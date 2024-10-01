@@ -4,7 +4,7 @@ import Image from "next/image";
 import logoSyncope from "@/app/public/logo/LOGO-10x10cm.png";
 import { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { MenuIcon } from "@heroicons/react/outline";
+// import { MenuIcon } from "@heroicons/react/outline";
 import styles from "./Header.module.css";
 
 const links = [
@@ -85,7 +85,7 @@ export default function Header() {
           />
         </Link>
         <button className={styles.menuButton} onClick={toggleMenu}>
-          <MenuIcon className={styles.menuIcon} />
+          {/* <MenuIcon className={styles.menuIcon} /> */}
         </button>
       </div>
       <div className={styles.menu}>
