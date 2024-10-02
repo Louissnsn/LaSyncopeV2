@@ -5,13 +5,14 @@ import logoSyncope from "@/app/public/logo/LOGO-10x10cm.png";
 import { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 // import { MenuIcon } from "@heroicons/react/outline";
-import styles from "@/styles/Header.module.css";
+import styles from "@/styles/Header.module.css"; // Importation des styles
+
 const links = [
   {
     name: "LA COMPAGNIE",
     href: "/la-compagnie",
     submenu: [
-      { name: "PRÉSENTATION", href: "/la-compagnie/presentation" },
+      // { name: "PRÉSENTATION", href: "/la-compagnie" },
       {
         name: "DIRECTION ARTISTIQUE",
         href: "/la-compagnie/direction-artistique",
@@ -79,13 +80,13 @@ export default function Header() {
           <Image
             src={logoSyncope}
             alt="logo de la syncope collectif"
-            width={50}
-            height={50}
+            width={55}
+            height={75}
           />
         </Link>
-        <button className={styles.menuButton} onClick={toggleMenu}>
-          {/* <MenuIcon className={styles.menuIcon} /> */}
-        </button>
+        {/* <button className={styles.menuButton} onClick={toggleMenu}>
+          <MenuIcon className={styles.menuIcon} />
+        </button> */}
       </div>
       <div className={styles.menu}>
         <nav
@@ -95,9 +96,9 @@ export default function Header() {
             {links.map((link) => {
               const isSubMenuActive = activeSubMenu === link.name;
               const isActiveLink = pathname === link.href;
-              const isActive = isActiveLink || isSubMenuActive;
+
               const linkClasses = `${styles.navLink} ${
-                isActive ? styles.activeLink : ""
+                isActiveLink || isSubMenuActive ? styles.activeLink : ""
               }`;
 
               return (
@@ -110,6 +111,7 @@ export default function Header() {
                   {link.submenu ? (
                     <div>
                       <button
+                        type="button"
                         onClick={() => handleMouseClick(link.name)}
                         className={linkClasses}
                       >

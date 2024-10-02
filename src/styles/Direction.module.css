@@ -1,5 +1,55 @@
-.titre{
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .container {
     display: flex;
-    align-items: center;
-    color: black;
-}
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .image-section {
+    flex: 1;
+    position: relative; /* Pour positionner le texte par-dessus */
+    height: 500px; /* Hauteur fixe pour l'image */
+    background-image: url('./path/to/profile-image.jpg'); /* Image de fond */
+    background-size: cover; /* Adapter la taille de l'image au conteneur */
+    background-position: center; /* Centrer l'image */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le texte */
+    color: white; /* Couleur du texte */
+    text-align: center;
+  }
+  
+  .overlay-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .bio-section {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .bio {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .bio p {
+    margin-bottom: 20px;
+  }
+  

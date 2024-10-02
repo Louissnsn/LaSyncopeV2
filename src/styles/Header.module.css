@@ -1,111 +1,147 @@
+/* Header.module.css */
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    width: 100%;
-    padding: 20px 40px;
-    border: 2px solid;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500; 
+  width: 100vw;
+  padding: 1.25rem 2.5rem; 
+  /* border: 2px solid currentColor; border-2 */
+  border-bottom: 2px solid;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95); 
+  color: black;
+  z-index: 10;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.menuButton {
+  display: block; /* Visible sur mobile */
+}
+
+@media (min-width: 768px) {
+  /* md: breakpoint */
+  .menuButton {
+    display: none; /* Caché sur md et plus */
   }
-  
-  .logo {
-    flex-shrink: 0;
-  }
-  
-  .menu {
-    flex-grow: 1;
-  }
-  
+}
+
+.menuIcon {
+  height: 1.5rem; 
+  width: 1.5rem; 
+}
+
+.menu {
+  flex-grow: 1;
+}
+
+.navBase {
+  display: none; /* Caché par défaut */
+}
+
+@media (min-width: 768px) {
   .navBase {
-    display: none;
+    display: flex; /* Affiché sur les écrans md et plus */
   }
-  
-  .navOpen {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 10;
-  }
-  
+}
+
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  width: 100%;
+  list-style: none; /* Ajouté pour supprimer les puces */
+  padding: 0; /* Enlever le padding par défaut */
+  margin: 0; /* Enlever la marge par défaut */
+}
+
+@media (min-width: 768px) {
   .navList {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
-    width: 100%;
   }
-  
-  @media (min-width: 768px) {
-    .navBase {
-      display: flex;
-    }
-    
-    .navList {
-      flex-direction: row;
-    }
-  }
-  
-  .navItem {
-    position: relative;
-  }
-  
-  .navLink {
-    outline: none;
-    padding: 16px;
-    border-radius: 8px;
-    background-color: rgba(135, 206, 235, 0.2);
-    color: black;
-    text-align: justify;
-  }
-  
-  .navLink:hover {
-    background-color: rgba(135, 206, 235, 0.5);
-    color: black;
-  }
-  
-  .activeLink {
-    background-color: rgba(135, 206, 235, 1);
-    color: black;
-  }
-  
-  .submenu {
-    position: absolute;
-    left: 0;
-    margin-top: 8px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 240px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .submenuLink {
-    display: block;
-    padding: 8px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: rgba(135, 206, 235, 0.2);
-    color: black;
-  }
-  
-  .submenuLink:hover {
-    background-color: rgba(135, 206, 235, 0.5);
-  }
-  
-  .activeSubmenuLink {
-    background-color: rgba(135, 206, 235, 1);
-  }
-  
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: inline-block;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded-md */
+  text-align: justify;
+  color: black;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px; /* Ajustez la taille selon vos besoins */
+  font-family: inherit; /* Assure que la police est héritée du parent */
+  line-height: normal; /* Réinitialise la hauteur de ligne si nécessaire */
+}
+
+.navLink:hover {
+  background-color: #e0f2fe; 
+  color: black;
+}
+
+.activeLink {
+  background-color: #e0f2fe; 
+  color: black;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  margin-top: 0.5rem; 
+  background-color: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.375rem;
+  width: 15rem; 
+  padding: 0.5rem; 
+  list-style: none; /* Ajouté pour supprimer les puces */
+  padding-left: 0; /* Enlever le padding par défaut */
+  margin: 0; /* Enlever la marge par défaut */
+}
+
+.submenu li + li {
+  margin-top: 0.75rem; 
+}
+
+.submenuLink {
+  display: block;
+  padding: 0.5rem; 
+  border-radius: 0.375rem;
+  color: black;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.submenuLink:hover {
+  background-color: #bae6fd; 
+  color: black;
+}
+
+.activeSubmenuLink {
+  background-color: #e0f2fe; 
+}

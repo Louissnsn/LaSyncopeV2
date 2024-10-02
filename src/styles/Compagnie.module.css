@@ -1,5 +1,7 @@
 .titre{
+    background-color: red;
     display: flex;
     align-items: center;
     color: black;
 }
+
