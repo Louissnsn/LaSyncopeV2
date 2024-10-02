@@ -5,8 +5,7 @@ import logoSyncope from "@/app/public/logo/LOGO-10x10cm.png";
 import { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 // import { MenuIcon } from "@heroicons/react/outline";
-import styles from "./Header.module.css";
-
+import styles from "@/styles/Header.module.css";
 const links = [
   {
     name: "LA COMPAGNIE",
