@@ -1,28 +1,27 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/app/components/Header";
 import { Metadata } from "next";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { combine, geistMonoVF } from "./utils/customFonts";
+import { Inter } from "next/font/google";
 
 export const metadata = {
   title: "La Syncope",
   description: "La Syncope - Collectif de théâtre",
 };
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="fr"
+      className={`${combine.variable} ${geistMonoVF.variable} ${inter.variable}`}
+    >
+      <body>
         <Header />
         {children}
       </body>

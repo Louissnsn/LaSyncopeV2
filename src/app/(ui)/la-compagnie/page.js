@@ -1,4 +1,4 @@
-import styles from "@/styles/Compagnie.module.css";
+import styles from "@/app/styles/Compagnie.module.css";
 
 export default function Compagnie() {
   <div>

@@ -1,4 +1,4 @@
-import styles from "@/styles/Agenda.module.css";
+import styles from "@/app/styles/Agenda.module.css";
 
 export default function Agenda() {
   return (

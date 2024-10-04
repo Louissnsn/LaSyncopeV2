@@ -1,4 +1,4 @@
-import styles from "@/styles/Poissons.module.css";
+import styles from "@/app/styles/Poissons.module.css";
 
 export default function Poissons() {
   return (

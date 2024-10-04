@@ -1,4 +1,4 @@
-import styles from "@/styles/Nobel.module.css";
+import styles from "@/app/styles/Nobel.module.css";
 
 export default function Nobel() {
   return (

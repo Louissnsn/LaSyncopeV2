@@ -1,4 +1,4 @@
-import styles from "@/styles/Ecole.module.css";
+import styles from "@/app/styles/Ecole.module.css";
 
 export default function Ecole() {
   <div className={styles.titre}>

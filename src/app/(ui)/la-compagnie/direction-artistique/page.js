@@ -1,29 +1,27 @@
-// pages/index.js
 import Image from "next/image";
-import styles from "@/styles/Direction.module.css";
-import photoMathilde from "@/public/images/119.webp";
-import localFont from "next/font/local";
-
-// const combine = localFont({ src: "../../../public/fonts/Combine.otf" });
-
-const imageStyle = {
-  borderRadius: "2%",
-  objectFit: "contain",
-};
+import styles from "@/app/styles/Direction.module.css";
+import photoMathilde from "@/app/public/images/119.webp";
 
 export default function Direction() {
   return (
     <div className={styles.container}>
       <div className={styles.photoContainer}>
         <Image
-          src={photoMathilde} // Replace with your image path
+          src={photoMathilde}
           alt="Photo de Mathilde"
           fill
-          style={{ borderRadius: "3%", objectFit: "cover" }} // Ensures the image covers the container
+          style={{
+            borderRadius: "25px",
+            objectFit: "cover",
+            minWidth: "400px",
+          }}
         />
       </div>
       <div className={styles.nomContainer}>
-        <p className={styles.nom}>Mathilde Bellin</p>
+        <p className={styles.nom}>
+          MATHILDE
+          <span className={styles.nomFamille}>BELLIN</span>
+        </p>
       </div>
       <div className={styles.bioTitle}>
         <p>B I O</p>
@@ -64,17 +62,6 @@ export default function Direction() {
         <div className={styles.zigZag}></div>
       </div>
       <div className={styles.barreLatérale}> </div>
-      {/* <div className={styles.imageSection}>
-        <Image src={photoMathilde} style={imageStyle} />
-      </div>
-      <div className={styles.textOverlay}>
-        <h1 className={styles.overlayTitle}>MATHILDE BELLIN</h1>
-      </div>
-      <div className={styles.bioSection}>
-        <div className={styles.bio}>
-         
-        </div>
-      </div> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 // import Gallery from "@/app/components/QuadGallery/page";
-import styles from "@/styles/Projets.module.css";
+import styles from "@/app/styles/Projets.module.css";
 export default function Projets() {
   return (
     //   <div className=" h-screen w-screen m-0 p-0">

@@ -1,4 +1,4 @@
-import styles from "@/styles/Loup.module.css";
+import styles from "@/app/styles/Loup.module.css";
 
 export default function Loup() {
   return (
