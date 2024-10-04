@@ -80,8 +80,8 @@ export default function Header() {
           <Image
             src={logoSyncope}
             alt="logo de la syncope collectif"
-            width={55}
-            height={75}
+            width={35}
+            height={50}
           />
         </Link>
         {/* <button className={styles.menuButton} onClick={toggleMenu}>
