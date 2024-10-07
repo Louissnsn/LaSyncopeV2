@@ -1,0 +1,50 @@
+.parent {
+  padding: 40px;
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.photoContainer {
+  grid-area: 1 / 7 / 13 / 11;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nom {
+  position: absolute;
+  font-family: var(--font-combine);
+  font-size: 70px;
+  font-weight: 600;
+  color: #cdb4db;
+  top: 2%;
+  z-index: 2;
+  right: 74%;
+}
+.nomFamille {
+  display: block;
+  margin-top: 20px;
+  color: #cdb4db;
+}
+.bio {
+  grid-area: 5 / 2 / 13 / 5;
+}
+.bioTitle {
+  grid-area: 4 / 2 / 5 / 5;
+}
+
+.texteBio {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-justify: auto;
+}
+
+/* SHAPES */
