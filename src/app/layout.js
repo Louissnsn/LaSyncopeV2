@@ -1,8 +1,6 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/app/components/Header";
-import { Metadata } from "next";
-import { combine, geistMonoVF } from "./utils/customFonts";
+import { combine, geistMonoVF } from "./public/utils/customFonts";
 import { Inter } from "next/font/google";
 
 export const metadata = {

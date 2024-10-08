@@ -7,8 +7,8 @@
   font-family: var(--font-inter);
   font-weight: 500;
   width: 100vw;
+  height: 10vh;
   padding: 1.25rem 2.5rem;
-  /* border: 2px solid currentColor; border-2 */
   border-bottom: 2px solid;
   position: sticky;
   top: 0;

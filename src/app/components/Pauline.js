@@ -7,7 +7,7 @@ export default function Pauline() {
       <div className={styles.photoContainer}>
         <p className={styles.nom}>
           PAULINE
-          <span className={styles.nomFamille}>Legoëdec</span>
+          <span className={styles.nomFamille}>LEGÖEDEC</span>
         </p>
         <Image
           src={photoPauline}
