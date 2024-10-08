@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.titre {
+  margin-top: 3%;
+  color: white;
+  position: absolute;
+  font-family: var(--font-combine);
+  font-size: 5rem;
+  font-weight: 200;
+  text-align: center;
+  left: 2%;
+}
+
+.titreSuite {
+  display: block;
+  margin-top: 40px;
+}

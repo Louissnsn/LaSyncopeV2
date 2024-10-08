@@ -1,9 +1,15 @@
-import styles from "@/app/styles/Loup.module.css";
+import Cover from "@/app/components/Cover";
+import LoupCover from "@/app/public/images/Covers/Loup.JPG";
 
 export default function Loup() {
+  const title = ["QUAND LE LOUP", "N'Y EST PLUS"];
   return (
-    <div className={styles.titre}>
-      <h1>QUAND LE LOUP</h1>
+    <div>
+      <Cover
+        image={LoupCover}
+        title={title}
+        altText="Photographie du spectacle"
+      />
     </div>
   );
 }

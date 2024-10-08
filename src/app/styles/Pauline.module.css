@@ -22,7 +22,7 @@
 .nom {
   position: absolute;
   font-family: var(--font-combine);
-  font-size: 70px;
+  font-size: 5rem;
   font-weight: 200;
   color: #cdb4db;
   top: 2%;

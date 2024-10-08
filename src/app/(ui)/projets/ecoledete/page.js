@@ -1,7 +1,15 @@
-import styles from "@/app/styles/Ecole.module.css";
+import Cover from "@/app/components/Cover";
+import Iceberg from "@/app/public/images/Covers/Iceberg 2.JPG";
 
 export default function Ecole() {
-  <div className={styles.titre}>
-    <h1>ECOLE D'ETE</h1>
-  </div>;
+  const title = ["ÉCOLE", "D'ÉTÉ"];
+  return (
+    <div>
+      <Cover
+        image={Iceberg}
+        title={title}
+        altText="Photographie du spectacle"
+      />
+    </div>
+  );
 }
