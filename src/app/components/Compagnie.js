@@ -1,3 +1,4 @@
+import styles from "@/app/styles/Compagnie.module.css";
 export default function Compagnie() {
   return (
     <div className={styles.container}>
