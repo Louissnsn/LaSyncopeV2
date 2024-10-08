@@ -1,5 +1,19 @@
-.titre{
-    display: flex;
-    align-items: center;
-    color: black;
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.titre {
+  margin-top: 3%;
+  color: white;
+  position: absolute;
+  font-family: var(--font-combine);
+  font-size: 70px;
+  font-weight: 200;
+  left: 5%;
+  top: 15%;
+}
+
+.titreSuite {
+  display: block;
+  margin-top: 40px;
 }

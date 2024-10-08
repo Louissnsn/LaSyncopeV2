@@ -1,9 +1,8 @@
-import styles from "@/app/styles/Poissons.module.css";
-
-export default function Poissons() {
+import Poissons from "@/app/components/Poissons";
+export default function PoissonsPage() {
   return (
-    <div className={styles.titre}>
-      <h1>POISSONNNNNNN</h1>
+    <div>
+      <Poissons />
     </div>
   );
 }
