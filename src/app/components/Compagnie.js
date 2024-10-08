@@ -1,15 +1,33 @@
-// import styles from "@/app/styles/Compagnie.module.css";
+// components/Compagnie.jsx
+
+import styles from "@/app/styles/Compagnie.module.css";
 import Image from "next/image";
-import welcome from "@/app/public/images/Covers/welcome.webp";
+import welcome from "@/app/public/images/images 16:9/poissons.jpg";
 import logo from "@/app/public/logo/logo BLANC.png";
-import Cover from "./Cover";
+
 export default function Compagnie() {
-  const title = ["LA", "SYNCOPE"];
-  console.log("e");
   return (
-    <div>
-      <Cover image={welcome} altText="page d'accueil" title={title} />
-      <Image src={logo} />
+    <div className={styles.container}>
+      <div className={styles.photosContainer}>
+        <div className={styles.imageWrapper}>
+          <Image
+            src={welcome}
+            alt="Page d'accueil"
+            layout="fill"
+            objectFit="cover"
+            className={styles.image}
+          />
+        </div>
+        <div className={styles.logoWrapper}>
+          <Image
+            src={logo}
+            alt="Logo de la compagnie"
+            width={250}
+            height={400}
+            className={styles.logo}
+          />
+        </div>
+      </div>
     </div>
   );
 }

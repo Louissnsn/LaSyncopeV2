@@ -1,0 +1,28 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.photoContainer {
+  grid-area: 2 / 1 / 13 / 5;
+  background-color: blueviolet;
+}
+.shape1Container {
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: aqua;
+}
+.titreContainer {
+  grid-area: 2 / 5 / 5 / 10;
+  background-color: bisque;
+}
+.texteContainer {
+  grid-area: 5 / 6 / 13 / 11;
+  background-color: orange;
+}
+.shape2Container {
+  grid-area: 1 / 12 / 13 / 13;
+  background-color: greenyellow;
+}

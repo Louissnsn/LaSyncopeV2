@@ -1,4 +1,52 @@
 .container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  position: relative;
+}
+
+.photosContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper :global(img) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 15%; /* Utiliser un pourcentage pour la réactivité */
+  max-width: 150px; /* Taille maximale pour les grands écrans */
+}
+
+.logoWrapper :global(img) {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logoWrapper {
+    top: 10%;
+    left: 5%;
+    width: 25%; /* Augmente la taille du logo sur les écrans plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .logoWrapper {
+    top: 15%;
+    left: 5%;
+    width: 35%; /* Encore plus grand sur les très petits écrans */
+  }
 }
