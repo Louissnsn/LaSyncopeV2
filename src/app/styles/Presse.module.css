@@ -1,0 +1,24 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.presse {
+  grid-area: 2 / 1 / 12 / 9;
+  background-color: #a2d2ff;
+}
+
+.titre {
+  position: absolute;
+  font-family: var(--font-combine);
+  font-size: 5rem;
+  font-weight: 200;
+  color: white;
+}
+
+.photoContainer {
+  grid-area: 1 / 9 / 13 / 13;
+}

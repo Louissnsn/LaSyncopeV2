@@ -1,0 +1,34 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #ffd670;
+}
+
+.titreContainer {
+  grid-area: 1 / 5 / 4 / 9;
+}
+.passées {
+  grid-area: 3 / 9 / 13 / 13;
+}
+.futures {
+  grid-area: 3 / 1 / 13 / 5;
+}
+
+.titre {
+  position: absolute;
+  font-family: var(--font-combine);
+  font-size: 5rem;
+  font-weight: 200;
+  color: white;
+}
+.texte {
+  color: white;
+  font-size: 4rem;
+  font-weight: 200;
+  font-family: var(--font-combine);
+}
