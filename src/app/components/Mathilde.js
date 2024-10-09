@@ -1,6 +1,7 @@
 import styles from "@/app/styles/Mathilde.module.css";
 import photoMathilde from "@/app/public/images/119.webp";
 import Image from "next/image";
+import logoSVG from "@/app/public/logo/logo-syncope-v2.svg";
 
 export default function Mathilde() {
   return (
@@ -60,6 +61,7 @@ export default function Mathilde() {
         <div className={styles.zigZag}></div>
       </div>
       <div className={styles.barreLatérale}> </div>
+      {/* <Image src={logoSVG} alt="logo au format SVG" /> */}
     </div>
   );
 }

@@ -48,7 +48,8 @@
 .texteBio {
   margin-bottom: 20px;
   margin-top: 20px;
-  text-justify: auto;
+  text-justify: inter-word;
+  font-size: 20px;
 }
 
 /* SHAPES */

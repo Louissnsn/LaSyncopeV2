@@ -35,7 +35,7 @@
   color: #cdb4db;
 }
 .bio {
-  grid-area: 5 / 2 / 13 / 5;
+  grid-area: 5 / 2 / 13 / 6;
 }
 .bioTitle {
   grid-area: 4 / 2 / 5 / 5;
@@ -44,7 +44,8 @@
 .texteBio {
   margin-bottom: 20px;
   margin-top: 20px;
-  text-justify: auto;
+  text-justify: inter-word;
+  font-size: 20px;
 }
 
 /* SHAPES */

@@ -5,6 +5,7 @@ export default function Direction() {
   return (
     <div className={styles.container}>
       <Mathilde />
+
       <Pauline />
     </div>
   );
