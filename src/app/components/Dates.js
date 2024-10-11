@@ -9,6 +9,9 @@ export default function Dates() {
       <div className={styles.futures}>
         <p className={styles.texte}>À VENIR</p>
       </div>
+      <div className={styles.shapeContainer}>
+        <div className={styles.shape}></div>
+      </div>
       <div className={styles.passées}>
         <p className={styles.texte}>PASSÉES</p>
       </div>

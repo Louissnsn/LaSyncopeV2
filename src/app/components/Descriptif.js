@@ -9,7 +9,7 @@ export default function Descriptif({ image, altText, descriptif }) {
         <div className={styles.shape}></div>
       </div>
       <div className={styles.photoContainer}>
-        <Image src={image} alt={altText} />
+        <Image src={image} alt={altText} fill />
       </div>
       <div className={styles.texteContainer}>
         <p>{descriptif}</p>

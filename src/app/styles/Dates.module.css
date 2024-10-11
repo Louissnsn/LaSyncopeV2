@@ -1,6 +1,7 @@
 .parent {
+  margin-top: 30px;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -11,16 +12,24 @@
 
 .titreContainer {
   grid-area: 1 / 5 / 4 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .passées {
   grid-area: 3 / 9 / 13 / 13;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .futures {
   grid-area: 3 / 1 / 13 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .titre {
-  position: absolute;
   font-family: var(--font-combine);
   font-size: 5rem;
   font-weight: 200;
@@ -31,4 +40,18 @@
   font-size: 4rem;
   font-weight: 200;
   font-family: var(--font-combine);
+}
+
+.shapeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3 / 6 / 13 / 8;
+}
+
+.shape {
+  height: 80%;
+  width: 10px;
+  background-color: white;
+  border-radius: 25px;
 }

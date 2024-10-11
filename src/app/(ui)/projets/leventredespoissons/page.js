@@ -5,6 +5,7 @@ import confluence from "@/app/public/images/Spectacles/Poissons/confluence.webp"
 import Distribution from "@/app/components/Distribution";
 import Descriptif from "@/app/components/Descriptif";
 import choeur from "@/app/public/images/Spectacles/Poissons/insectes 3.jpg";
+import Dates from "@/app/components/Dates";
 
 export default function PoissonsPage() {
   const title = ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"];
@@ -13,8 +14,9 @@ export default function PoissonsPage() {
     <div>
       <Cover image={boue} altText={altText} title={title} />
       <Descriptif image={choeur} altText={altText} />
-      <Presse image={confluence} altText="Photographie des Poissons" />
       <Distribution />
+      <Presse image={confluence} altText="Photographie des Poissons" />
+      <Dates />
     </div>
   );
 }
