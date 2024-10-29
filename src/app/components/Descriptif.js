@@ -2,7 +2,7 @@
 import styles from "@/app/styles/Descriptif.module.css";
 import Image from "next/image";
 
-export default function Descriptif({ image, altText, descriptif }) {
+export default function Descriptif({ image, altText, title, descriptif }) {
   return (
     <div className={styles.parent}>
       <div className={styles.shapeContainer}>
@@ -12,7 +12,8 @@ export default function Descriptif({ image, altText, descriptif }) {
         <Image src={image} alt={altText} fill />
       </div>
       <div className={styles.texteContainer}>
-        <p>{descriptif}</p>
+        <h2 className={styles.titre}>{title}</h2>
+        <p className={styles.text}>{descriptif}</p>
       </div>
     </div>
   );

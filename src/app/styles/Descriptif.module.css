@@ -14,14 +14,27 @@
 }
 .photoContainer {
   position: relative;
-  grid-area: 4 / 1 / 12 / 8;
+  grid-area: 3 / 1 / 12 / 7;
   background-color: #a2d2ff;
 }
 .texteContainer {
   background-color: #a2d2ff;
-  grid-area: 2 / 7 / 13 / 13;
+  grid-area: 2 / 6 / 13 / 13;
 }
 
 .shape {
   background-color: #ff9770;
+}
+
+.titre {
+  padding: 20px;
+  margin-top: 3%;
+  font-family: var(--font-combine);
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+}
+
+.texte {
+  font-size: 50px;
 }
