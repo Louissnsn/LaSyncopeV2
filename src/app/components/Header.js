@@ -40,7 +40,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const timeoutIdRef = useRef(null);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  // const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleMouseEnter = (name) => {
     if (timeoutIdRef.current) {

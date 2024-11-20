@@ -1,6 +1,7 @@
 import styles from "@/app/styles/Distribution.module.css";
 import Image from "next/image";
 import logo from "@/app/public/logo/logo BLANC.png";
+
 export default function Distribution() {
   return (
     <div className={styles.parent}>
