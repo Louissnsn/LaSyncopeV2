@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #0070f3;
+  background-color: #ff9770;
   color: #ffffff;
   text-decoration: none;
   border: none;
@@ -12,10 +12,11 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  font-family: var(--font-geist-mono);
 }
 
 .button:hover {
-  background-color: #005bb5;
+  background-color: #ff9770;
 }
 
 .buttonContainer {

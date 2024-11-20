@@ -21,8 +21,8 @@ export default function Descriptif({
       <div className={styles.texteContainer}>
         <h2 className={styles.titre}>{title}</h2>
         <p className={styles.text}>{descriptif}</p>
+        <DownloadButton filePath={filePath} />
       </div>
-      <DownloadButton filePath={filePath} />
     </div>
   );
 }
