@@ -7,15 +7,7 @@ export default function Presse({ image, altText }) {
         <p className={styles.titre}>ON PARLE DE NOUS</p>
       </div>
       <div className={styles.photoContainer}>
-        <Image
-          src={image}
-          alt={altText}
-          fill
-          style={{
-            objectFit: "cover",
-            minWidth: "200px",
-          }}
-        />
+        <Image src={image} alt={altText} fill />
       </div>
     </div>
   );

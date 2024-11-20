@@ -26,6 +26,7 @@
 }
 
 .photoContainer {
-  padding: 20px;
   grid-area: 1 / 9 / 13 / 13;
+  background-color: red;
+  position: relative;
 }

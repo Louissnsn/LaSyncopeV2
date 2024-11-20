@@ -15,7 +15,6 @@
 .photoContainer {
   position: relative;
   grid-area: 3 / 1 / 12 / 7;
-  background-color: #a2d2ff;
 }
 .texteContainer {
   background-color: #a2d2ff;
