@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logoSyncope from "@/public/logo/LOGO-10x10cm.png";
+import logoSyncope from "../../public/logo/LOGO-10x10cm.png";
 import { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 // import { MenuIcon } from "@heroicons/react/outline";

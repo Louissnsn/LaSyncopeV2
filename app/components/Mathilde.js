@@ -1,7 +1,7 @@
 import styles from "@/styles/Mathilde.module.css";
-import photoMathilde from "@/public/images/119.webp";
+import photoMathilde from "../../public/images/119.webp";
 import Image from "next/image";
-import logoSVG from "@/public/logo/logo-syncope-v2.svg";
+import logoSVG from "../../public/logo/logo-syncope-v2.svg";
 
 export default function Mathilde() {
   return (

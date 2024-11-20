@@ -1,5 +1,5 @@
 import styles from "@/styles/Pauline.module.css";
-import photoPauline from "@/public/images/118.webp";
+import photoPauline from "../../public/images/118.webp";
 import Image from "next/image";
 export default function Pauline() {
   return (

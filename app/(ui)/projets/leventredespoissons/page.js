@@ -1,10 +1,10 @@
 import Cover from "@/components/Cover";
-import boue from "@/public/images/Covers/boue.jpg";
+import boue from "../../../../public/images/Covers/boue.jpg";
 import Presse from "@/components/Presse";
-import confluence from "@/public/images/Spectacles/Poissons/confluence.webp";
+import confluence from "../../../../public/images/Spectacles/Poissons/confluence.webp";
 import Distribution from "@/components/Distribution";
 import Descriptif from "@/components/Descriptif";
-import choeur from "@/public/images/Spectacles/Poissons/insectes 3.jpg";
+import choeur from "../../../../public/images/Spectacles/Poissons/insectes 3.jpg";
 import Dates from "@/components/Dates";
 
 export default function PoissonsPage() {
@@ -14,7 +14,7 @@ export default function PoissonsPage() {
 Alors qu’Augusto décide de rester dans son village, observant les poissons morts flotter à la surface de la boue jusqu'à la taille, Sophia s’échappe à la ville et gravite bientôt dans les hautes sphères du pouvoir. Au cœur de cet accident qui n'en est pas vraiment un, on trouve notamment la Ministre de l'Environnement corrompue, sa conseillère politique arriviste, et le Président de la Société Samarco. 
 Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?`;
   const textTitle = "UN SPECTACLE DE MATHILDE BELLIN";
-  const filePath = "/pdf/poissons.pdf";
+  const filePath = "/poissons.pdf";
   return (
     <div>
       <Cover image={boue} altText={altText} title={title} />

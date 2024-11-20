@@ -1,6 +1,6 @@
 import "./globals.css";
 import Header from "@/components/Header";
-import { combine, geistMonoVF } from "./public/utils/customFonts";
+import { combine, geistMonoVF } from "../public/utils/customFonts";
 import { Inter } from "next/font/google";
 
 export const metadata = {

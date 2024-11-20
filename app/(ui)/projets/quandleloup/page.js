@@ -1,5 +1,5 @@
 import Cover from "@/components/Cover";
-import LoupCover from "@/public/images/Covers/Loup.JPG";
+import LoupCover from "../../../../public/images/Covers/Loup.JPG";
 
 export default function Loup() {
   const title = ["QUAND LE LOUP", "N'Y EST PLUS"];

@@ -2,8 +2,8 @@
 
 import styles from "@/styles/Compagnie.module.css";
 import Image from "next/image";
-import welcome from "@/public/images/images 16:9/poissons.jpg";
-import logo from "@/public/logo/logo BLANC.png";
+import welcome from "../../public/images/images 16:9/poissons.jpg";
+import logo from "../../public/logo/logo BLANC.png";
 
 export default function Compagnie() {
   return (
