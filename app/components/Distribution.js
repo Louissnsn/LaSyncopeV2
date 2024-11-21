@@ -6,7 +6,13 @@ export default function Distribution() {
   return (
     <div className={styles.parent}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt="logo de la Syncope" height={600} width={400} />
+        <Image
+          src={logo}
+          alt="logo de la Syncope"
+          sizes="(max-width: 768px) 80vw, 400px"
+          height={500}
+          width={300}
+        />
       </div>
       <div className={styles.titreContainer}>
         <p className={styles.titre}>DISTRIBUTION</p>
