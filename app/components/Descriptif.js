@@ -11,9 +11,9 @@ export default function Descriptif({
 }) {
   return (
     <div className={styles.parent}>
-      <div className={styles.shapeContainer}>
+      {/* <div className={styles.shapeContainer}>
         <div className={styles.shape}></div>
-      </div>
+      </div> */}
       <div className={styles.photoContainer}>
         <Image
           src={image}
@@ -23,6 +23,7 @@ export default function Descriptif({
           style={{
             borderRadius: "15px",
           }}
+          className={styles.image}
         />
       </div>
       <div className={styles.texteContainer}>

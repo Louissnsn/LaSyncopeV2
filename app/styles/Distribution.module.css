@@ -110,12 +110,6 @@
 }
 
 @media (max-width: 480px) {
-  .parent {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: 90vh;
-  }
-
   .titre {
     font-size: clamp(1.2rem, 8vw, 2.5rem);
   }
