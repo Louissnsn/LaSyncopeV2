@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import styles from "@/styles/Descriptif.module.css";
 import Image from "next/image";
 import DownloadButton from "./DownloadButton";
@@ -14,22 +14,20 @@ export default function Descriptif({
       {/* <div className={styles.shapeContainer}>
         <div className={styles.shape}></div>
       </div> */}
+      <div className={styles.firstPart}>
+        <h2 className={styles.titre}>{title}</h2>
+        <div className={styles.descContainer}>{descriptif}</div>
+        <DownloadButton filePath={filePath} />
+      </div>
       <div className={styles.photoContainer}>
         <Image
           src={image}
           alt={altText}
           fill
-          placeholder="blur"
           style={{
-            borderRadius: "15px",
+            borderRadius: "25px",
           }}
-          className={styles.image}
         />
-      </div>
-      <div className={styles.texteContainer}>
-        <h2 className={styles.titre}>{title}</h2>
-        <div className={styles.descContainer}>{descriptif}</div>
-        <DownloadButton filePath={filePath} />
       </div>
     </div>
   );
