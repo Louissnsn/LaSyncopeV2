@@ -1,19 +1,14 @@
 .parent {
   width: 100vw;
-  height: auto;
+  min-height: auto;
   background-color: #a2d2ff;
   padding: 10px;
 }
 
-/* .firstPart {
-  width: 100%;
-  height: auto;
-} */
-
 .titre {
   margin-top: 6%;
-
-  font-family: var(--font-combine);
+  line-height: 150%;
+  font-family: var(--font-combine, Arial, sans-serif);
   color: white;
   text-align: center;
 }
@@ -24,35 +19,53 @@
 
 .descContainer {
   text-align: justify;
-  font-family: var(--font-geist-mono);
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+  margin-top: 2%;
+  line-height: 1.5;
 }
 
 @media (max-width: 375px) {
   .parent {
     display: flex;
     flex-direction: column;
-    justify-self: space-between;
+    justify-content: space-between;
   }
 
   .titre {
     font-size: 2rem;
     font-weight: 200;
-    line-height: 150%;
   }
-  .descContainer {
-    line-height: 1.5;
-  }
+
   .photoContainer {
     width: 100%;
     height: 200px;
   }
 }
 
-@media (max-width: 490px) {
+@media (min-width: 376px) and (max-width: 490px) {
   .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
   .photoContainer {
     width: 100%;
-    height: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .photoContainer {
+    width: 90%;
+    height: 400px;
   }
 }
