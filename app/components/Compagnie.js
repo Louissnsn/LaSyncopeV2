@@ -1,9 +1,7 @@
-// components/Compagnie.jsx
-
 import styles from "@/styles/Compagnie.module.css";
 import Image from "next/image";
 import welcome from "../../public/images/images 16:9/poissons.jpg";
-import logo from "../../public/logo/logo_BLANC.png";
+import logo from "../../public/logo/LogoBLANC.png";
 
 export default function Compagnie() {
   return (

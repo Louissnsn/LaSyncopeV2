@@ -1,6 +1,6 @@
 import styles from "@/styles/Distribution.module.css";
 import Image from "next/image";
-import logo from "../../public/logo/logo BLANC.png";
+import logo from "../../public/logo/LogoBLANC.png";
 
 export default function Distribution() {
   return (
