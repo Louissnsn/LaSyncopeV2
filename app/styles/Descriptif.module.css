@@ -6,7 +6,7 @@
 }
 
 .titre {
-  margin-top: 6%;
+  margin-top: 2%;
   line-height: 150%;
   font-family: var(--font-combine, Arial, sans-serif);
   color: white;
@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: 780px) and (max-width: 980px) {
+@media (min-width: 780px) and (max-width: 1020px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -83,5 +83,24 @@
     max-height: 45vh;
     min-height: 45vh;
     max-width: 90%;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1980px) {
+  .firstPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .descContainer {
+    max-width: 56%;
+    min-width: 50%;
+
+    line-height: 2;
+  }
+  .photoContainer {
+    min-height: 45vh;
+    max-width: 55%;
   }
 }
