@@ -14,6 +14,7 @@ export default function Descriptif({
       {/* <div className={styles.shapeContainer}>
         <div className={styles.shape}></div>
       </div> */}
+      <div className={styles.shape1}></div>
       <div className={styles.firstPart}>
         <h2 className={styles.titre}>{title}</h2>
         <div className={styles.descContainer}>{descriptif}</div>
@@ -29,6 +30,7 @@ export default function Descriptif({
           }}
         />
       </div>
+      <div className={styles.shape2}></div>
     </div>
   );
 }

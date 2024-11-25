@@ -11,6 +11,7 @@
   font-family: var(--font-combine, Arial, sans-serif);
   color: white;
   text-align: center;
+  padding: 2%;
 }
 
 .photoContainer {
@@ -143,6 +144,22 @@
 
   .titre {
     color: #ff9770;
+  }
+  .shape1 {
+    grid-area: 1 / 1 / 2 / 13;
+    background-color: #ff9770;
+    margin: auto;
+    width: 84%;
+    height: 8px;
+    border-radius: 50px;
+  }
+  .shape2 {
+    grid-area: 10 / 1 / 12 / 13;
+    background-color: #ff9770;
+    margin: auto;
+    width: 84%;
+    height: 8px;
+    border-radius: 50px;
   }
 }
 
