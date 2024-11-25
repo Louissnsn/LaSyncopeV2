@@ -24,7 +24,7 @@
   line-height: 1.5;
 }
 
-@media (min-width: 300px) and (max-width: 490px) {
+@media (min-width: 300px) and (max-width: 550px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -38,5 +38,50 @@
   .photoContainer {
     width: 100%;
     min-height: 250px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 780px) {
+  .parent {
+    height: 100vh;
+  }
+  .photoContainer {
+    width: 100%;
+    max-height: 45vh;
+    min-height: 450px;
+  }
+
+  .firstPart {
+    padding-bottom: 2%;
+  }
+
+  .descContainer {
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 980px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descContainer {
+    width: 85%;
+    line-height: 2;
+  }
+
+  .photoContainer {
+    width: 90%;
+    max-height: 45vh;
+    min-height: 45vh;
+    max-width: 90%;
   }
 }
