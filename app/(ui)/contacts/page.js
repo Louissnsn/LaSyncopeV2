@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <div>
       <div className={styles.titre}>
-        <h1>Hello ici c'est la page contact</h1>
+        <h1>Hello ici c&apos;est la page contact</h1>
       </div>
     </div>
   );
