@@ -54,6 +54,7 @@
 
 /* SHAPES */
 .zigZag {
+  grid-area: 12 / 2 / 13 / 12;
   --a: 90deg; /* control the angle */
   --s: 100px; /* size of the zig-zag */
   --b: 35px; /* control the thickness */

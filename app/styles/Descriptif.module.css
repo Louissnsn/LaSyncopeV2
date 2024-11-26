@@ -9,9 +9,9 @@
   margin-top: 2%;
   line-height: 150%;
   font-family: var(--font-combine, Arial, sans-serif);
-  color: white;
   text-align: center;
   padding: 2%;
+  color: #ff9770;
 }
 
 .photoContainer {
@@ -92,12 +92,14 @@
 }
 
 @media (min-width: 1020px) and (max-width: 1280px) {
+  .parent {
+    background-color: #a2d2ff;
+  }
   .firstPart {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #a2d2ff;
   }
   .descContainer {
     max-width: 65%;
@@ -106,13 +108,14 @@
     line-height: 2;
   }
   .photoContainer {
-    min-height: 60vh;
+    min-height: 50vh;
+    max-height: 55vh;
     max-width: 65%;
     margin: auto;
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   .parent {
     min-height: 100vh;
     display: grid;
@@ -142,9 +145,6 @@
     grid-area: 3 / 1 / 7 / 6;
   }
 
-  .titre {
-    color: #ff9770;
-  }
   .shape1 {
     grid-area: 1 / 1 / 2 / 13;
     background-color: #ff9770;
@@ -163,7 +163,7 @@
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
   .parent {
     min-height: 100vh;
     display: grid;
@@ -173,19 +173,85 @@
     grid-row-gap: 0px;
   }
 
-  .firstPart {
-    grid-area: 1 / 5 / 13 / 13;
-    color: aliceblue;
+  .shape1 {
+    display: none;
   }
 
+  .firstPart {
+    grid-area: 2 / 5 / 10 / 12;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+    background-color: #a2d2ff;
+    min-height: 80vh;
+  }
+
+  .descContainer {
+    max-width: 60%;
+    line-height: 2;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+
+  .titre {
+    margin-top: 5%;
+  }
   .photoContainer {
-    grid-area: 3 / 2 / 8 / 7;
+    grid-area: 4 / 1 / 8 / 6;
     position: relative;
   }
+
+  /* SHAPES */
+  .zigZag1 {
+    grid-area: 1 / 1 / 2 / 13;
+    --a: 90deg; /* control the angle */
+    --s: 100px; /* size of the zig-zag */
+    --b: 20px; /* control the thickness */
+
+    background: #ff9770;
+    height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+    width: 100%;
+    --_g: var(--s) repeat-x
+      conic-gradient(
+        from calc(var(--a) / -2) at bottom,
+        #0000,
+        #000 1deg calc(var(--a) - 1deg),
+        #0000 var(--a)
+      );
+    mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+  }
+
+  .zigZag2 {
+    grid-area: 11 / 1 / 13 / 13;
+    --a: 90deg; /* control the angle */
+    --s: 100px; /* size of the zig-zag */
+    --b: 20px; /* control the thickness */
+
+    background: #ff9770;
+    height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+    width: 100%;
+    --_g: var(--s) repeat-x
+      conic-gradient(
+        from calc(var(--a) / -2) at bottom,
+        #0000,
+        #000 1deg calc(var(--a) - 1deg),
+        #0000 var(--a)
+      );
+    mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+  }
 }
+
 @media (min-width: 1920px) {
   /* Styles pour écrans ultra-larges */
   .parent {
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 }
