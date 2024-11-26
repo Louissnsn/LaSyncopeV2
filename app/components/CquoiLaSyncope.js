@@ -7,7 +7,7 @@ export default function Cquoi() {
         <h3 className={styles.sousTitre}>
           QU&apos;EST-CE QUE C&apos;EST QUE CETTE SYNCOPE
         </h3>
-        <div className={styles.textleft}>
+        <div className={styles.textLeft}>
           <p className={styles.textDescription}>
             Une aventure artistique menée par Mathilde Bellin et Pauline Darcel,
             autour desquelles gravitent une multiplicité d’artiste
