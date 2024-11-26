@@ -12,9 +12,33 @@
   grid-area: 2 / 1 / 11 / 10;
   background-color: #ff9770;
 }
+
+.textDescription {
+  text-align: justify;
+  margin-top: 4%;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+  padding: 10px;
+  text-indent: 1em;
+  line-height: 1.5;
+}
 .rightContainer {
   grid-area: 3 / 7 / 10 / 13;
   background-color: #ffd670;
+}
+
+.titre {
+  margin-top: 2%;
+  line-height: 150%;
+  font-family: var(--font-combine, Arial, sans-serif);
+  text-align: center;
+  font-size: xx-large;
+}
+
+.sousTitre {
+  font-family: var(--font-combine, Arial, sans-serif);
+  font-size: small;
+  text-align: center;
+  padding-top: 5%;
 }
 
 @media (min-width: 300px) and (max-width: 780px) {
@@ -25,12 +49,23 @@
   }
 
   .leftContainer {
-    height: 50vh;
+    height: auto;
     width: 100%;
   }
   .rightContainer {
-    height: 50vh;
+    height: auto;
     width: 100%;
+  }
+
+  .textLeft {
+    width: 80%;
+    height: 80%;
+    padding: 2%;
+  }
+
+  .sousTitre {
+    padding-top: 2%;
+    margin-top: 2%;
   }
 }
 
