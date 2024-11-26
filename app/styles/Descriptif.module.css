@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 550px) and (max-width: 780px) {
+@media (min-width: 551px) and (max-width: 780px) {
   .parent {
     height: 100vh;
     background-color: #a2d2ff;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 780px) and (max-width: 1020px) {
+@media (min-width: 781px) and (max-width: 1020px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 1020px) and (max-width: 1280px) {
+@media (min-width: 1021px) and (max-width: 1280px) {
   .parent {
     background-color: #a2d2ff;
   }

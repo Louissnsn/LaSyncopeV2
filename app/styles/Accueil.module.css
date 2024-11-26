@@ -1,6 +1,6 @@
 .parent {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -9,13 +9,12 @@
 }
 
 .photoContainer {
-  grid-area: 2 / 1 / 13 / 7;
+  grid-area: 2 / 1 / 13 / 6;
   position: relative;
-  background-color: blueviolet;
 }
 .shape1 {
   grid-area: 1 / 1 / 2 / 13;
-  background-color: aqua;
+  background-color: orange;
   margin: auto;
   width: 80%;
   height: 10px;
@@ -28,16 +27,17 @@
 
 .titre {
   position: absolute;
-  font-family: var(--font-combine);
-  font-size: 5rem;
+  margin-bottom: 2%;
+  font-family: var(--font-combine, Arial, sans-serif);
+  font-size: 6rem;
   font-weight: 200;
-  color: #ffd670;
+  color: orange;
 }
 
 .texteContainer {
-  grid-area: 3 / 7 / 13 / 12;
-  background-color: orange;
-  margin-top: 20px;
+  grid-area: 3 / 6 / 13 / 12;
+  margin-top: 2%;
+  background-color: #ffd670;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,19 +45,21 @@
 
 .texteBio {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 6%;
   font-size: 20px;
-  text-justify: inter-word;
-  background-color: blue;
+  line-height: 1.5;
+  max-width: 80%;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
 }
 
 .shapeInText {
-  width: 100%;
+  width: 80%;
+  border-radius: 25px;
   height: 10px;
-  background-color: aqua;
+  margin-top: 20%;
+  background-color: orange;
 }
 
 .shape2Container {
   grid-area: 1 / 12 / 13 / 13;
-  background-color: greenyellow;
 }

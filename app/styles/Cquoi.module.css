@@ -1,0 +1,38 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.leftContainer {
+  grid-area: 2 / 1 / 11 / 10;
+  background-color: #ff9770;
+}
+.rightContainer {
+  grid-area: 3 / 7 / 10 / 13;
+  background-color: #ffd670;
+}
+
+@media (min-width: 300px) and (max-width: 780px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leftContainer {
+    height: 50vh;
+    width: 100%;
+  }
+  .rightContainer {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 551px) and (max-width: 780px) {
+} */
