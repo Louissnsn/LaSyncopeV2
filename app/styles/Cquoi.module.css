@@ -27,11 +27,12 @@
 }
 
 .titre {
+  grid-area: 1 / 1 / 2 / 13;
   margin-top: 2%;
   line-height: 150%;
   font-family: var(--font-combine, Arial, sans-serif);
   text-align: center;
-  font-size: xx-large;
+  font-size: 4em;
 }
 
 .sousTitre {
@@ -47,7 +48,10 @@
     flex-direction: column;
     width: 100%;
   }
-
+  .titre {
+    font-size: 2em;
+    display: block;
+  }
   .leftContainer {
     height: auto;
     width: 100%;
@@ -64,7 +68,7 @@
   }
 
   .sousTitre {
-    padding-top: 2%;
+    padding-top: 7%;
     margin-top: 2%;
   }
 }

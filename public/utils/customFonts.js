@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 const combine = localFont({
   src: "../assets/fonts/Combine.otf",
   variable: "--font-combine",
+  weight: "100 900",
 });
 
 const geistSans = localFont({
