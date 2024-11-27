@@ -26,6 +26,8 @@
 .rightContainer {
   height: auto;
   width: 100%;
+  text-decoration: none;
+  color: black;
 }
 .noms {
   font-family: var(--font-combine, Arial, sans-serif);
@@ -50,16 +52,59 @@
     width: 100%;
     margin-top: 5%;
   }
-
   .noms {
     width: 100%;
     text-align: center;
     font-family: var(--font-combine, Arial, sans-serif);
     line-height: 2;
   }
-
   .rightContainer {
-    height: auto;
+    height: 650px;
     width: 100%;
+    position: relative;
+    background-color: #ffc8dd;
+  }
+  .letter {
+    margin-top: 25%;
+    font-family: var(--font-combine, Arial, sans-serif);
+    position: absolute;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  .p {
+    top: 0;
+    left: 10%;
+  }
+  .t {
+    top: 150px;
+    right: 10%;
+  }
+  .o1 {
+    top: 100px;
+    left: 30%;
+  }
+  .r {
+    top: 50px;
+    left: 60%;
+  }
+  .f {
+    top: 220px;
+    left: 15%;
+  }
+  .o2 {
+    top: 300px;
+    left: 50%;
+  }
+  .l {
+    top: 350px;
+    left: 5%;
+  }
+  .i {
+    top: 400px;
+    left: 40%;
+  }
+  .o3 {
+    top: 470px;
+    right: 15%;
   }
 }
