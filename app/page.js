@@ -7,8 +7,8 @@ import Compagnie from "./components/Compagnie";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Compagnie />
-      <Accueil />
+      {/* <Compagnie />
+      <Accueil /> */}
       <Cquoi />
       <Collaborateurices />
     </div>

@@ -1,13 +1,9 @@
 .parent {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   background-color: #ffc8dd;
+  width: 100vw;
+  box-sizing: border-box;
 }
 .titre {
-  grid-area: 1 / 1 / 2 / 13;
   font-family: var(--font-combine, Arial, sans-serif);
   text-align: center;
   font-size: 4em;
@@ -28,8 +24,6 @@
 .leftContainer {
   height: auto;
   width: 100%;
-  text-align: center;
-  text-justify: inter-word;
 }
 
 .rightContainer {
@@ -53,6 +47,9 @@
     display: block;
     padding-top: 7%;
     margin-top: 2%;
+  }
+  .text {
+    text-align: center;
   }
   .leftContainer {
     height: auto;
@@ -132,7 +129,9 @@
     position: relative;
     background-color: #ffc8dd;
   }
-
+  .text {
+    text-align: center;
+  }
   .letter {
     margin-top: 20%;
     font-family: var(--font-combine, Arial, sans-serif);
@@ -192,6 +191,7 @@
     flex-wrap: wrap;
   }
   .text {
+    text-align: center;
     font-size: 15px;
     width: 50%;
   }
@@ -204,7 +204,72 @@
   }
   .rightContainer {
     position: relative;
-    height: 80vh;
+    height: 100vh;
+    width: 100%;
+  }
+  .p {
+    top: 0;
+    left: 8%;
+  }
+
+  .o1 {
+    top: 50px;
+    left: 28%;
+  }
+  .r {
+    top: 35px;
+    left: 49%;
+  }
+
+  .t {
+    top: 150px;
+    left: 70%;
+  }
+
+  .f {
+    top: 220px;
+    left: 12%;
+  }
+  .o2 {
+    top: 280px;
+    left: 28%;
+  }
+  .l {
+    top: 350px;
+    left: 45%;
+  }
+  .i {
+    top: 400px;
+    left: 65%;
+  }
+  .o3 {
+    top: 470px;
+    right: 13%;
+  }
+}
+
+@media (min-width: 1221px) and (max-width: 2000) {
+  .parent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .leftContainer {
+    width: 50%;
+  }
+  .text {
+    font-size: 15px;
+    width: 50%;
+  }
+  .letter {
+    margin-top: 20%;
+    font-family: var(--font-combine, Arial, sans-serif);
+    position: absolute;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  .rightContainer {
+    position: relative;
+    height: 100vh;
     width: 100%;
   }
   .p {

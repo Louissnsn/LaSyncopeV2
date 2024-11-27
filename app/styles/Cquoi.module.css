@@ -104,9 +104,11 @@
 
   .textDescription {
     width: 80%;
+    font-size: 15px;
   }
   .textDescriptionRight {
     width: 80%;
+    font-size: 15px;
   }
   .rightContainer {
     width: 100%;
@@ -129,5 +131,5 @@
   }
 }
 
-@media (min-width: 781px) and (max-width: 1200px) {
+@media (min-width: 1201px) and (max-width: 1600) {
 }
