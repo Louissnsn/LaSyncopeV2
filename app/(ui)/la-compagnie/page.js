@@ -2,7 +2,7 @@ import Compagnie from "@/components/Compagnie";
 import Accueil from "@/components/Accueil";
 // import styles from "@/app/styles/CompagniePage.module.css";
 export default function CompagniePage() {
-  console.log("cmpagnie page");
+  // console.log("cmpagnie page");
   return (
     <div>
       <Compagnie />
