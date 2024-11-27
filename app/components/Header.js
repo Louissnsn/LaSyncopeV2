@@ -9,13 +9,13 @@ import styles from "@/styles/Header.module.css"; // Importation des styles
 
 const links = [
   {
-    name: "LA COMPAGNIE",
-    href: "/la-compagnie",
+    name: "ACCUEIL",
+    href: "/",
     submenu: [
       // { name: "PRÉSENTATION", href: "/la-compagnie" },
       {
         name: "DIRECTION ARTISTIQUE",
-        href: "/la-compagnie/direction-artistique",
+        href: "/direction-artistique",
       },
     ],
   },
@@ -60,8 +60,10 @@ export default function Header() {
   const handleMouseClick = (linkName) => {
     if (linkName === "PROJETS") {
       router.push("/projets");
-    } else if (linkName === "LA COMPAGNIE") {
-      router.push("/la-compagnie");
+    } else if (linkName === "DIRECTION ARTISTIQUE") {
+      router.push("/direction-artistique");
+    } else if (linkName === "ACCUEIL") {
+      router.push("/");
     }
   };
 
@@ -80,8 +82,8 @@ export default function Header() {
           <Image
             src={logoSyncope}
             alt="logo de la syncope collectif"
-            width={35}
-            height={60}
+            width={55}
+            height={90}
           />
         </Link>
         {/* <button className={styles.menuButton} onClick={toggleMenu}>

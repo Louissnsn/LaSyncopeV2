@@ -6,6 +6,10 @@ import { Inter } from "next/font/google";
 export const metadata = {
   title: "La Syncope",
   description: "La Syncope - Collectif de théâtre",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 const inter = Inter({
