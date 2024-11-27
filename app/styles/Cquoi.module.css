@@ -13,17 +13,28 @@
   background-color: #ff9770;
 }
 
+.rightContainer {
+  grid-area: 3 / 7 / 10 / 13;
+  background-color: #ffd670;
+}
+
 .textDescription {
   text-align: justify;
   margin-top: 5%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
-  padding: 10px;
+  padding: 2%;
   text-indent: 1em;
   line-height: 1.5;
+  width: 100%;
 }
-.rightContainer {
-  grid-area: 3 / 7 / 10 / 13;
-  background-color: #ffd670;
+.textDescriptionRight {
+  text-align: justify;
+  margin-top: 5%;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+  padding: 2%;
+  text-indent: 1em;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .titre {
@@ -57,10 +68,13 @@
   .leftContainer {
     height: auto;
     width: 100%;
+    padding: 2%;
   }
+
   .rightContainer {
     height: auto;
     width: 100%;
+    padding: 2%;
   }
 
   .textLeft {
@@ -75,26 +89,35 @@
   }
 }
 
-@media (min-width: 781px) and (max-width: 1020px) {
+@media (min-width: 781px) and (max-width: 1080px) {
   .parent {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: column;
   }
   .titre {
-    grid-area: 1 / 2 / 2 / 8;
-    position: absolute;
+    font-size: 50px;
     text-align: center;
   }
-  .leftContainer {
-    grid-area: 2 / 1 / 10 / 7;
+
+  .textDescription {
+    width: 80%;
+  }
+  .textDescriptionRight {
+    width: 80%;
   }
   .rightContainer {
-    grid-area: 4/ 5 / 9 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textinRight {
+    width: 80%;
   }
   .textLeft {
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

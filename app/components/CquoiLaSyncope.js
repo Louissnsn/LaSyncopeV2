@@ -37,23 +37,23 @@ export default function Cquoi() {
         <h3 className={styles.sousTitre}>NOS PRINCIPES CRÉATIFS</h3>
 
         <div className={styles.textRight}>
-          <p className={styles.textDescription}>
+          <p className={styles.textDescriptionRight}>
             1- Dramaturgies imprévisibles et écritures en mutation : écrire
             avant, pendant, après le plateau.
           </p>
-          <p className={styles.textDescription}>
+          <p className={styles.textDescriptionRight}>
             2- Une pépinière pour les jeunes auteur·ice·s de théâtre :
             accompagner des textes non édités, les aider à rencontrer leur
             public et une maison.
           </p>
 
-          <p className={styles.textDescription}>
+          <p className={styles.textDescriptionRight}>
             3- Les créations de la Syncope tendent à entremêler théâtre et
             disciplines artistiques allogènes : arts plastiques, arts numériques
             y dialoguent avec l’art de la scène.
           </p>
 
-          <p className={styles.textDescription}>
+          <p className={styles.textDescriptionRight}>
             4- Sororité et horizontalité : deux modes de fonctionnement
             appliqués au plateau, en régie, et dans nos bureaux.
           </p>

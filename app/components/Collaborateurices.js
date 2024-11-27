@@ -49,7 +49,10 @@ export default function Collaborateurices() {
         <br />
         <p className={styles.text}>
           Vassia <span className={styles.noms}>CHAVAROCHE</span> auteur, metteur
-          en scène Sibille CLAIR comédienne
+          en scène
+        </p>
+        <p>
+          Sibille <span className={styles.noms}>CLAIR</span> comédienne
         </p>
         <br />
         <p className={styles.text}>
