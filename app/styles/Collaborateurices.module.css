@@ -7,9 +7,59 @@
   background-color: #ffc8dd;
 }
 .titre {
+  grid-area: 1 / 1 / 2 / 13;
+  font-family: var(--font-combine, Arial, sans-serif);
+  text-align: center;
+  font-size: 4em;
+  max-width: 100%;
+  margin-top: 2%;
+  line-height: 150%;
+}
+.text {
+  font-family: var(--font-geist-mono, "Courier New", monospace);
 }
 .leftContainer {
+  height: auto;
+  width: 100%;
 }
 
 .rightContainer {
+  height: auto;
+  width: 100%;
+}
+.noms {
+  font-family: var(--font-combine, Arial, sans-serif);
+}
+
+@media (min-width: 300px) and (max-width: 780px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .titre {
+    font-size: 20px;
+    display: block;
+    padding-top: 7%;
+    margin-top: 2%;
+  }
+  .leftContainer {
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .noms {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-combine, Arial, sans-serif);
+    line-height: 2;
+  }
+
+  .rightContainer {
+    height: auto;
+    width: 100%;
+  }
 }

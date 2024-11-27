@@ -5,7 +5,7 @@ export default function Cquoi() {
       <h1 className={styles.titre}>LA SYNCOPE</h1>
       <div className={styles.leftContainer}>
         <h3 className={styles.sousTitre}>
-          QU&apos;EST-CE QUE C&apos;EST QUE CETTE SYNCOPE
+          QU&apos;EST-CE QUE C&apos;EST QUE CETTE SYNCOPE ?
         </h3>
         <div className={styles.textLeft}>
           <p className={styles.textDescription}>

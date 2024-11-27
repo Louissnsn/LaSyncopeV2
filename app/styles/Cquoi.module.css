@@ -5,7 +5,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .leftContainer {
@@ -15,7 +15,7 @@
 
 .textDescription {
   text-align: justify;
-  margin-top: 4%;
+  margin-top: 5%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   padding: 10px;
   text-indent: 1em;
@@ -38,7 +38,8 @@
 
 .sousTitre {
   font-family: var(--font-combine, Arial, sans-serif);
-  font-size: small;
+  font-size: 20px;
+  line-height: 2;
   text-align: center;
   padding-top: 5%;
 }
