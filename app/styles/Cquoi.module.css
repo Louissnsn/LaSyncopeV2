@@ -106,14 +106,18 @@
     width: 80%;
   }
   .rightContainer {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .textRight {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .textinRight {
-    width: 80%;
-  }
+
   .textLeft {
     display: flex;
     flex-direction: column;
