@@ -49,7 +49,6 @@
 
 .sousTitre {
   font-family: var(--font-combine, Arial, sans-serif);
-  font-size: 20px;
   line-height: 2;
   text-align: center;
   padding-top: 5%;
@@ -89,7 +88,7 @@
   }
 }
 
-@media (min-width: 781px) and (max-width: 1080px) {
+@media (min-width: 781px) and (max-width: 1200px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -97,6 +96,10 @@
   .titre {
     font-size: 50px;
     text-align: center;
+  }
+
+  .sousTitre {
+    font-size: 30px;
   }
 
   .textDescription {
@@ -124,4 +127,7 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
 }
