@@ -51,7 +51,8 @@ export default function Collaborateurices() {
           Vassia <span className={styles.noms}>CHAVAROCHE</span> auteur, metteur
           en scène
         </p>
-        <p>
+        <br />
+        <p className={styles.text}>
           Sibille <span className={styles.noms}>CLAIR</span> comédienne
         </p>
         <br />
@@ -87,6 +88,7 @@ export default function Collaborateurices() {
         <p className={styles.text}>
           Anne <span className={styles.noms}>PULCE</span> monteuse
         </p>
+        <br />
         <p className={styles.text}>
           Gabriella <span className={styles.noms}>RAULT</span> comédienne
         </p>

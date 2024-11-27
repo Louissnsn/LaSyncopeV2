@@ -2,7 +2,6 @@ import styles from "@/styles/Accueil.module.css";
 import Image from "next/image";
 import choeur from "../../public/images/Covers/choeur-des-hommes-4.webp";
 export default function Accueil() {
-  console.log("heyo");
   return (
     <div className={styles.parent}>
       <div className={styles.photoContainer}>
