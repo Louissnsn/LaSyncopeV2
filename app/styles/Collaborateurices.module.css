@@ -250,15 +250,17 @@
 
 @media (min-width: 1221px) and (max-width: 2000px) {
   .parent {
-  }
-  .titre {
+    /* height: auto not detected, only vh ? how can .letter fit in parent ; */
+    height: auto;
   }
   .leftContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     width: 100%;
+  }
+  .titre {
+    padding: 5%;
   }
   .text {
     font-size: 15px;
@@ -266,21 +268,27 @@
     width: 50%;
   }
   .letter {
+    height: auto; /* Adjust to content */
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
     margin-top: 20%;
     font-family: var(--font-combine, Arial, sans-serif);
     position: absolute;
-    font-size: 60px;
+    font-size: 80px;
     cursor: pointer;
+    transform: translate(-50%, -50%);
+    display: none;
   }
   .rightContainer {
+    height: 100%;
+    min-width: 100%;
     position: relative;
-    height: 100vh;
-    width: 50%;
   }
 
   .p {
     top: 0;
-    left: 8%;
+    left: 25%;
   }
 
   .o1 {
