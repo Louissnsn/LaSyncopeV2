@@ -1,7 +1,7 @@
 .matContainer {
-  padding: 40px;
+  padding: 4%;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -32,6 +32,7 @@
 }
 
 .bioTitle {
+  padding: 5%;
   grid-area: 3 / 8 / 4 / 12;
   font-size: 45px;
   display: flex;
@@ -46,18 +47,22 @@
 }
 
 .texteBio {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  text-indent: 5%;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  line-height: 1.5;
   text-justify: inter-word;
-  font-size: 20px;
+  font-size: 1em;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
 }
 
 /* SHAPES */
 .zigZag {
+  padding-top: 7%;
   grid-area: 12 / 2 / 13 / 12;
   --a: 90deg; /* control the angle */
   --s: 100px; /* size of the zig-zag */
-  --b: 35px; /* control the thickness */
+  --b: 25px; /* control the thickness */
 
   background: #ff9770;
   height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));

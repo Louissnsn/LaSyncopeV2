@@ -53,6 +53,12 @@
   text-align: center;
   padding-top: 5%;
 }
+.sousTitre2 {
+  font-family: var(--font-combine, Arial, sans-serif);
+  line-height: 2;
+  text-align: center;
+  padding-top: 5%;
+}
 
 @media (min-width: 300px) and (max-width: 780px) {
   .zigZag {
@@ -160,17 +166,44 @@
   .sousTitre {
     padding-bottom: 10%;
   }
+  .sousTitre2 {
+    margin-top: 8%;
+  }
 
   .leftContainer {
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-justify: inter-word;
+    border-radius: 400px;
   }
   .textDescription {
+    padding-left: 15%;
     width: 65%;
-    text-align: center;
     margin-top: 2%;
+    text-justify: inter-word;
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 500px;
+  }
+  /* .flower {
+    width: 200px; 
+    aspect-ratio: 1;
+    --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+    mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g),
+      50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g),
+      0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g),
+      75% 6.699% var(--g), 93.301% 25% var(--g),
+      radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
+  } 
+  */
+
+  .textRight {
+    width: 70%;
+    text-justify: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

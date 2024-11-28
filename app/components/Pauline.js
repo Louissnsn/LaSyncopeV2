@@ -16,7 +16,8 @@ export default function Pauline() {
           style={{
             borderRadius: "25px",
             objectFit: "cover",
-            minWidth: "400px",
+            minWidth: "10%",
+            maxWidth: "100%",
           }}
         />
       </div>

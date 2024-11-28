@@ -1,7 +1,7 @@
 .parent {
-  padding: 40px;
+  padding: 4%;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -36,16 +36,27 @@
 }
 .bio {
   grid-area: 5 / 2 / 13 / 6;
+  width: 35vw;
 }
 .bioTitle {
   grid-area: 4 / 2 / 5 / 5;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: var(--font-inter);
+  color: #cdb4db;
+  padding: 5%;
 }
 
 .texteBio {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  text-indent: 5%;
+  line-height: 1.5;
+  margin-bottom: 2%;
+  margin-top: 2%;
   text-justify: inter-word;
-  font-size: 20px;
+  font-size: 1em;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
 }
 
 /* SHAPES */
