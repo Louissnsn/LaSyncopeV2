@@ -3,7 +3,7 @@ import styles from "@/styles/Collaborateurices.module.css";
 export default function Collaborateurices() {
   return (
     <div className={styles.parent}>
-      <h3 className={styles.titre}>COLLABORATEUR.ICE.S</h3>
+      <h2 className={styles.titre}>COLLABORATEUR.ICE.S</h2>
       <div className={styles.leftContainer}>
         <p className={styles.text}>
           Mona <span className={styles.noms}>ABOUSAÏD</span> comédienne

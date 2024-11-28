@@ -34,7 +34,7 @@ export default function Cquoi() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <h3 className={styles.sousTitre2}>NOS PRINCIPES CRÉATIFS</h3>
+        <h2 className={styles.sousTitre2}>NOS PRINCIPES CRÉATIFS</h2>
 
         <div className={styles.textRight}>
           <p className={styles.textDescriptionRight}>

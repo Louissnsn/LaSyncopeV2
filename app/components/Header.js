@@ -82,8 +82,9 @@ export default function Header() {
           <Image
             src={logoSyncope}
             alt="logo de la syncope collectif"
-            width={55}
-            height={90}
+            style={{ objectFit: "contain" }}
+            width={200}
+            height={190 / (16 / 9)}
           />
         </Link>
         {/* <button className={styles.menuButton} onClick={toggleMenu}>
