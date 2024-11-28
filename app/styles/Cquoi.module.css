@@ -55,6 +55,9 @@
 }
 
 @media (min-width: 300px) and (max-width: 780px) {
+  .zigZag {
+    display: none;
+  }
   .parent {
     display: flex;
     flex-direction: column;
@@ -89,6 +92,9 @@
 }
 
 @media (min-width: 781px) and (max-width: 1200px) {
+  .zigZag {
+    display: none;
+  }
   .parent {
     display: flex;
     flex-direction: column;
@@ -131,5 +137,40 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1600) {
+@media (min-width: 1201px) and (max-width: 3000px) {
+  .zigZag {
+    grid-area: 12 / 3 / 12 / 11;
+    --a: 90deg; /* control the angle */
+    --s: 100px; /* size of the zig-zag */
+    --b: 35px; /* control the thickness */
+
+    background: #fb6f92;
+    height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+    width: 100%;
+    --_g: var(--s) repeat-x
+      conic-gradient(
+        from calc(var(--a) / -2) at bottom,
+        #0000,
+        #000 1deg calc(var(--a) - 1deg),
+        #0000 var(--a)
+      );
+    mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+  }
+
+  .sousTitre {
+    padding-bottom: 10%;
+  }
+
+  .leftContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-justify: inter-word;
+  }
+  .textDescription {
+    width: 65%;
+    text-align: center;
+    margin-top: 2%;
+  }
 }

@@ -59,6 +59,7 @@ export default function Cquoi() {
           </p>
         </div>
       </div>
+      <div className={styles.zigZag}></div>
     </div>
   );
 }
