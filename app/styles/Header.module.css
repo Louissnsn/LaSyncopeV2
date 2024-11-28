@@ -24,13 +24,6 @@
   display: block; /* Visible sur mobile */
 }
 
-@media (min-width: 768px) {
-  /* md: breakpoint */
-  .menuButton {
-    display: none; /* Caché sur md et plus */
-  }
-}
-
 .menuIcon {
   height: 1.5rem;
   width: 1.5rem;
@@ -42,12 +35,6 @@
 
 .navBase {
   display: none; /* Caché par défaut */
-}
-
-@media (min-width: 768px) {
-  .navBase {
-    display: flex; /* Affiché sur les écrans md et plus */
-  }
 }
 
 .navOpen {
@@ -78,6 +65,12 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
+  }
+  .navBase {
+    display: flex; /* Affiché sur les écrans md et plus */
+  }
+  .menuButton {
+    display: none; /* Caché sur md et plus */
   }
 }
 
