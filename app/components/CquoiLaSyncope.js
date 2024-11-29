@@ -14,22 +14,22 @@ export default function Cquoi() {
           </p>
           <br />
           <p className={styles.textDescription}>
-            La Syncope est une compagnie de théâtre née en 2019 et domiciliée en
-            Île-de-France. Elle s’est fondée sur une étroite collaboration entre
-            Mathilde Bellin et Pauline Darcel, deux artistes de théâtre ayant
-            développé une affinité artistique commune lors de leurs différentes
-            formations.
+            La Syncope est une compagnie de théâtre francilienne créée en 2019
+            par Pauline Legoëdec et Mathilde Bellin, deux artistes de théâtre
+            ayant développé une affinité artistique singulière lors de leurs
+            différentes formations.
           </p>
           <br />
           <p className={styles.textDescription}>
-            La Syncope affirme aussi une grande confiance en l&apos;interprète
-            et mène à bien des créations qui ont pour terrain de jeu des
-            écritures contemporaines, pensées pour, avec et par la scène. Les
-            artistes de la Syncope questionnent le monde actuel par l’entremise
-            du symbole, de l&apos;image et de la fiction. Anciennement baptisée
-            Syncope Collectif, La Syncope s’est féminisée en 2023 et accompagne
-            des artistes de théâtre émergent·e·s et des auteur·ice·s de textes
-            contemporains.
+            Elle affirme une grande confiance en l&apos;interprète et mène à
+            bien des spectacles qui ont pour terrain de jeu des écritures
+            contemporaines, pensées pour, avec et par la scène. La Syncope
+            accompagne des artistes de théâtre et des auteur·ice·s de textes
+            contemporains, et nourrit ainsi des collaborations complices et
+            pérennes, notamment avec la comédienne Rose Guillon, les créateurs
+            sonores Nicolas Hadot et Marius Orjollet, la vidéaste et
+            plasticienne Isadora Teles, ou encore avec l&apos; auteur et metteur
+            en scène Vassia Chavaroche.
           </p>
         </div>
       </div>
@@ -38,24 +38,29 @@ export default function Cquoi() {
 
         <div className={styles.textRight}>
           <p className={styles.textDescriptionRight}>
-            1- Dramaturgies imprévisibles et écritures en mutation : écrire
-            avant, pendant, après le plateau.
+            1- Dramaturgies imprévisibles : écrire avant, pendant, après le
+            plateau.
           </p>
           <p className={styles.textDescriptionRight}>
-            2- Une pépinière pour les jeunes auteur·ice·s de théâtre :
+            2- Une compagnie pour de jeunes auteur·ice·s de théâtre :
             accompagner des textes non édités, les aider à rencontrer leur
-            public et une maison.
+            public.
           </p>
 
           <p className={styles.textDescriptionRight}>
-            3- Les créations de la Syncope tendent à entremêler théâtre et
-            disciplines artistiques allogènes : arts plastiques, arts numériques
-            y dialoguent avec l’art de la scène.
+            3- Les créations de la Syncope questionnent le monde actuel par
+            l’entremise de la fiction.
           </p>
 
           <p className={styles.textDescriptionRight}>
-            4- Sororité et horizontalité : deux modes de fonctionnement
-            appliqués au plateau, en régie, et dans nos bureaux.
+            4- Entremêler théâtre et disciplines artistiques allogènes : arts
+            plastiques, arts numériques y dialoguent avec l’art de la scène.
+          </p>
+          <p className={styles.textDescriptionRight}>
+            5- Sororité et horizontalité : deux modes de fonctionnement
+            appliqués au plateau, en régie, et dans nos bureaux. Anciennement
+            baptisée &quot;Syncope Collectif&quot;, La Syncope s’est
+            d&apos;ailleurs féminisée en 2023.
           </p>
         </div>
       </div>
