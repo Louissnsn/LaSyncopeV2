@@ -39,7 +39,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const timeoutIdRef = useRef(null);
 
-  // const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleMouseEnter = (name) => {
     if (timeoutIdRef.current) {
@@ -86,9 +86,9 @@ export default function Header() {
             height={140 / (16 / 9)}
           />
         </Link>
-        {/* <button className={styles.menuButton} onClick={toggleMenu}>
-          <MenuIcon className={styles.menuIcon} />
-        </button> */}
+      </div>
+      <div className={styles.menuButton} onClick={toggleMenu}>
+        <MenuIcon className={styles.menuIcon} />
       </div>
       <div className={styles.menu}>
         <nav
