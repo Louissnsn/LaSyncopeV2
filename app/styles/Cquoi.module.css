@@ -8,6 +8,9 @@
   height: auto;
 }
 
+.italique {
+  font-style: italic;
+}
 .leftContainer {
   grid-area: 2 / 1 / 11 / 10;
   background-color: #ff9770;
@@ -72,6 +75,7 @@
   .titre {
     font-size: 2em;
     display: block;
+    padding: 8%;
   }
   .leftContainer {
     height: auto;
@@ -106,6 +110,8 @@
     flex-direction: column;
   }
   .titre {
+    padding: 8%;
+
     font-size: 4em;
     text-align: center;
   }

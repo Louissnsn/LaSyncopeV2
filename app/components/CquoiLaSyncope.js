@@ -23,7 +23,9 @@ export default function Cquoi() {
           <p className={styles.textDescription}>
             Elle affirme une grande confiance en l&apos;interprète et mène à
             bien des spectacles qui ont pour terrain de jeu des écritures
-            contemporaines, pensées pour, avec et par la scène. La Syncope
+            contemporaines, pensées pour,
+            <span className={styles.italique}>avec</span> et
+            <span className={styles.italique}>par</span> la scène. La Syncope
             accompagne des artistes de théâtre et des auteur·ice·s de textes
             contemporains, et nourrit ainsi des collaborations complices et
             pérennes, notamment avec la comédienne Rose Guillon, les créateurs
@@ -38,7 +40,8 @@ export default function Cquoi() {
 
         <div className={styles.textRight}>
           <p className={styles.textDescriptionRight}>
-            1- Dramaturgies imprévisibles : écrire avant, pendant, après le
+            1- Dramaturgies imprévisibles : écrire{" "}
+            <span className={styles.italique}>avant, pendant, après</span> le
             plateau.
           </p>
           <p className={styles.textDescriptionRight}>
