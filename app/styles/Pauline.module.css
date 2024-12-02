@@ -2,7 +2,7 @@
   .paulineContainer {
     padding: 4%;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -16,19 +16,20 @@
   }
 
   .nom {
+    font-size: 5rem;
+  }
+  .nomFamille {
+    color: #cdb4db;
+    font-size: 5rem;
+  }
+  .nomContainer {
     position: absolute;
     font-family: var(--font-combine);
-    font-size: 5rem;
-    font-weight: 200;
+    top: 5%;
     color: #cdb4db;
-    top: 2%;
+    font-size: 40px;
+    line-height: 1.5;
     right: 75%;
-  }
-
-  .nomFamille {
-    display: block;
-    margin-top: 20px;
-    color: #cdb4db;
   }
 
   .bio {
@@ -78,7 +79,6 @@
   }
 
   .nomContainer {
-    top: 200px;
     position: absolute;
     font-family: var(--font-combine);
     top: 5%;

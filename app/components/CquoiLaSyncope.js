@@ -23,14 +23,14 @@ export default function Cquoi() {
           <p className={styles.textDescription}>
             Elle affirme une grande confiance en l&apos;interprète et mène à
             bien des spectacles qui ont pour terrain de jeu des écritures
-            contemporaines, pensées pour,
-            <span className={styles.italique}>avec</span> et
-            <span className={styles.italique}>par</span> la scène. La Syncope
+            contemporaines, pensées
+            <span className={styles.italique}> pour, avec </span> et
+            <span className={styles.italique}> par </span> la scène. La Syncope
             accompagne des artistes de théâtre et des auteur·ice·s de textes
             contemporains, et nourrit ainsi des collaborations complices et
             pérennes, notamment avec la comédienne Rose Guillon, les créateurs
             sonores Nicolas Hadot et Marius Orjollet, la vidéaste et
-            plasticienne Isadora Teles, ou encore avec l&apos; auteur et metteur
+            plasticienne Isadora Teles, ou encore avec l&apos;auteur et metteur
             en scène Vassia Chavaroche.
           </p>
         </div>

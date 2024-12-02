@@ -2,7 +2,7 @@
   .matContainer {
     padding: 4%;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -58,13 +58,13 @@
 
   /* SHAPES */
   .zigZag {
-    padding-top: 7%;
+    margin-top: 15%;
     grid-area: 12 / 2 / 13 / 12;
     --a: 90deg; /* control the angle */
     --s: 100px; /* size of the zig-zag */
     --b: 25px; /* control the thickness */
 
-    background: #ff9770;
+    background: #a2d2ff;
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x
