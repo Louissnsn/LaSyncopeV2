@@ -40,7 +40,6 @@
   }
   .titre {
     font-size: clamp(1.2rem, 8vw, 2.5rem);
-    /* Les règles pour centrer restent en place */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,9 +52,6 @@
 
 @media (min-width: 769px) {
   .titre {
-    font-size: 6rem; /* Augmente la taille pour les écrans > 768px */
-  }
-  .titreSuite {
-    font-size: 3rem; /* Ajuste également la suite du titre si nécessaire */
+    font-size: 6rem;
   }
 }

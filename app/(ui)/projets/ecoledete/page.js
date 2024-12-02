@@ -1,15 +1,14 @@
 import Cover from "@/components/Cover";
-
+import ecole from "../../../../public/images/Covers/Iceberg.webp";
 export default function Ecole() {
   const cover = {
-    src: "/images/Covers/Iceberg.webp",
     title: ["ÉCOLE", "D'ÉTÉ"],
   };
 
   return (
     <div>
       <Cover
-        src={cover.src}
+        src={ecole}
         title={cover.title}
         altText="Photographie du spectacle"
       />

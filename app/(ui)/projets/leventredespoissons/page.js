@@ -5,10 +5,9 @@ import Distribution from "@/components/Distribution";
 import Descriptif from "@/components/Descriptif";
 import choeur from "../../../../public/images/Spectacles/Poissons/insectes 3.jpg";
 import Dates from "@/components/Dates";
-
+import poisson from "../../../../public/images/Covers/boue.webp";
 export default function PoissonsPage() {
   const cover = {
-    src: "/images/Covers/boue.webp",
     customPosition: "80% 10%",
     title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
     altText: "Photographie du spectacle",
@@ -27,7 +26,7 @@ Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'
   return (
     <div>
       <Cover
-        src={cover.src}
+        src={poisson}
         customPosition={cover.customPosition}
         altText={cover.altText}
         title={cover.title}

@@ -8,6 +8,8 @@ export default function Cover({ src, altText, title, customPosition }) {
         src={src}
         alt={altText}
         fill
+        priority
+        placeholder="blur"
         style={{
           objectFit: "cover",
           objectPosition: customPosition || "center",
