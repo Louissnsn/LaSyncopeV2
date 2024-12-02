@@ -1,14 +1,19 @@
 import Cover from "@/components/Cover";
-import LoupCover from "../../../../public/images/Covers/Loup.JPG";
+import styles from "@/styles/Loup.module.css";
 
 export default function Loup() {
-  const title = ["QUAND LE LOUP", "N'Y EST PLUS"];
+  const cover = {
+    src: "/images/Covers/Loup.webp",
+    customPosition: "10% 35%",
+    title: ["QUAND LE LOUP", "N'Y EST PLUS"],
+  };
   return (
-    <div>
+    <div className={styles.container}>
       <Cover
-        image={LoupCover}
-        title={title}
+        src={cover.src}
+        title={cover.title}
         altText="Photographie du spectacle"
+        customPosition={cover.customPosition}
       />
     </div>
   );

@@ -1,19 +1,19 @@
 import styles from "@/styles/Cover.module.css";
 import Image from "next/image";
 
-export default function Cover({ image, altText, title }) {
+export default function Cover({ src, altText, title, customPosition }) {
   return (
     <div className={styles.container}>
-      <div className={styles.photoContainer}>
-        <Image
-          src={image}
-          alt={altText}
-          fill
-          style={{
-            objectFit: "cover",
-            minWidth: "400px",
-          }}
-        />
+      <Image
+        src={src}
+        alt={altText}
+        fill
+        style={{
+          objectFit: "cover",
+          objectPosition: customPosition || "center",
+        }}
+      />
+      <div className={styles.titreContainer}>
         <h1 className={styles.titre}>
           {title.map((line, index) => (
             <span key={index} className={styles.titreSuite}>
