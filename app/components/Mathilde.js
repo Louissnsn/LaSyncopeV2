@@ -12,15 +12,17 @@ export default function Mathilde() {
           alt="Photo de Mathilde"
           fill
           style={{
-            borderRadius: "25px",
+            borderRadius: "20px",
             objectFit: "cover",
-            minWidth: "400px",
+            minWidth: "250px",
           }}
         />
-        <p className={styles.nom}>
-          MATHILDE
-          <span className={styles.nomFamille}>BELLIN</span>
-        </p>
+        <div className={styles.nomContainer}>
+          <p className={styles.nom}>
+            MATHILDE
+            <span className={styles.nomFamille}>BELLIN</span>
+          </p>
+        </div>
       </div>
       <div className={styles.bioTitle}>
         <p>B I O</p>
@@ -57,8 +59,7 @@ export default function Mathilde() {
           et des ateliers d&apos;écriture dans différentes structures publiques
           (médiathèques, associations). En 2024, elle est enseignante en Arts du
           spectacle à l&apos;Université Lyon 2 et à la mise en scène de
-          l&apos;opéra
-          <em>Lakmé</em>.
+          l&apos;opéra <em>Lakmé</em>.
         </p>
         <div className={styles.zigZag}></div>
       </div>

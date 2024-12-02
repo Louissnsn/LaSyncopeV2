@@ -6,7 +6,7 @@ export default function Direction() {
     <div className={styles.container}>
       <Mathilde />
 
-      <Pauline />
+      {/* <Pauline /> */}
     </div>
   );
 }
