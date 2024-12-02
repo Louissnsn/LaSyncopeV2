@@ -9,8 +9,8 @@ export default function Cquoi() {
         </h3>
         <div className={styles.textLeft}>
           <p className={styles.textDescription}>
-            Une aventure artistique menée par Mathilde Bellin et Pauline Darcel,
-            autour desquelles gravitent une multiplicité d’artiste
+            Une aventure artistique menée par Mathilde Bellin et Pauline
+            Legoëdec, autour desquelles gravitent une multiplicité d’artistes.
           </p>
           <br />
           <p className={styles.textDescription}>
