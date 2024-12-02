@@ -10,10 +10,15 @@
   font-size: clamp(2rem, 5vw, 5rem);
   position: absolute;
   max-width: 90%;
-  left: 35%;
-  margin-top: 2%;
   line-height: 1.5;
+
+  /* Centrer horizontalement et verticalement */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Décale pour centrer parfaitement */
+  text-align: center; /* Centre le texte à l'intérieur */
 }
+
 .titreSuite {
   display: block;
   margin-top: 3%;
@@ -34,9 +39,23 @@
     position: relative;
   }
   .titre {
-    /* font-size: clamp(1.2rem, 8vw, 2.5rem); */
+    font-size: clamp(1.2rem, 8vw, 2.5rem);
+    /* Les règles pour centrer restent en place */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   .titreSuite {
-    /* font-size: 1rem; */
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .titre {
+    font-size: 6rem; /* Augmente la taille pour les écrans > 768px */
+  }
+  .titreSuite {
+    font-size: 3rem; /* Ajuste également la suite du titre si nécessaire */
   }
 }
