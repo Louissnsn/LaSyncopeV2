@@ -4,7 +4,6 @@ import Image from "next/image";
 import logoSyncope from "../../public/logo/LOGO-10x10cm.png";
 import { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import styles from "@/styles/Header.module.css";
 
 const links = [
