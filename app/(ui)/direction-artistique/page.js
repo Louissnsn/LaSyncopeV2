@@ -4,7 +4,7 @@ import Pauline from "@/components/Pauline";
 export default function Direction() {
   return (
     <div className={styles.container}>
-      {/* <Mathilde /> */}
+      <Mathilde />
 
       <Pauline />
     </div>

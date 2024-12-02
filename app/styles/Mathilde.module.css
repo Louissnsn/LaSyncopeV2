@@ -112,7 +112,6 @@
     top: 5%;
     color: #64aaec;
     width: 100%;
-    text-align: center;
     font-size: 30px;
   }
   .nomFamille {
@@ -140,7 +139,7 @@
     --s: 20px; /* size of the zig-zag */
     --b: 15px; /* control the thickness */
 
-    background: #ff9770;
+    background: #d4a4ee;
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x
