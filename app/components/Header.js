@@ -76,10 +76,6 @@ export default function Header() {
 
   return (
     <div className={styles.header}>
-      {/* <div className={styles.logoAndMobilemenucontainer}> */}
-      {/* <div className={styles.menuButton} onClick={toggleMenu}>
-          <MenuIcon className={styles.menuIcon} />
-        </div> */}
       <div className={styles.logo}>
         <Link href="/">
           <Image
@@ -90,7 +86,6 @@ export default function Header() {
             height={140 / (16 / 9)}
           />
         </Link>
-        {/* </div> */}
       </div>
 
       <div className={styles.menu}>
