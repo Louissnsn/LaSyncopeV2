@@ -1,62 +1,107 @@
-.parent {
-  padding: 4%;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+@media (min-width: 768px) {
+  .paulineContainer {
+    padding: 4%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .photoContainer {
+    grid-area: 1 / 7 / 13 / 11;
+    position: relative;
+  }
+
+  .nom {
+    position: absolute;
+    font-family: var(--font-combine);
+    font-size: 5rem;
+    font-weight: 200;
+    color: #cdb4db;
+    top: 2%;
+    right: 75%;
+  }
+
+  .nomFamille {
+    display: block;
+    margin-top: 20px;
+    color: #cdb4db;
+  }
+
+  .bio {
+    grid-area: 5 / 2 / 13 / 6;
+    width: 35vw;
+  }
+  .bioTitle {
+    grid-area: 4 / 2 / 5 / 5;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: var(--font-inter);
+    color: #cdb4db;
+    padding: 5%;
+  }
+
+  .texteBio {
+    text-indent: 5%;
+    line-height: 1.5;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-justify: inter-word;
+    font-size: 1em;
+    font-family: var(--font-geist-mono, "Courier New", monospace);
+  }
 }
 
-.photoContainer {
-  grid-area: 1 / 7 / 13 / 11;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+@media (min-width: 300px) and (max-width: 767px) {
+  .paulineContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    /* height: fit-content; */
+    padding: 15px;
+  }
 
-.nom {
-  position: absolute;
-  font-family: var(--font-combine);
-  font-size: 5rem;
-  font-weight: 200;
-  color: #cdb4db;
-  top: 2%;
-  z-index: 2;
-  right: 74%;
-}
-.nomFamille {
-  display: block;
-  margin-top: 20px;
-  color: #cdb4db;
-}
-.bio {
-  grid-area: 5 / 2 / 13 / 6;
-  width: 35vw;
-}
-.bioTitle {
-  grid-area: 4 / 2 / 5 / 5;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-family: var(--font-inter);
-  color: #cdb4db;
-  padding: 5%;
-}
+  .photoContainer {
+    max-height: 10vh;
+    min-height: 85vh;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
-.texteBio {
-  text-indent: 5%;
-  line-height: 1.5;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  text-justify: inter-word;
-  font-size: 1em;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
+  .nomContainer {
+    top: 200px;
+    position: absolute;
+    font-family: var(--font-combine);
+    top: 5%;
+    color: #f751a5;
+    font-size: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bioTitle {
+    margin-top: 10%;
+    text-align: center;
+    font-family: var(--font-geist-mono, "Courier New", monospace);
+    font-size: 20px;
+    color: #f751a5;
+  }
+  .bio {
+    padding: 2%;
+  }
+  .texteBio {
+    margin-top: 5%;
+    font-family: var(--font-geist-mono, "Courier New", monospace);
+    text-indent: 5%;
+  }
 }
-
-/* SHAPES */

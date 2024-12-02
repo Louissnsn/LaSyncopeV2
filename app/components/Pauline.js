@@ -3,23 +3,22 @@ import photoPauline from "../../public/images/118.webp";
 import Image from "next/image";
 export default function Pauline() {
   return (
-    <div className={styles.parent}>
+    <div className={styles.paulineContainer}>
       <div className={styles.photoContainer}>
-        <p className={styles.nom}>
-          PAULINE
-          <span className={styles.nomFamille}>LEGÖEDEC</span>
-        </p>
         <Image
           src={photoPauline}
           alt="Photo de Pauline"
           fill
           style={{
-            borderRadius: "25px",
+            borderRadius: "20px",
             objectFit: "cover",
-            minWidth: "10%",
-            maxWidth: "100%",
+            minWidth: "250px",
           }}
         />
+        <div className={styles.nomContainer}>
+          <p className={styles.nom}>PAULINE</p>
+          <span className={styles.nomFamille}>LEGÖEDEC</span>
+        </div>
       </div>
       <div className={styles.bioTitle}>
         <p>B I O </p>

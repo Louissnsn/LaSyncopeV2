@@ -133,4 +133,23 @@
     font-family: var(--font-geist-mono, "Courier New", monospace);
     text-indent: 5%;
   }
+
+  .zigZag {
+    margin-top: 10%;
+    --a: 90deg; /* control the angle */
+    --s: 20px; /* size of the zig-zag */
+    --b: 15px; /* control the thickness */
+
+    background: #ff9770;
+    height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+    width: 100%;
+    --_g: var(--s) repeat-x
+      conic-gradient(
+        from calc(var(--a) / -2) at bottom,
+        #0000,
+        #000 1deg calc(var(--a) - 1deg),
+        #0000 var(--a)
+      );
+    mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+  }
 }
