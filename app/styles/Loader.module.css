@@ -1,0 +1,20 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #9a080a; /* Couleur de fond */
+  z-index: 9999;
+  animation: slideOut 2s ease-in-out forwards;
+}
+
+/* Animation de décalage vers la droite */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
