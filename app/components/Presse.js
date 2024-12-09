@@ -1,5 +1,5 @@
 import styles from "@/styles/Presse.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 export default function Presse({ image, altText }) {
   return (
     <div className={styles.parent}>
@@ -7,7 +7,7 @@ export default function Presse({ image, altText }) {
         <p className={styles.titre}>ON PARLE DE NOUS</p>
       </div>
       <div className={styles.photoContainer}>
-        <Image src={image} alt={altText} fill />
+        {/* <Image src={null} alt={altText} fill /> */}
       </div>
     </div>
   );

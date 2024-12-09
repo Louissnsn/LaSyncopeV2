@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
       className={`${combine.variable} ${geistMonoVF.variable} ${inter.variable}`}
     >
       <body>
-        <Header />
+        <header>
+          <Header />
+        </header>
         <main>{children}</main>
       </body>
     </html>

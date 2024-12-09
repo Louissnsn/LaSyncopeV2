@@ -1,19 +1,19 @@
+"use client";
 import Cover from "@/components/Cover";
 import styles from "@/styles/Loup.module.css";
 import loup from "../../../../public/images/Covers/Loup.webp";
+import { useProjectData } from "../ProjectDataContext";
 
 export default function Loup() {
-  const cover = {
-    customPosition: "10% 35%",
-    title: ["QUAND LE LOUP", "N'Y EST PLUS"],
-  };
+  const project = useProjectData();
+
   return (
     <div className={styles.container}>
       <Cover
         src={loup}
-        title={cover.title}
+        title={project.title}
         altText="Photographie du spectacle"
-        customPosition={cover.customPosition}
+        customPosition={project.customPosition}
       />
     </div>
   );
