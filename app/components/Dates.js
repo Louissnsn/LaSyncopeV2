@@ -22,7 +22,7 @@ export default function Dates() {
       <div className={styles.futures}>
         <p className={styles.texte}>À VENIR</p>
       </div>
-      <div className={styles.datesAvenir}>{project.dates.aVenir}</div>
+      {/* <div className={styles.datesAvenir}>{project.dates.aVenir}</div> */}
 
       {/* <div className={styles.datesPassees}>{datesToShow}</div> */}
     </div>
