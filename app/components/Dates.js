@@ -4,9 +4,9 @@ import { useProjectData } from "../(ui)/projets/ProjectDataContext";
 
 export default function Dates() {
   const project = useProjectData();
-  const datesToShow = project?.dates.passées?.map((date, index) => {
-    return <span key={index}>{date}</span>;
-  });
+  // const datesToShow = project?.dates.passées?.map((date, index) => {
+  //   return <span key={index}>{date}</span>;
+  // });
 
   return (
     <div className={styles.parent}>
