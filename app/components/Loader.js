@@ -1,7 +1,7 @@
 import styles from "@/styles/Loader.module.css";
 import { useState, useEffect } from "react";
 
-//loader component
+//Loader component
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -9,7 +9,7 @@ const Preloader = () => {
     // Simule le chargement
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Temps simulé pour le chargement (3s)
+    }, 4000); // Temps simulé pour le chargement (3s)
 
     return () => clearTimeout(timer);
   }, []);

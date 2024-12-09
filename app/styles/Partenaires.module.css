@@ -9,7 +9,7 @@
 }
 
 .left {
-  grid-area: 2 / 1 / 12 / 5;
+  grid-area: 2 / 1 / 12 / 6;
   background-color: #ff9770;
 }
 .right {
@@ -18,9 +18,9 @@
 }
 
 .titre {
-  position: absolute;
+  grid-area: 4 / 3 / 5 / 11;
   font-family: var(--font-combine);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
   color: white;
 }
