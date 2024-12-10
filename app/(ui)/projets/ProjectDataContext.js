@@ -12,6 +12,7 @@ const ProjectDataContext = createContext({});
 
 export function ProjectDataProvider({ children }) {
   const segments = useSegments(); // par exemple ['ecoledete']
+  console.log("SEGMENT EN COURS ===>", segments);
   const currentProject = segments[0];
 
   // Toute la data de chacun des spectacles présents dans app/projets
@@ -27,7 +28,10 @@ export function ProjectDataProvider({ children }) {
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
       description: "Une autre description...",
-      dates: ["12/24/2024"],
+      dates: {
+        aVenir: ["Pas de dates prévues pour le moment !"],
+        passées: ["12/24/2024"],
+      },
     },
     quandleloup: {
       title: ["QUAND LE LOUP", "N'Y EST PLUS"],
@@ -41,7 +45,7 @@ export function ProjectDataProvider({ children }) {
           "Dimanche 16 février 2025",
           "Dimanche 28 février 2025",
         ],
-        passées: [],
+        passées: ["test/test/tes"],
       },
       customPosition: "10% 35%",
       distribution: [
@@ -63,7 +67,7 @@ export function ProjectDataProvider({ children }) {
 
       dates: {
         aVenir: ["Pas de dates prévues pour le moment !"],
-        passées: [],
+        passées: ["test/test/test"],
       },
 
       description: `  Tout ce qu’il y a dans le ventre des poissons raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies. 
@@ -74,7 +78,6 @@ export function ProjectDataProvider({ children }) {
     
     
     Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?`,
-      dates: ["25/12/2024", "12/12/12"],
     },
     distribution: [
       { role: "Texte, mise en scène", contributors: ["Mathilde BELLIN"] },
