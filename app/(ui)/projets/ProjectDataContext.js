@@ -19,7 +19,7 @@ export function ProjectDataProvider({ children }) {
       title: ["ÉCOLE", "D'ÉTÉ"],
       description: "Une description...",
       dates: {
-        aVenir: "Pas de dates prévues pour le moment !",
+        aVenir: ["Pas de dates prévues pour le moment !"],
         passées: ["28/05/2023"],
       },
     },
@@ -60,7 +60,10 @@ export function ProjectDataProvider({ children }) {
       title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
       customPosition: "80% 10%",
 
-      datesAvenir: "Pas de dates prévues pour le moment !",
+      dates: {
+        aVenir: ["Pas de dates prévues pour le moment !"],
+        passées: [],
+      },
 
       description: `  Tout ce qu’il y a dans le ventre des poissons raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies. 
 
