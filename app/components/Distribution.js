@@ -1,13 +1,16 @@
+"use client";
 import styles from "@/styles/Distribution.module.css";
 import Image from "next/image";
 import logo from "../../public/logo/LogoBLANC.png";
+import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+export default function Distribution() {
+  const project = useProjectData();
 
-export default function Distribution({ distrib }) {
-  // console.log(distrib);
-  // const distribution = distrib.map((data, i) => {
+  // const distribution = project?.distribution?.map((data, i) => {
   //   return (
   //     <div key={i}>
   //       <h3>{data.role}</h3>
+  //       <p>{data.contributors}</p>
   //     </div>
   //   );
   // });

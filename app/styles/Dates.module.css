@@ -51,6 +51,7 @@
 }
 
 .shape {
+  margin-top: 10%;
   height: 80%;
   width: 6px;
   background-color: white;
@@ -69,10 +70,17 @@
 
 .datesAvenir {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex end;
   grid-area: 5 / 8 / 7 / 12;
   margin-top: 5%;
+}
+.dateTexte {
+  margin-top: 8%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   line-height: 1.5;
 }
+/* .dateTexte:hover {
+  cursor: pointer;
+} */

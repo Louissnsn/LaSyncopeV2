@@ -12,7 +12,7 @@ const projetLayout = ({ children }) => {
         <ProjectDataProvider>
           {children}
           <Distribution />
-          <Presse />
+          {/* <Presse /> */}
           <Dates />
           <Partenaires />
         </ProjectDataProvider>

@@ -9,8 +9,6 @@ export default function PoissonsPage() {
   const project = useProjectData();
 
   const cover = {
-    customPosition: "80% 10%",
-    title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
     altText: "Photographie du spectacle",
     textTitle: "UN SPECTACLE DE MATHILDE BELLIN",
     filePath: "/pdf/poissons.pdf",
@@ -20,7 +18,7 @@ export default function PoissonsPage() {
     <div>
       <Cover
         src={poisson}
-        customPosition={cover.customPosition}
+        customPosition={project.customPosition}
         altText={cover.altText}
         title={project.title}
       />

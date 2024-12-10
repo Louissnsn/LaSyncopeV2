@@ -31,7 +31,17 @@ export function ProjectDataProvider({ children }) {
     quandleloup: {
       title: ["QUAND LE LOUP", "N'Y EST PLUS"],
       description: "Encore une description...",
-      dates: ["12/24/2024"],
+      dates: {
+        aVenir: [
+          "Mercredi 2 février 2025",
+          "Mercredi 12 février 2025",
+          "Mercredi 19 février 2025",
+          "Dimanche 9 février 2025",
+          "Dimanche 16 février 2025",
+          "Dimanche 28 février 2025",
+        ],
+        passées: [],
+      },
       customPosition: "10% 35%",
       distribution: [
         {
@@ -48,6 +58,8 @@ export function ProjectDataProvider({ children }) {
     },
     leventredespoissons: {
       title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
+      customPosition: "80% 10%",
+
       datesAvenir: "Pas de dates prévues pour le moment !",
 
       description: `  Tout ce qu’il y a dans le ventre des poissons raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies. 
@@ -60,6 +72,30 @@ export function ProjectDataProvider({ children }) {
     Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?`,
       dates: ["25/12/2024", "12/12/12"],
     },
+    distribution: [
+      { role: "Texte, mise en scène", contributors: ["Mathilde BELLIN"] },
+      {
+        role: "Interprétation",
+        contributors: [
+          "Soizic BILLET",
+          "Matisse BONZON",
+          "Pauline DARCEL",
+          "Juliette DUCERF",
+          "Aurélien HOUVER",
+        ],
+      },
+      {
+        role: "Assistanat à la mise en scène, régie générale, régie lumière",
+        contributors: ["Rose GUILLON"],
+      },
+      {
+        role: "Création vidéo",
+        contributors: ["Isadora TELES DE CASTRO E COSTA"],
+      },
+      { role: "Régie vidéo", contributors: ["Mathias SAÏL"] },
+      { role: "Création Sonore", contributors: ["Nicolas HADOT"] },
+      { role: "Régie son", contributors: ["Nicolas HADOT", "Marius ORJOLLET"] },
+    ],
   };
 
   const data = currentProject ? projetData[currentProject] : {};

@@ -4,9 +4,17 @@ import { useProjectData } from "../(ui)/projets/ProjectDataContext";
 
 export default function Dates() {
   const project = useProjectData();
+  // console.log("PROJECT ==>", project);
   // const datesToShow = project?.dates.passées?.map((date, index) => {
   //   return <span key={index}>{date}</span>;
   // });
+  const datesavenir = project?.dates.aVenir?.map((date, index) => {
+    return (
+      <span className={styles.dateTexte} key={index}>
+        {date}
+      </span>
+    );
+  });
 
   return (
     <div className={styles.parent}>
@@ -22,7 +30,9 @@ export default function Dates() {
       <div className={styles.futures}>
         <p className={styles.texte}>À VENIR</p>
       </div>
-      {/* <div className={styles.datesAvenir}>{project.dates.aVenir}</div> */}
+      {project?.dates.aVenir && (
+        <div className={styles.datesAvenir}> {datesavenir} </div>
+      )}
 
       {/* <div className={styles.datesPassees}>{datesToShow}</div> */}
     </div>
