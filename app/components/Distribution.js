@@ -5,6 +5,7 @@ import logo from "../../public/logo/LogoBLANC.png";
 import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
 export default function Distribution() {
   const project = useProjectData();
+  console.log("project data in Distribution ==>", project);
 
   // const distribution = project?.distribution?.map((data, i) => {
   //   return (

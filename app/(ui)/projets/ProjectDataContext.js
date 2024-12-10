@@ -14,6 +14,7 @@ export function ProjectDataProvider({ children }) {
   const segments = useSegments(); // par exemple ['ecoledete']
   const currentProject = segments[0];
 
+  // Toute la data de chacun des spectacles présents dans app/projets
   const projetData = {
     ecoledete: {
       title: ["ÉCOLE", "D'ÉTÉ"],
