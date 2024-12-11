@@ -21,8 +21,8 @@ export function ProjectDataProvider({ children }) {
       title: ["ÉCOLE", "D'ÉTÉ"],
       description: "Une description...",
       dates: {
-        aVenir: ["Pas de dates prévues pour le moment !"],
-        passées: ["28/05/2023"],
+        aVenir: [{ année: "2025", représentations: [] }],
+        passées: [{ année: "2024", représentations: [] }],
       },
       distribution: [
         { role: "Texte", contributors: ["Vassia CHAVAROCHE"] },
@@ -37,8 +37,8 @@ export function ProjectDataProvider({ children }) {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
       description: "Une autre description...",
       dates: {
-        aVenir: ["Pas de dates prévues pour le moment !"],
-        passées: ["12/24/2024"],
+        aVenir: [{ année: "2025", représentations: [] }],
+        passées: [{ année: "2024", représentations: [] }],
       },
       distribution: [
         { role: "Texte, mise en scène", contributors: ["Vassia CHAVAROCHE"] },

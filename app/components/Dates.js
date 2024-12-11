@@ -14,11 +14,13 @@ export default function Dates() {
       </div>
       <div className={styles.passées}>
         <p className={styles.texte}>PASSÉES</p>
+      </div>
+      <div className={styles.datesPassees}>
         {passées.map((anneeData, anneeIndex) => (
           <div key={anneeIndex} className={styles.dateTexte}>
             <h3>{anneeData.année}</h3>
             {anneeData.représentations.length === 0 ? (
-              <p>Pas de dates passées pour cette année.</p>
+              <p>Pas de dates passées pour {anneeData.année}.</p>
             ) : (
               <ul>
                 {anneeData.représentations.map((repr, reprIndex) => (
@@ -42,7 +44,7 @@ export default function Dates() {
           <div key={anneeIndex} className={styles.dateTexte}>
             <h3>{anneeData.année}</h3>
             {anneeData.représentations.length === 0 ? (
-              <p>Pas de dates prévues pour {anneeData.année}</p>
+              <p>Pas de dates prévues pour {anneeData.année}.</p>
             ) : (
               <ul className={styles.dateTexte}>
                 {anneeData.représentations.map((repr, reprIndex) => (
