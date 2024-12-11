@@ -19,10 +19,269 @@ export function ProjectDataProvider({ children }) {
   const projetData = {
     ecoledete: {
       title: ["ÉCOLE", "D'ÉTÉ"],
-      description: "Une description...",
+      description: `  À travers une amitié à distance, qui pourrait s’être écrite sur du vent, École d'été veut raconter l’écart des quotidiens qui peut exister entre deux pays éloignés (comme le tien et le mien), entre les fantasmes qu’on peut se faire et la réalité qui nous saute aux yeux. Et raconter aussi la difficulté de croire à ce qui arrive dans un autre pays et qui relève, d’une certaine manière, de la fiction tant qu’on ne l’a pas véritablement vécu. C'est la tentative de raconter l’histoire sincère et à fleur de peau, de personne à personnes, d’une amitié qui vacille en même temps qu’un pays s’effondre.
+      
+      
+La mise en scène gravite autour d’une mappemonde lumineuse comme je gravite autour de toi, en étendant une constellation d’objets qui parlent de ton pays et racontent mon imaginaire.
+
+
+Je m’adresse directement à toi comme à lui, avec doute et hésitation. Et on ne saurait plus dire ce qui est réel, ce qui est inventé, ce qui est du vécu ou ce qui est joué.
+
+
+Sans grands artifices techniques, cette pièce peut exister dans n’importe quel espace qui ne soit pas un lieu de représentation théâtrale, en saisissant chaque occasion de se réinventer.`,
       dates: {
         aVenir: [{ année: "2025", représentations: [] }],
-        passées: [{ année: "2024", représentations: [] }],
+        passées: [
+          { année: "2024", représentations: [] },
+          {
+            année: "2023",
+            représentations: [
+              {
+                date: "Samedi 8 avril",
+                lieu: "Les Plateaux Sauvages – Paris (XX)",
+              },
+              {
+                date: "Mardi 3 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mercredi 4 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mardi 10 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mercredi 11 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mardi 17 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mercredi 18 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mardi 24 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Mercredi 25 janvier",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+            ],
+          },
+          {
+            année: "2022",
+            représentations: [
+              {
+                date: "Samedi 18 juin",
+                lieu: "Hôpital Casanova - Saint-Denis",
+              },
+              {
+                date: "Samedi 18 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Dimanche 19 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Samedi 11 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Dimanche 12 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Samedi 4 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Dimanche 5 juin",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Samedi 28 mai",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Dimanche 29 mai",
+                lieu: "Théâtre des Déchargeurs - Salle La Bohême",
+              },
+              {
+                date: "Samedi 5 mars",
+                lieu: "Théâtre Kantor – Lyon (69) / École normale supérieure",
+              },
+              {
+                date: "Dimanche 6 mars",
+                lieu: "Théâtre Kantor – Lyon (69) / École normale supérieure",
+              },
+              {
+                date: "Dimanche 20 novembre",
+                lieu: "Chez Lila - Paris II",
+              },
+              {
+                date: "Mardi 1er novembre",
+                lieu: "Chez Guillaume - Lizy (77)",
+              },
+              {
+                date: "Dimanche 16 octobre",
+                lieu: "Chez Emmanuelle - Montreuil (93)",
+              },
+              {
+                date: "Mardi 4 octobre",
+                lieu: "Chez Élisa et Serge - Ronchin (59)",
+              },
+              {
+                date: "Mercredi 5 octobre",
+                lieu: "Chez Élisa et Serge - Ronchin (59)",
+              },
+              {
+                date: "Vendredi 6 mai",
+                lieu: "Chez Gaspart et Lola - Paris XVIII",
+              },
+              {
+                date: "Dimanche 24 avril",
+                lieu: "Chez Françoise - Sceaux (92)",
+              },
+              {
+                date: "Mercredi 9 mars",
+                lieu: "Chez Hélène - Hellemmes (59)",
+              },
+              {
+                date: "Mardi 8 mars",
+                lieu: "Chez Blandine et Marc - Arras (62)",
+              },
+              {
+                date: "Mercredi 2 février",
+                lieu: "Chez Alex et Geoffroy - Lille (59)",
+              },
+            ],
+          },
+          {
+            année: "2021",
+            représentations: [
+              {
+                date: "Mercredi 27 octobre",
+                lieu: "Pavillon Carré Baudouin – Paris XXème",
+              },
+              { date: "Mardi 14 septembre", lieu: "Asiathèque – Paris XI" },
+              { date: "Vendredi 28 août", lieu: "FAR WEST – Penmarc'h (29)" },
+              {
+                date: "Mercredi 27 juillet",
+                lieu: "Festival La Nuit derrière les forêts – Sorrus (62)",
+              },
+              {
+                date: "Mardi 11 mai",
+                lieu: "Théâtre à Durée Indéterminée – Paris XX",
+              },
+              {
+                date: "Samedi 1er mai",
+                lieu: "Villa Mais d'ici – Aubervilliers (93)",
+              },
+              {
+                date: "Mercredi 1er décembre",
+                lieu: "Chez Rose, Benoît, Laurie, Phil, Marie, Jaime, JB – Toulouse (31)",
+              },
+              {
+                date: "Mardi 30 novembre",
+                lieu: "Chez Rose, Benoît, Laurie, Phil, Marie, Jaime, JB – Toulouse (31)",
+              },
+              {
+                date: "Lundi 29 novembre",
+                lieu: "Chez Mia, Quentin et Théo – Toulouse (31)",
+              },
+              {
+                date: "Mardi 23 novembre",
+                lieu: "Chez Ségal, Simon, Basile, Nico, Sonia, Valentin – Villejuif (94)",
+              },
+              {
+                date: "Dimanche 21 novembre",
+                lieu: "Chez Aurélie – Paris XVIIIème",
+              },
+              {
+                date: "Mercredi 17 novembre",
+                lieu: "Chez Mélina – Lille (59)",
+              },
+              {
+                date: "Mardi 16 novembre",
+                lieu: "hez Marie-Joëlle – Paris XVIII",
+              },
+              {
+                date: "Jeudi 14 octobre",
+                lieu: "Chez Alain et Andrée – Lopérec (29)",
+              },
+              {
+                date: "Mercredi 25 août",
+                lieu: "Chez Claire et Guy – Guimaëc (29)",
+              },
+              {
+                date: "Mardi 24 août",
+                lieu: "Chez Michel et Patricia – Guimaëc (29)",
+              },
+              {
+                date: "Lundi 28 juin",
+                lieu: "Chez Loudmilla et Sophie – Paris XI",
+              },
+              {
+                date: "Dimanche 27 juin",
+                lieu: "Chez Mélissandre – Paris XIX",
+              },
+              {
+                date: "Mercredi 16 juin",
+                lieu: "Chez Dominque et Maryelle – Meudon (92)",
+              },
+              { date: "Dimanche 13 juin", lieu: "Chez Sandra – Paris XIX" },
+              { date: "Vendredi 28 mai", lieu: "Chez Yvan – Paris XII" },
+              {
+                date: "Mercredi 19 mai",
+                lieu: "Chez Dominque et Maryelle – Meudon (92)",
+              },
+              { date: "Mercredi 19 mai", lieu: "Chez Laura – Paris XX" },
+              {
+                date: "Mardi 27 avril",
+                lieu: "Chez Victor et Virginie – Lyon (69)",
+              },
+              {
+                date: "Dimanche 18 avril",
+                lieu: "Chez Angele et Pauline – Paris XX",
+              },
+              { date: "Dimanche 14 mars", lieu: "Chez Philippe – Paris XX" },
+              { date: "Dimanche 28 février", lieu: "Chez Philippe – Paris XX" },
+              {
+                date: "Dimanche 21 février",
+                lieu: "Chez Marie – Les Lilas (93)",
+              },
+              {
+                date: "Dimanche 31 janvier",
+                lieu: "Chez Catherine – Sceaux (92)",
+              },
+              {
+                date: "Dimanche 17 janvier",
+                lieu: "Chez Mathilde et Youn – Saint-Ouen (93)",
+              },
+            ],
+          },
+          {
+            année: "2020",
+            représentations: [
+              {
+                date: "Samedi 26 septembre",
+                lieu: "Festival La Mascarade - Nogent L'Artaud (02)",
+              },
+              { date: "Dimanche 29 novembre", lieu: "Chez Sandra - Paris XIX" },
+              {
+                date: "Dimanche 22 novembre",
+                lieu: "Chez Marie - Les Lilas (93)",
+              },
+            ],
+          },
+        ],
       },
       distribution: [
         { role: "Texte", contributors: ["Vassia CHAVAROCHE"] },

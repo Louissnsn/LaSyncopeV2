@@ -1,82 +1,189 @@
+/* Base Styles (Desktop) */
 .parent {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  min-height: 100vh;
   background-color: #ffd670;
 }
 
 .titreContainer {
-  grid-area: 1 / 5 / 4 / 9;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.passées {
-  grid-area: 4 / 1 / 13 / 6;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.futures {
-  grid-area: 4 / 8 / 13 / 12;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  font-family: var(--font-combine, Arial, sans-serif);
+  padding: 5%;
+  color: aliceblue;
 }
 
 .titre {
-  font-family: var(--font-combine);
   font-size: 5rem;
-  font-weight: 200;
-  color: white;
 }
-.texte {
-  color: white;
+
+.sousTitre {
   font-size: 4rem;
-  font-weight: 200;
-  font-family: var(--font-combine);
 }
 
-.shapeContainer {
+.contentContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: 2 / 6 / 13 / 8;
-}
-
-.shape {
-  margin-top: 10%;
-  height: 80%;
-  width: 6px;
-  background-color: white;
-  border-radius: 25px;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+  line-height: 1.5;
+  padding-bottom: 2%;
 }
 
 .datesPassees {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  grid-area: 5 / 2 / 12 / 6;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
+  flex-direction: column;
+  margin-top: 2%;
+  width: 49%;
+  gap: 1rem;
+}
+
+.datesPassees p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.shapeContainer {
+  background-color: aliceblue;
+  border-radius: 25px;
+  width: 6px;
+  min-height: 80vh;
 }
 
 .datesAvenir {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  grid-area: 5 / 8 / 12 / 12;
-}
-.dateTexte {
-  font-family: var(--font-geist-mono, "Courier New", monospace);
-  line-height: 2;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 49%;
 }
 
-/* .dateTexte:hover {
-  cursor: pointer;
-} */
+.datesAvenir p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles for Smartphones */
+@media (max-width: 768px) {
+  .titreContainer {
+    flex-direction: column; /* Stack titles vertically */
+    text-align: center;
+    padding: 10%;
+  }
+
+  .titre {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+
+  .sousTitre {
+    display: none;
+  }
+
+  .contentContainer {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    padding-bottom: 5%; /* Add more spacing */
+  }
+
+  .datesAvenir {
+    order: 1; /* Display .datesAvenir first */
+    width: 90%; /* Full width for small screens */
+    margin-bottom: 2%; /* Add spacing below */
+  }
+
+  .datesPassees {
+    order: 2; /* Display .datesPassees below */
+    width: 90%; /* Full width for small screens */
+  }
+
+  .shapeContainer {
+    display: none; /* Hide the shape on small screens */
+  }
+}
+
+/* Responsive Styles for Medium Screens */
+@media (max-width: 1439px) and (min-width: 769px) {
+  .titreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3%; /* Reduce padding */
+  }
+
+  .titre {
+    font-size: 3rem;
+  }
+
+  .sousTitre {
+    font-size: 2rem;
+  }
+
+  .contentContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3%;
+  }
+
+  .datesPassees,
+  .datesAvenir {
+    width: 45%; /* Adjust width slightly */
+    margin-top: 2%;
+  }
+
+  .shapeContainer {
+    width: 4px; /* Thinner separator */
+    min-height: auto; /* Adapt to content height */
+  }
+}
+
+/* Responsive Styles for Large Screens */
+@media (min-width: 1440px) {
+  .parent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffd670;
+    padding-top: 2%;
+  }
+
+  .titreContainer {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font-combine, Arial, sans-serif);
+    color: aliceblue;
+  }
+
+  .titre {
+    font-size: 5rem;
+  }
+
+  .sousTitre {
+    font-size: 3rem;
+  }
+
+  .contentContainer {
+    display: flex;
+    justify-content: space-between; /* Spread items across the screen */
+    padding: 2% 5%; /* Add spacing around content */
+  }
+
+  .datesPassees,
+  .datesAvenir {
+    width: 40%; /* Adjust width for more balanced spacing */
+    gap: 1.5rem; /* Increase gap between dates */
+    margin-top: 2%;
+  }
+
+  .datesPassees p,
+  .datesAvenir p {
+    margin-bottom: 1.5rem; /* Add more spacing between dates */
+  }
+
+  .shapeContainer {
+    width: 6px;
+    min-height: 100%; /* Extend to full parent height */
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin: 0 2%; /* Add horizontal spacing */
+  }
+}

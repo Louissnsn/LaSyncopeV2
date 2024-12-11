@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 769px) {
-  .titre {
-    font-size: 6rem;
+  .titreSuite {
+    font-size: 5rem;
   }
 }

@@ -6,7 +6,7 @@ import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
 
 export default function Distribution() {
   const project = useProjectData();
-  console.log("project data in Distribution ==>", project);
+  // console.log("project data in Distribution ==>", project);
 
   const distrib = project?.distribution ?? []; // si distribution est undefined, on prend un tableau vide
 

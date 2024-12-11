@@ -14,7 +14,7 @@ const projetLayout = ({ children }) => {
           <Distribution />
           {/* <Presse /> */}
           <Dates />
-          <Partenaires />
+          {/* <Partenaires /> */}
         </ProjectDataProvider>
       </SegmentsProvider>
     </div>
