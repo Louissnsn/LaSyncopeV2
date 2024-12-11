@@ -66,13 +66,13 @@
 /* Responsive Styles for Smartphones */
 @media (max-width: 768px) {
   .titreContainer {
-    flex-direction: column; /* Stack titles vertically */
+    flex-direction: column;
     text-align: center;
     padding: 10%;
   }
 
   .titre {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-size: 3rem;
   }
 
   .sousTitre {
@@ -80,24 +80,24 @@
   }
 
   .contentContainer {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 5%; /* Add more spacing */
+    padding-bottom: 5%;
   }
 
   .datesAvenir {
-    order: 1; /* Display .datesAvenir first */
-    width: 90%; /* Full width for small screens */
-    margin-bottom: 2%; /* Add spacing below */
+    order: 1;
+    width: 90%;
+    margin-bottom: 2%;
   }
 
   .datesPassees {
-    order: 2; /* Display .datesPassees below */
-    width: 90%; /* Full width for small screens */
+    order: 2;
+    width: 90%;
   }
 
   .shapeContainer {
-    display: none; /* Hide the shape on small screens */
+    display: none;
   }
 }
 
@@ -107,7 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 3%; /* Reduce padding */
+    padding: 3%;
   }
 
   .titre {
@@ -126,13 +126,13 @@
 
   .datesPassees,
   .datesAvenir {
-    width: 45%; /* Adjust width slightly */
+    width: 45%;
     margin-top: 2%;
   }
 
   .shapeContainer {
-    width: 4px; /* Thinner separator */
-    min-height: auto; /* Adapt to content height */
+    width: 4px;
+    min-height: auto;
   }
 }
 
@@ -163,27 +163,27 @@
 
   .contentContainer {
     display: flex;
-    justify-content: space-between; /* Spread items across the screen */
-    padding: 2% 5%; /* Add spacing around content */
+    justify-content: space-between;
+    padding: 2% 5%;
   }
 
   .datesPassees,
   .datesAvenir {
-    width: 40%; /* Adjust width for more balanced spacing */
-    gap: 1.5rem; /* Increase gap between dates */
+    width: 40%;
+    gap: 1.5rem;
     margin-top: 2%;
   }
 
   .datesPassees p,
   .datesAvenir p {
-    margin-bottom: 1.5rem; /* Add more spacing between dates */
+    margin-bottom: 1.5rem;
   }
 
   .shapeContainer {
     width: 6px;
-    min-height: 100%; /* Extend to full parent height */
+    min-height: 100%;
     background-color: aliceblue;
     border-radius: 25px;
-    margin: 0 2%; /* Add horizontal spacing */
+    margin: 0 2%;
   }
 }
