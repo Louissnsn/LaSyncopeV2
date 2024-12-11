@@ -89,7 +89,7 @@ export function ProjectDataProvider({ children }) {
             ],
           },
         ],
-        passées: [],
+        passées: [{ année: "2024", représentations: [] }],
       },
       customPosition: "10% 35%",
       distribution: [
