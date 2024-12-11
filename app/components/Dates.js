@@ -11,6 +11,7 @@ export default function Dates() {
   // });
 
   const dates = project?.dates ?? []; // si dates est undefined, on prend un tableau vide
+
   console.log("DATES ???", dates);
   const datesavenir = dates?.aVenir?.map((date, index) => {
     return (

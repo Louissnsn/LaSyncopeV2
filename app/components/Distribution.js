@@ -3,18 +3,21 @@ import styles from "@/styles/Distribution.module.css";
 import Image from "next/image";
 import logo from "../../public/logo/LogoBLANC.png";
 import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+
 export default function Distribution() {
   const project = useProjectData();
   console.log("project data in Distribution ==>", project);
 
-  // const distribution = project?.distribution?.map((data, i) => {
-  //   return (
-  //     <div key={i}>
-  //       <h3>{data.role}</h3>
-  //       <p>{data.contributors}</p>
-  //     </div>
-  //   );
-  // });
+  const distrib = project?.distribution ?? []; // si distribution est undefined, on prend un tableau vide
+
+  const distribution = distrib.map((data, i) => {
+    return (
+      <div className={styles.distribText} key={i}>
+        <h3>{data.role}</h3>
+        <p className={styles.name}>{data.contributors.join(", ")}</p>
+      </div>
+    );
+  });
   return (
     <div className={styles.parent}>
       <div className={styles.logoContainer}>
@@ -28,9 +31,8 @@ export default function Distribution() {
       </div>
       <div className={styles.titreContainer}>
         <p className={styles.titre}>DISTRIBUTION</p>
-        {/* {distribution} */}
       </div>
-      <div className={styles.texteContainer}></div>
+      <div className={styles.texteContainer}>{distribution}</div>
     </div>
   );
 }

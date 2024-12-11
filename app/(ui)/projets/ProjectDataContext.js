@@ -24,6 +24,14 @@ export function ProjectDataProvider({ children }) {
         aVenir: ["Pas de dates prévues pour le moment !"],
         passées: ["28/05/2023"],
       },
+      distribution: [
+        { role: "Texte", contributors: ["Vassia CHAVAROCHE"] },
+        {
+          role: "Mise en scène",
+          contributors: ["Vassia CHAVAROCHE", "Pauline DARCEL"],
+        },
+        { role: "Interprétation", contributors: ["Pauline DARCEL"] },
+      ],
     },
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
@@ -32,20 +40,56 @@ export function ProjectDataProvider({ children }) {
         aVenir: ["Pas de dates prévues pour le moment !"],
         passées: ["12/24/2024"],
       },
+      distribution: [
+        { role: "Texte, mise en scène", contributors: ["Vassia CHAVAROCHE"] },
+        {
+          role: "Interprétation",
+          contributors: [
+            "Mona ABOUSAÏD",
+            "Mélina BIGOT",
+            "Laure BLATTER",
+            "Pauline DARCEL",
+            "Ghazal ZATI",
+          ],
+        },
+      ],
     },
     quandleloup: {
       title: ["QUAND LE LOUP", "N'Y EST PLUS"],
       description: "Encore une description...",
       dates: {
         aVenir: [
-          "Mercredi 2 février 2025",
-          "Mercredi 12 février 2025",
-          "Mercredi 19 février 2025",
-          "Dimanche 9 février 2025",
-          "Dimanche 16 février 2025",
-          "Dimanche 28 février 2025",
+          {
+            année: "2025",
+            représentations: [
+              {
+                date: "Mercredi 2 février 2025",
+                lieu: "Théâtre du Troisième Types (3T)- Saint-Denis",
+              },
+              {
+                date: "Dimanche 9 février 2025",
+                lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              },
+              {
+                date: "Mercredi 12 février 2025",
+                lieu: "Théâtre du Troisième Types (3T) - Saint-Denis ",
+              },
+              {
+                date: "Dimanche 16 février 2025",
+                lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              },
+              {
+                date: "Mercredi 19 février 2025",
+                lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              },
+              {
+                date: "Dimanche 28 février 2025",
+                lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              },
+            ],
+          },
         ],
-        passées: ["test/test/tes"],
+        passées: [],
       },
       customPosition: "10% 35%",
       distribution: [
@@ -63,11 +107,47 @@ export function ProjectDataProvider({ children }) {
     },
     leventredespoissons: {
       title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
+      textTitle: "UN SPECTACLE DE MATHILDE BELLIN",
       customPosition: "80% 10%",
 
       dates: {
-        aVenir: ["Pas de dates prévues pour le moment !"],
-        passées: ["test/test/test"],
+        aVenir: [{ année: "2025", représentations: [] }],
+        passées: [
+          {
+            année: "2022",
+            représentations: [
+              { date: "Jeudi 26 mai", lieu: "Théâtre de Maison-Laffitte" },
+            ],
+          },
+          {
+            année: "2021",
+            représentations: [
+              {
+                date: "Samedi 30 octobre",
+                lieu: "Salle de spectacle Cipriani - Saint-Ouen",
+              },
+            ],
+          },
+          {
+            année: "2020",
+            représentations: [
+              { date: "Vendredi 7 février", lieu: "Centre Paris Anim' Mathis" },
+              {
+                date: "Jeudi 16 et vendredi 17 janvier",
+                lieu: "Théâtre El Duende",
+              },
+            ],
+          },
+          {
+            année: "2019",
+            représentations: [
+              {
+                date: "Mercredi 13 novembre",
+                lieu: "Théâtre de la Reine Blanche",
+              },
+            ],
+          },
+        ],
       },
 
       description: `  Tout ce qu’il y a dans le ventre des poissons raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies. 
@@ -103,6 +183,29 @@ export function ProjectDataProvider({ children }) {
       { role: "Création Sonore", contributors: ["Nicolas HADOT"] },
       { role: "Régie son", contributors: ["Nicolas HADOT", "Marius ORJOLLET"] },
     ],
+    partenaires: {
+      soutiens: [
+        "Teatro SESC Patativa do Assaré (Juazeiro do Norte, Brésil)",
+        "Les Studios de Virecourt",
+        "Unversité Paris 8",
+      ],
+      subventions: [
+        { institution: "Ville de Paris", nom: "Quartiers Libres" },
+        { institution: "Université Paris 8", nom: "Bourse FSDIE" },
+      ],
+      récompenses: [
+        {
+          date: "2023",
+          lieu: "Festival BIOVIV'ART",
+          nom: "Prix Jeunes auteurs de théâtre",
+        },
+        {
+          date: "2022",
+          lieu: "Festival de Théâtre de Maisons-Laffitte",
+          nom: "Prix du jury 2022",
+        },
+      ],
+    },
   };
 
   const data = currentProject ? projetData[currentProject] : {};

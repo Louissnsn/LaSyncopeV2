@@ -10,7 +10,6 @@ export default function PoissonsPage() {
 
   const cover = {
     altText: "Photographie du spectacle",
-    textTitle: "UN SPECTACLE DE MATHILDE BELLIN",
     filePath: "/pdf/poissons.pdf",
   };
 
@@ -26,7 +25,7 @@ export default function PoissonsPage() {
         image={choeur}
         altText={cover.altText}
         descriptif={project.description}
-        title={cover.textTitle}
+        title={project.textTitle}
         filePath={cover.filePath}
       />
     </div>
