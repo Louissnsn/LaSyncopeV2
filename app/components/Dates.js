@@ -4,22 +4,8 @@ import { useProjectData } from "../(ui)/projets/ProjectDataContext";
 
 export default function Dates() {
   const project = useProjectData();
-  console.log("composant mount");
-  console.log("PROJECT DATES ==>", project.dates);
-  // const datesToShow = project?.dates.passées?.map((date, index) => {
-  //   return <span key={index}>{date}</span>;
-  // });
 
-  const dates = project?.dates ?? []; // si dates est undefined, on prend un tableau vide
-
-  console.log("DATES ???", dates);
-  const datesavenir = dates?.aVenir?.map((date, index) => {
-    return (
-      <span className={styles.dateTexte} key={index}>
-        {date}
-      </span>
-    );
-  });
+  const { aVenir = [], passées = [] } = project?.dates ?? {}; // si dates est undefined, on prend un tableau vide
 
   return (
     <div className={styles.parent}>
@@ -28,6 +14,22 @@ export default function Dates() {
       </div>
       <div className={styles.passées}>
         <p className={styles.texte}>PASSÉES</p>
+        {passées.map((anneeData, anneeIndex) => (
+          <div key={anneeIndex} className={styles.dateTexte}>
+            <h3>{anneeData.année}</h3>
+            {anneeData.représentations.length === 0 ? (
+              <p>Pas de dates passées pour cette année.</p>
+            ) : (
+              <ul>
+                {anneeData.représentations.map((repr, reprIndex) => (
+                  <li key={reprIndex}>
+                    {repr.date} - {repr.lieu}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
       </div>
       <div className={styles.shapeContainer}>
         <div className={styles.shape}></div>
@@ -35,9 +37,24 @@ export default function Dates() {
       <div className={styles.futures}>
         <p className={styles.texte}>À VENIR</p>
       </div>
-      <div className={styles.datesAvenir}> {datesavenir} </div>
-
-      {/* <div className={styles.datesPassees}>{datesToShow}</div> */}
+      <div className={styles.datesAvenir}>
+        {aVenir.map((anneeData, anneeIndex) => (
+          <div key={anneeIndex} className={styles.dateTexte}>
+            <h3>{anneeData.année}</h3>
+            {anneeData.représentations.length === 0 ? (
+              <p>Pas de dates prévues pour {anneeData.année}</p>
+            ) : (
+              <ul className={styles.dateTexte}>
+                {anneeData.représentations.map((repr, reprIndex) => (
+                  <li key={reprIndex}>
+                    {repr.date} - {repr.lieu}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
