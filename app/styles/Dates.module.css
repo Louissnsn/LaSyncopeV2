@@ -73,7 +73,6 @@
   grid-area: 5 / 8 / 12 / 12;
 }
 .dateTexte {
-  margin-top: 8%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   line-height: 2;
 }
