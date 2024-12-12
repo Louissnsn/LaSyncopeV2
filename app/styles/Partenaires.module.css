@@ -7,10 +7,6 @@
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-}
-
-.left {
-  grid-area: 2 / 1 / 12 / 6;
   background: radial-gradient(
       ellipse 50% 50% at 100% 0,
       #ed9d33 0%,
@@ -71,6 +67,10 @@
 
   background-size: 64px 64px;
   background-color: #ed9d33;
+}
+
+.left {
+  grid-area: 2 / 1 / 12 / 6;
 }
 
 .right {

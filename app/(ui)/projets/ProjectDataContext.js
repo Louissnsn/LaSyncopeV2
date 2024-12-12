@@ -298,7 +298,9 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
     },
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
-      description: "Une autre description...",
+      textTitle: "cérémonie de fantômes en trois monologues et deux surprises",
+      description:
+        "« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »",
       //CHANGER L'IMPORT
       filePath: "/pdf/poissons.pdf",
 

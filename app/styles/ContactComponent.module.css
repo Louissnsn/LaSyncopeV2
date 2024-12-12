@@ -1,0 +1,80 @@
+.container {
+  background: radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #f31987 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #f31987 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #f31987 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #f31987 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    repeating-conic-gradient(#bde0fe 0 25%, #0000 0 50%) 0 0 / calc(2 * 32px)
+      calc(2 * 32px),
+    radial-gradient(#0000 66%, #f31987 68% 70%, #0000 72%) 0 calc(32px / 2) /
+      32px 32px #bde0fe;
+  width: 100%;
+  height: fit-content;
+}
+
+.titreContact {
+  text-align: center;
+  padding: 5%;
+  font-size: 5rem;
+  font-family: var(--font-combine);
+}
+.publicationContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  padding: 5%;
+}
+.publication {
+  /* background-color: #f31987; */
+  padding: 2%;
+}
+.droits {
+  /* background-color: green; */
+  padding: 2%;
+  max-width: 25%;
+}
+.dev {
+  /* background-color: pink; */
+  padding: 2%;
+}
+.hebergement {
+  /* background-color: yellow; */
+  padding: 2%;
+}
+.titre {
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+
+  font-size: 2rem;
+}
+.texte {
+  margin-top: 5%;
+  font-family: var(--font-geist-mono, "Courier New", monospace);
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1em;
+}
