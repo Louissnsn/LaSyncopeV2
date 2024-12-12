@@ -2,6 +2,8 @@
 import Cover from "@/components/Cover";
 import styles from "@/styles/Loup.module.css";
 import loup from "../../../../public/images/Covers/Loup.webp";
+import loup1 from "../../../../public/images/Spectacles/Loup/loup1.webp";
+import Descriptif from "@/components/Descriptif";
 import { useProjectData } from "../ProjectDataContext";
 
 export default function Loup() {
@@ -14,6 +16,13 @@ export default function Loup() {
         title={project.title}
         altText="Photographie du spectacle"
         customPosition={project.customPosition}
+      />
+      <Descriptif
+        image={loup1}
+        alText={project.altText}
+        descriptif={project.description}
+        title={project.textTitle}
+        filePath={project.filePath}
       />
     </div>
   );

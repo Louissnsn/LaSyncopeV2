@@ -11,12 +11,153 @@
 
 .left {
   grid-area: 2 / 1 / 12 / 6;
-  background-color: #ff9770;
+  background: radial-gradient(
+      ellipse 50% 50% at 100% 0,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 0 100%,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 50% 50%,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+        ellipse 50% 50% at 50% 50%,
+        #ed9d33 0%,
+        #1a8fe5 5%,
+        #ed9d33 15%,
+        #1a8fe5 25%,
+        #ed9d33 35%,
+        #1a8fe5 45%,
+        #ed9d33 55%,
+        #1a8fe5 65%,
+        #ed9d33 75%,
+        #1a8fe5 85%,
+        #0000 96%
+      )
+      32px 32px;
+
+  background-size: 64px 64px;
+  background-color: #ed9d33;
 }
 
 .right {
   grid-area: 3 / 5 / 13 / 13;
-  background-color: #a2d2ff;
+  background: radial-gradient(
+      ellipse 50% 50% at 100% 0,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 0 100%,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 50% 50%,
+      #ed9d33 0%,
+      #1a8fe5 5%,
+      #ed9d33 15%,
+      #1a8fe5 25%,
+      #ed9d33 35%,
+      #1a8fe5 45%,
+      #ed9d33 55%,
+      #1a8fe5 65%,
+      #ed9d33 75%,
+      #1a8fe5 85%,
+      #0000 96%
+    ),
+    radial-gradient(
+        ellipse 50% 50% at 50% 50%,
+        #ed9d33 0%,
+        #1a8fe5 5%,
+        #ed9d33 15%,
+        #1a8fe5 25%,
+        #ed9d33 35%,
+        #1a8fe5 45%,
+        #ed9d33 55%,
+        #1a8fe5 65%,
+        #ed9d33 75%,
+        #1a8fe5 85%,
+        #0000 96%
+      )
+      32px 32px;
+  background-size: 64px 64px;
+  background-color: #ed9d33;
+}
+
+@keyframes customAni {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
 }
 
 .titre {
@@ -25,55 +166,5 @@
   font-size: 5rem;
   font-weight: 200;
   color: white;
-}
-
-/* Medium Screens (Tablets) */
-@media (max-width: 1024px) {
-  .parent {
-    grid-template-columns: repeat(
-      8,
-      1fr
-    ); /* Adjust column count for narrower screens */
-    grid-template-rows: auto; /* Allow rows to adapt to content */
-  }
-
-  .left {
-    grid-area: 2 / 1 / 10 / 9; /* Span most of the grid */
-  }
-
-  .right {
-    grid-area: 10 / 1 / 12 / 9; /* Move below the left section */
-  }
-
-  .titre {
-    grid-area: 1 / 1 / 2 / 9; /* Adjust title to occupy full width at the top */
-    font-size: 4rem; /* Reduce font size */
-  }
-}
-
-/* Small Screens (Smartphones) */
-@media (max-width: 768px) {
-  .parent {
-    grid-template-columns: 1fr; /* Single-column layout */
-    grid-template-rows: auto; /* Adapt rows to content */
-  }
-
-  .left {
-    grid-area: 2 / 1 / 5 / 2; /* Full width for the left section */
-  }
-
-  .right {
-    grid-area: 5 / 1 / 7 / 2; /* Full width for the right section, below the left */
-  }
-
-  .titre {
-    line-height: 1.5;
-    grid-area: 1 / 1 / 2 / 2; /* Title at the top */
-    font-size: 3rem; /* Further reduce font size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: pink;
-    text-align: center; /* Center-align text for smaller screens */
-  }
+  animation: customAni 2s ease-in-out 0s 2 normal none;
 }

@@ -24,6 +24,8 @@
   font-family: var(--font-geist-mono, "Courier New", monospace);
   margin-top: 2%;
   line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media (min-width: 300px) and (max-width: 550px) {
@@ -211,7 +213,8 @@
     --s: 100px; /* size of the zig-zag */
     --b: 20px; /* control the thickness */
 
-    background: #ff9770;
+    background-color: #ff416c;
+    background: linear-gradient(to top, #ff416c 0%, #ff4b2b 100%);
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x
@@ -230,7 +233,8 @@
     --s: 100px; /* size of the zig-zag */
     --b: 20px; /* control the thickness */
 
-    background: #ff9770;
+    background: #ff4b2b;
+    background: linear-gradient(to top, #ff4b2b 0%, #ff416c 100%);
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x

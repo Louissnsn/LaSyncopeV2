@@ -8,25 +8,20 @@ import { useProjectData } from "../ProjectDataContext";
 export default function PoissonsPage() {
   const project = useProjectData();
 
-  const cover = {
-    altText: "Photographie du spectacle",
-    filePath: "/pdf/poissons.pdf",
-  };
-
   return (
     <div>
       <Cover
         src={poisson}
         customPosition={project.customPosition}
-        altText={cover.altText}
+        altText={project.altText}
         title={project.title}
       />
       <Descriptif
         image={choeur}
-        altText={cover.altText}
+        altText={project.altText}
         descriptif={project.description}
         title={project.textTitle}
-        filePath={cover.filePath}
+        filePath={project.filePath}
       />
     </div>
   );

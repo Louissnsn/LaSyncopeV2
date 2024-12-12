@@ -19,6 +19,10 @@ export function ProjectDataProvider({ children }) {
   const projetData = {
     ecoledete: {
       title: ["ÉCOLE", "D'ÉTÉ"],
+      textTitle: "Un spectacle de Vassia Chavaroche et Pauline LEGÖEDEC",
+      //CHANGER L'IMPORT
+      filePath: "/pdf/poissons.pdf",
+
       description: `  À travers une amitié à distance, qui pourrait s’être écrite sur du vent, École d'été veut raconter l’écart des quotidiens qui peut exister entre deux pays éloignés (comme le tien et le mien), entre les fantasmes qu’on peut se faire et la réalité qui nous saute aux yeux. Et raconter aussi la difficulté de croire à ce qui arrive dans un autre pays et qui relève, d’une certaine manière, de la fiction tant qu’on ne l’a pas véritablement vécu. C'est la tentative de raconter l’histoire sincère et à fleur de peau, de personne à personnes, d’une amitié qui vacille en même temps qu’un pays s’effondre.
       
       
@@ -287,14 +291,17 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
         { role: "Texte", contributors: ["Vassia CHAVAROCHE"] },
         {
           role: "Mise en scène",
-          contributors: ["Vassia CHAVAROCHE", "Pauline DARCEL"],
+          contributors: ["Vassia CHAVAROCHE", "Pauline LEGÖEDEC"],
         },
-        { role: "Interprétation", contributors: ["Pauline DARCEL"] },
+        { role: "Interprétation", contributors: ["Pauline LEGÖEDEC"] },
       ],
     },
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
       description: "Une autre description...",
+      //CHANGER L'IMPORT
+      filePath: "/pdf/poissons.pdf",
+
       dates: {
         aVenir: [{ année: "2025", représentations: [] }],
         passées: [{ année: "2024", représentations: [] }],
@@ -307,7 +314,7 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
             "Mona ABOUSAÏD",
             "Mélina BIGOT",
             "Laure BLATTER",
-            "Pauline DARCEL",
+            "Pauline LEGÖEDEC",
             "Ghazal ZATI",
           ],
         },
@@ -315,7 +322,32 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
     },
     quandleloup: {
       title: ["QUAND LE LOUP", "N'Y EST PLUS"],
-      description: "Encore une description...",
+      description: `
+« Promenons-nous dans les bois, puisque le loup n’y est plus. » 
+
+
+Pour ce spectacle, nous réécrivons le conte Le Petit Chaperon Rouge des Frères Grimm. Dans le conte de ces derniers, dont la fin, plus heureuse que celle de Charles Perrault, connaît deux versions, la grand-mère et sa petite fille sont mangées par le loup puis sauvées par un chasseur. Imaginons que cette  fois-ci, le Petit Chaperon Rouge déambule dans une forêt dépourvue de prédateurs : le conte commence, mais le loup refuse de jouer son rôle. Chassés et exterminés par les fusils des hommes, les loups ont presque tous définitivement disparu, et notre loup est le dernier à pouvoir prendre la parole.
+Et si, pour un temps, la forêt n’était plus cette zone hostile, mais un lieu dans lequel un personnage féminin aurait tout loisir de s’égarer, de musarder ? Comment repenser la narration d’un conte sans prédateur, et d’une forêt dépourvue de danger ?
+
+
+Conte, théâtre d'objet, marionnette et théâtre sonore : au carrefour des langages
+
+
+Pour répondre à toutes ces questions, nous passons, en outre du conte et du récit, par le théâtre d’objet, la marionnette et le théâtre sonore. Dans notre processus créatif, chaque espèce vivante possède son propre mode d'expression scénique : les arbres ne sont qu'audibles, nous les animons en effet grâce au théâtre sonore et à différents bruitages. Rouge, la petite fille, est incarnée par une actrice, et ses souvenirs sont interprétés sur scène grâce au théâtre d'objet. Enfin, le loup est figuré grâce à une marionnette en papier.
+
+
+L'histoire telle que nous la racontons
+
+
+Rouge est une petite-fille timide, dont les joues prennent souvent  une teinte cramoisie à l’école. Un jour, elle apprend que sa mamie  est à l’hôpital : celle-ci souffre d’une maladie très rare qui forme un  masque de loup rouge sur le visage. Ni une ni deux, Rouge boucle  son sac à dos et part explorer la forêt pour y rencontrer le loup et  lui demander conseil. Mais tout ne se passe pas exactement comme  prévu...
+
+Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
+
+      textTitle:
+        "Un spectacle de Mathilde BELLIN, Rose GUILLON et Pauline LEGÖEDEC",
+      //CHANGER L'IMPORT
+      filePath: "/pdf/poissons.pdf",
+
       dates: {
         aVenir: [
           {
@@ -354,7 +386,7 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
       distribution: [
         {
           role: "Texte, mise en scène, interprétation",
-          contributors: ["Mathilde BELLIN", "Pauline DARCEL", "Rose GUILLON"],
+          contributors: ["Mathilde BELLIN", "Rose GUILLON", "Pauline LEGÖEDEC"],
         },
         { role: "Création sonore", contributors: ["Rebecca MEYER"] },
         { role: "Création lumière", contributors: ["Rose GUILLON"] },
@@ -368,7 +400,8 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
       title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
       textTitle: "UN SPECTACLE DE MATHILDE BELLIN",
       customPosition: "80% 10%",
-
+      altText: "Photographie du spectacle",
+      filePath: "/pdf/poissons.pdf",
       dates: {
         aVenir: [{ année: "2025", représentations: [] }],
         passées: [
@@ -425,9 +458,9 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
         contributors: [
           "Soizic BILLET",
           "Matisse BONZON",
-          "Pauline DARCEL",
           "Juliette DUCERF",
           "Aurélien HOUVER",
+          "Pauline LEGÖEDEC",
         ],
       },
       {

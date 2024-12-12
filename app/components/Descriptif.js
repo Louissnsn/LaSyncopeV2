@@ -1,14 +1,7 @@
-"use client";
 import styles from "@/styles/Descriptif.module.css";
 import Image from "next/image";
 import DownloadButton from "./DownloadButton";
-export default function Descriptif({
-  image,
-  altText,
-  title,
-  descriptif,
-  filePath,
-}) {
+export default function Descriptif({ image, title, descriptif, filePath }) {
   return (
     <div className={styles.parent}>
       {/* <div className={styles.shapeContainer}>
@@ -25,10 +18,11 @@ export default function Descriptif({
       <div className={styles.photoContainer}>
         <Image
           src={image}
-          alt={altText}
+          alt="Photo du spectacle"
           fill
           style={{
-            borderRadius: "25px",
+            borderRadius: "100px",
+            objectFit: "contain",
           }}
         />
       </div>

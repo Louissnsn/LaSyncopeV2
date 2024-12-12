@@ -1,8 +1,9 @@
 .parent {
   display: grid;
   width: 100%;
-  min-height: 90vh;
-  background-color: #ff9770;
+  min-height: 100vh;
+  background: #1089cf;
+  background: linear-gradient(to top, #1089cf 0%, #b8c6cf 100%);
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 0px;
