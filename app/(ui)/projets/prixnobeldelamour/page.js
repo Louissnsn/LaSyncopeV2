@@ -11,12 +11,12 @@ export default function Ecole() {
   return (
     <div>
       <Cover
-        src={nobel}
+        src={nobel1}
         title={project.title}
         altText="Photographie du spectacle"
       />
       <Descriptif
-        image={nobel1}
+        image={nobel}
         alText={project.altText}
         descriptif={project.description}
         title={project.textTitle}

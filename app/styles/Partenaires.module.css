@@ -161,7 +161,7 @@
 }
 
 .titre {
-  grid-area: 4 / 2 / 5 / 13;
+  grid-area: 2 / 2 / 5 / 13;
   font-family: var(--font-combine);
   font-size: 5rem;
   font-weight: 200;

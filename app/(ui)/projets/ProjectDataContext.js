@@ -527,53 +527,56 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
     
     
     Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?`,
-    },
-    distribution: [
-      { role: "Texte, mise en scène", contributors: ["Mathilde BELLIN"] },
-      {
-        role: "Interprétation",
-        contributors: [
-          "Soizic BILLET",
-          "Matisse BONZON",
-          "Juliette DUCERF",
-          "Aurélien HOUVER",
-          "Pauline LEGÖEDEC",
+      distribution: [
+        { role: "Texte, mise en scène", contributors: ["Mathilde BELLIN"] },
+        {
+          role: "Interprétation",
+          contributors: [
+            "Soizic BILLET",
+            "Matisse BONZON",
+            "Juliette DUCERF",
+            "Aurélien HOUVER",
+            "Pauline LEGÖEDEC",
+          ],
+        },
+        {
+          role: "Assistanat à la mise en scène, régie générale, régie lumière",
+          contributors: ["Rose GUILLON"],
+        },
+        {
+          role: "Création vidéo",
+          contributors: ["Isadora TELES DE CASTRO E COSTA"],
+        },
+        { role: "Régie vidéo", contributors: ["Mathias SAÏL"] },
+        { role: "Création Sonore", contributors: ["Nicolas HADOT"] },
+        {
+          role: "Régie son",
+          contributors: ["Nicolas HADOT", "Marius ORJOLLET"],
+        },
+      ],
+      partenaires: {
+        soutiens: [
+          "Teatro SESC Patativa do Assaré (Juazeiro do Norte, Brésil)",
+          "Les Studios de Virecourt",
+          "Unversité Paris 8",
+        ],
+        subventions: [
+          { institution: "Ville de Paris", nom: "Quartiers Libres" },
+          { institution: "Université Paris 8", nom: "Bourse FSDIE" },
+        ],
+        récompenses: [
+          {
+            date: "2023",
+            lieu: "Festival BIOVIV'ART",
+            nom: "Prix Jeunes auteurs de théâtre",
+          },
+          {
+            date: "2022",
+            lieu: "Festival de Théâtre de Maisons-Laffitte",
+            nom: "Prix du jury 2022",
+          },
         ],
       },
-      {
-        role: "Assistanat à la mise en scène, régie générale, régie lumière",
-        contributors: ["Rose GUILLON"],
-      },
-      {
-        role: "Création vidéo",
-        contributors: ["Isadora TELES DE CASTRO E COSTA"],
-      },
-      { role: "Régie vidéo", contributors: ["Mathias SAÏL"] },
-      { role: "Création Sonore", contributors: ["Nicolas HADOT"] },
-      { role: "Régie son", contributors: ["Nicolas HADOT", "Marius ORJOLLET"] },
-    ],
-    partenaires: {
-      soutiens: [
-        "Teatro SESC Patativa do Assaré (Juazeiro do Norte, Brésil)",
-        "Les Studios de Virecourt",
-        "Unversité Paris 8",
-      ],
-      subventions: [
-        { institution: "Ville de Paris", nom: "Quartiers Libres" },
-        { institution: "Université Paris 8", nom: "Bourse FSDIE" },
-      ],
-      récompenses: [
-        {
-          date: "2023",
-          lieu: "Festival BIOVIV'ART",
-          nom: "Prix Jeunes auteurs de théâtre",
-        },
-        {
-          date: "2022",
-          lieu: "Festival de Théâtre de Maisons-Laffitte",
-          nom: "Prix du jury 2022",
-        },
-      ],
     },
   };
 

@@ -3,6 +3,10 @@
   width: 100vw;
   box-sizing: border-box;
 }
+.lien {
+  text-decoration: none;
+  color: black;
+}
 .titre {
   font-family: var(--font-combine, Arial, sans-serif);
   text-align: center;
@@ -31,7 +35,6 @@
   width: 100%;
   text-decoration: none;
   color: black;
-  padding-left: 2%;
 }
 
 @media (min-width: 300px) and (max-width: 780px) {
@@ -68,6 +71,7 @@
     width: 100%;
     position: relative;
     background-color: #ffc8dd;
+    text-decoration: none;
   }
   .letter {
     margin-top: 25%;
@@ -248,16 +252,20 @@
   }
 }
 
-@media (min-width: 1221px) and (max-width: 2000px) {
+@media (min-width: 1221px) and (max-width: 4000px) {
   .parent {
-    /* height: auto not detected, only vh ? how can .letter fit in parent ; */
+    display: flex;
+    flex-direction: column;
     height: auto;
+    background-color: #ffc8dd;
+    text-decoration: none;
   }
   .leftContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    text-decoration: none;
   }
   .titre {
     padding: 5%;
@@ -267,8 +275,8 @@
     text-align: center;
     width: 50%;
   }
+
   .letter {
-    height: auto; /* Adjust to content */
     max-height: 100%;
     width: auto;
     max-width: 100%;
@@ -278,51 +286,52 @@
     font-size: 80px;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    display: none;
+    position: relative;
   }
   .rightContainer {
-    height: 100%;
+    padding-top: 5%;
+    min-height: 100vh;
     min-width: 100%;
-    position: relative;
+    background-color: #ffc8dd;
   }
 
   .p {
-    top: 0;
-    left: 25%;
+    top: 200px;
+    left: 15%;
   }
 
   .o1 {
-    top: 50px;
+    top: 250px;
     left: 28%;
   }
   .r {
-    top: 35px;
-    left: 49%;
+    top: 270px;
+    left: 40%;
   }
 
   .t {
-    top: 150px;
-    left: 70%;
+    top: 270px;
+    left: 50%;
   }
 
   .f {
-    top: 220px;
-    left: 12%;
+    top: 580px;
+    left: 15%;
   }
   .o2 {
-    top: 280px;
+    top: 600px;
     left: 28%;
   }
   .l {
-    top: 350px;
-    left: 45%;
+    top: 620px;
+    left: 40%;
   }
   .i {
-    top: 400px;
-    left: 65%;
+    top: 580px;
+    left: 50%;
   }
   .o3 {
-    top: 470px;
-    right: 13%;
+    top: 590px;
+    left: 65%;
   }
 }

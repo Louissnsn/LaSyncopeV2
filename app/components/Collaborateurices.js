@@ -115,21 +115,23 @@ export default function Collaborateurices() {
         </p>
         <br />
       </div>
-      <a
-        href="pdf/portfolioCompagnie.pdf"
-        download="portfolioCompagnie.pdf"
-        className={styles.rightContainer}
-      >
-        <span className={`${styles.letter} ${styles.p}`}>P</span>
-        <span className={`${styles.letter} ${styles.o1}`}>O</span>
-        <span className={`${styles.letter} ${styles.r}`}>R</span>
-        <span className={`${styles.letter} ${styles.t}`}>T</span>
-        <span className={`${styles.letter} ${styles.f}`}>F</span>
-        <span className={`${styles.letter} ${styles.o2}`}>O</span>
-        <span className={`${styles.letter} ${styles.l}`}>L</span>
-        <span className={`${styles.letter} ${styles.i}`}>I</span>
-        <span className={`${styles.letter} ${styles.o3}`}>O</span>
-      </a>
+      <div className={styles.rightContainer}>
+        <a
+          className={styles.lien}
+          href="pdf/portfolioCompagnie.pdf"
+          download="portfolioCompagnie.pdf"
+        >
+          <span className={`${styles.letter} ${styles.p}`}>P</span>
+          <span className={`${styles.letter} ${styles.o1}`}>O</span>
+          <span className={`${styles.letter} ${styles.r}`}>R</span>
+          <span className={`${styles.letter} ${styles.t}`}>T</span>
+          <span className={`${styles.letter} ${styles.f}`}>F</span>
+          <span className={`${styles.letter} ${styles.o2}`}>O</span>
+          <span className={`${styles.letter} ${styles.l}`}>L</span>
+          <span className={`${styles.letter} ${styles.i}`}>I</span>
+          <span className={`${styles.letter} ${styles.o3}`}>O</span>
+        </a>
+      </div>
     </div>
   );
 }

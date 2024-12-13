@@ -2,8 +2,9 @@
   display: grid;
   width: 100%;
   min-height: 100vh;
-  background: #1089cf;
-  background: linear-gradient(to top, #1089cf 0%, #b8c6cf 100%);
+  /* background-color: #1089cf; */
+  background-color: #ff9770;
+  /* background: linear-gradient(to top, #1089cf 0%, #b8c6cf 100%); */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 0px;
@@ -26,8 +27,8 @@
 }
 
 .titre {
-  margin-top: 0;
-  padding: 20px;
+  margin-top: 5%;
+  padding: 5%;
   font-family: var(--font-combine);
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 200;
@@ -37,7 +38,7 @@
 
 .texteContainer {
   grid-area: 4 / 6 / 13 / 13;
-  padding-top: 20px;
+  padding: 5%;
 }
 .distribText {
   margin-top: 8%;
