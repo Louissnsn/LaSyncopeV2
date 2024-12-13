@@ -7,7 +7,7 @@ import { SegmentsProvider } from "./SegmentsProvider";
 import { ProjectDataProvider } from "./ProjectDataContext";
 import { usePathname } from "next/navigation";
 
-const projetLayout = ({ children }) => {
+const ProjetLayout = ({ children }) => {
   const pathname = usePathname();
 
   // Détermine les enfants spécifiques
@@ -40,4 +40,4 @@ const projetLayout = ({ children }) => {
     </div>
   );
 };
-export default projetLayout;
+export default ProjetLayout;
