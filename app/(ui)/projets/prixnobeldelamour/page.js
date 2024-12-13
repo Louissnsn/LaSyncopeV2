@@ -3,6 +3,7 @@ import Cover from "@/components/Cover";
 import nobel from "../../../../public/images/Covers/Nobel.webp";
 import Descriptif from "@/components/Descriptif";
 import nobel1 from "../../../../public/images/Spectacles/Nobel/Nobel1.webp";
+// import Video from "@/components/Video";
 import { useProjectData } from "../ProjectDataContext";
 
 export default function Ecole() {
@@ -21,6 +22,7 @@ export default function Ecole() {
         title={project.textTitle}
         filePath={project.filePath}
       />
+      {/* <Video /> */}
     </div>
   );
 }

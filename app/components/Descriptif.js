@@ -20,6 +20,8 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
           src={image}
           alt="Photo du spectacle"
           fill
+          priority
+          placeholder="blur"
           style={{
             borderRadius: "100px",
             objectFit: "contain",

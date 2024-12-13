@@ -9,6 +9,7 @@ export default function Pauline() {
           src={photoPauline}
           alt="Photo de Pauline"
           fill
+          placeholder="blur"
           style={{
             borderRadius: "20px",
             objectFit: "cover",

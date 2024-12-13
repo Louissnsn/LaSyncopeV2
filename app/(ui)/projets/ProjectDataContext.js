@@ -299,14 +299,88 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
       textTitle: "cérémonie de fantômes en trois monologues et deux surprises",
-      description:
-        "« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »",
+      description: `« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »
+        Nous rendons ce soir femmage, en sa présence!, à la poétesse Josiane Chantier, 
+
+que tout le monde a oubliée. 
+
+Nous avons l’honneur de recevoir ses amies : 
+
+la poétesse Wisława Szymborska et la réalisatrice Chantal Akerman. 
+
+Guidés tout au long de cette soirée par moi-même, 
+
+votre modeste Maîtresse de Cérémonie pour vous servir, 
+
+vous aurez la chance d’entendre ces femmes extraordinaires :
+
+toutes les trois sont mortes et confient ce qu’elles n’ont jamais osé se dire de leur vivant !
+
+
+
+Avec une franche émotion qui les saisira là où elles ne s’y attendront pas, 
+
+Wisława et Chantal se mettront à nue, en avouant la place secrète et ingrate que Josiane a occupée dans leur vie affective et artistique. 
+
+Nous chercherons à comprendre pourquoi Josiane n’a publié qu’un seul recueil de poésie 
+
+et passé sa vie à réécrire en boucle ses poèmes sur sa mère morte et son jardin,
+
+(poèmes que Wisława et Chantal trouvent d’ailleurs terriblement mauvais).
+
+Nous tenterons d’élucider les étranges circonstances du décès de Josiane, 
+
+qui a disparu dans son jardin de fleurs...
+
+
+
+J’ai secrètement prévu quelques coups de théâtre pour pimenter la soirée :
+
+une invitée surprise déboulera du cosmos pour ajouter son mignon petit grain de sel, 
+
+je vous dévoilerai ma véritable identité toute pailletée (car j’ai moi aussi mon mot à dire)
+
+et, quand le bon moment sera venu : 
+
+Josiane prendra enfin la parole pour nous révéler ses secrets...
+
+
+
+Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !`,
       //CHANGER L'IMPORT
       filePath: "/pdf/poissons.pdf",
 
       dates: {
-        aVenir: [{ année: "2025", représentations: [] }],
-        passées: [{ année: "2024", représentations: [] }],
+        aVenir: [
+          {
+            année: "2025",
+            représentations: [
+              {
+                date: "Résidence du 17 au 21 mars",
+                lieu: "Théâtre à Durée Indéterminée (TDI)",
+              },
+            ],
+          },
+        ],
+        passées: [
+          {
+            année: "2024",
+            représentations: [
+              {
+                date: "Résidence du 21 au 25 avril",
+                lieu: "Théâtre à Durée Indéterminée (TDI)",
+              },
+              {
+                date: "Résidence du 21 au 25 octobre et présentation de la maquette à la Nef de Pantin",
+                lieu: "Théâtre Paris-Villette dans le cadre du Festival En Rappel #1",
+              },
+              {
+                date: "Résidence du 11 au 15 novembre",
+                lieu: "Le Colombier - Centre de création théâtrale et chorégraphique indépendant",
+              },
+            ],
+          },
+        ],
       },
       distribution: [
         { role: "Texte, mise en scène", contributors: ["Vassia CHAVAROCHE"] },
@@ -315,11 +389,12 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
           contributors: [
             "Mona ABOUSAÏD",
             "Mélina BIGOT",
-            "Laure BLATTER",
             "Pauline LEGÖEDEC",
+            "Alma LIVERT",
             "Ghazal ZATI",
           ],
         },
+        { role: "Soutien musical", contributors: ["Matthieu PICARD"] },
       ],
     },
     quandleloup: {

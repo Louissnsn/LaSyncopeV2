@@ -8,6 +8,7 @@ export default function Accueil() {
         <Image
           src={choeur}
           alt="Photo du spectacle des Poissons"
+          placeholder="blur"
           fill
           style={{ objectFit: "cover" }}
         />

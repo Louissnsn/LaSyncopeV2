@@ -11,6 +11,7 @@ export default function Compagnie() {
           <Image
             src={welcome}
             alt="Page d'accueil"
+            placeholder="blur"
             layout="fill"
             objectFit="cover"
             className={styles.image}
@@ -19,6 +20,7 @@ export default function Compagnie() {
         <div className={styles.logoWrapper}>
           <Image
             src={logo}
+            placeholder="blur"
             alt="Logo de la compagnie"
             width={250}
             height={400}

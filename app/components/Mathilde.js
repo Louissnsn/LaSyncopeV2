@@ -11,6 +11,7 @@ export default function Mathilde() {
           src={photoMathilde}
           alt="Photo de Mathilde"
           fill
+          placeholder="blur"
           style={{
             borderRadius: "20px",
             objectFit: "cover",
