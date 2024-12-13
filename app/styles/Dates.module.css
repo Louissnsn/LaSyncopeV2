@@ -66,10 +66,14 @@
 
 /* Responsive Styles for Smartphones */
 @media (max-width: 768px) {
+  .parent {
+    clip-path: none;
+  }
   .titreContainer {
     flex-direction: column;
     text-align: center;
     padding: 10%;
+    font-size: clamp(2rem, 5vw, 5rem);
   }
 
   .titre {

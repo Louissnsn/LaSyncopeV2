@@ -83,6 +83,10 @@
   }
 
   .texteContainer {
+    text-align: center;
     padding: 10px;
+  }
+  .name {
+    text-align: center;
   }
 }

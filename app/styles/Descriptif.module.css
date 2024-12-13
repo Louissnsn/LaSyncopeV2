@@ -45,6 +45,7 @@
   .titre {
     font-size: 2rem;
     font-weight: 200;
+    color: #9a080a;
   }
   .photoContainer {
     width: 100%;
@@ -65,6 +66,9 @@
   .parent {
     height: auto;
     background-color: #a2d2ff;
+  }
+  .titre {
+    color: #9a080a;
   }
   .photoContainer {
     width: 100%;
@@ -118,6 +122,10 @@
 @media (min-width: 1021px) and (max-width: 1280px) {
   .parent {
     background-color: #a2d2ff;
+  }
+  .titre {
+    color: #9a080a;
+    font-size: clamp(2rem, 5vw, 5rem);
   }
   .firstPart {
     display: flex;

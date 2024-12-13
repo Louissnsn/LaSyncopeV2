@@ -12,7 +12,7 @@ export default function Compagnie() {
             src={welcome}
             alt="Page d'accueil"
             placeholder="blur"
-            layout="fill"
+            fill
             objectFit="cover"
             className={styles.image}
           />
@@ -22,8 +22,6 @@ export default function Compagnie() {
             src={logo}
             placeholder="blur"
             alt="Logo de la compagnie"
-            width={250}
-            height={400}
             className={styles.logo}
           />
         </div>

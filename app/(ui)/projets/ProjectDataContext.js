@@ -19,7 +19,7 @@ export function ProjectDataProvider({ children }) {
   const projetData = {
     ecoledete: {
       title: ["ÉCOLE", "D'ÉTÉ"],
-      textTitle: "Un spectacle de Vassia Chavaroche et Pauline LEGÖEDEC",
+      textTitle: "Un spectacle de Vassia CHAVAROCHE et Pauline LEGÖEDEC",
       //CHANGER L'IMPORT
       filePath: "/pdf/poissons.pdf",
 

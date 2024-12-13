@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden; /* Empêche tout dépassement */
 }
 
 .photosContainer {
@@ -24,10 +25,10 @@
 
 .logoWrapper {
   position: absolute;
-  top: 5%;
+  top: 35%;
   left: 5%;
-  width: 15%; /* Utiliser un pourcentage pour la réactivité */
-  max-width: 150px; /* Taille maximale pour les grands écrans */
+  width: 20%; /* Taille du logo par défaut */
+  max-width: 150px;
 }
 
 .logoWrapper :global(img) {
@@ -35,18 +36,23 @@
   height: auto;
 }
 
+/* Écrans moyens */
 @media (max-width: 768px) {
   .logoWrapper {
-    top: 10%;
-    left: 5%;
-    width: 25%; /* Augmente la taille du logo sur les écrans plus petits */
+    top: 25%; /* Ajuste la position verticale */
+    left: 10%;
+    width: 30%; /* Augmente la taille */
+  }
+  .photosContainer {
+    height: 100%;
   }
 }
 
+/* Petits écrans */
 @media (max-width: 480px) {
   .logoWrapper {
     top: 15%;
-    left: 5%;
-    width: 35%; /* Encore plus grand sur les très petits écrans */
+    left: 50%; /* Centrage horizontal */
+    width: 40%; /* Taille adaptée aux petits écrans */
   }
 }
