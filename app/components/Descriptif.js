@@ -12,7 +12,9 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
       <div className={styles.shape1}></div>
       <div className={styles.firstPart}>
         <h2 className={styles.titre}>{title}</h2>
-        <div className={styles.descContainer}>{descriptif}</div>
+        <div className={styles.descContainer}>
+          <p className={styles.texte}>{descriptif}</p>
+        </div>
         <DownloadButton filePath={filePath} />
       </div>
       <div className={styles.photoContainer}>

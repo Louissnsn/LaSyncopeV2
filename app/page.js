@@ -9,11 +9,11 @@ import Loader from "@/components/Loader";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Compagnie />
+      {/* <Compagnie /> */}
       <Accueil />
-      <Loader />
+      {/* <Loader />
       <Cquoi />
-      <Collaborateurices />
+      <Collaborateurices /> */}
     </div>
   );
 }
