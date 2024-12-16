@@ -13,38 +13,43 @@ export default function Partenaires() {
   return (
     <div className={styles.parent}>
       <p className={styles.titre}>PARTENAIRES ET SOUTIENS</p>
-      <div className={styles.left}></div>
       <div className={styles.right}>
-        <p>SOUTIENS</p>
-        {soutiens.map((data, index) => {
-          // console.log(data);
-          return (
-            <div className={styles.partenaires} key={index}>
-              <p>{data}</p>
-            </div>
-          );
-        })}
-        <p>SUBVENTIONS</p>
-        {subventions.map((data, index) => {
-          // console.log(data);
-          return (
-            <div className={styles.subventions} key={index}>
-              <p>{data.institution}</p>
-              <p>{data.nom}</p>
-            </div>
-          );
-        })}
-        <p>RÉCOMPENSES</p>
-        {récompenses.map((data, index) => {
-          // console.log(data);
-          return (
-            <div className={styles.récompenses} key={index}>
-              <p>{data.date}</p>
-              <p>{data.lieu}</p>
-              <p>{data.nom}</p>
-            </div>
-          );
-        })}
+        <div className={styles.partenaires}>
+          <p className={styles.sousTitre}>SOUTIENS</p>
+          {soutiens.map((data, index) => {
+            // console.log(data);
+            return (
+              <div key={index}>
+                <li>{data}</li>
+              </div>
+            );
+          })}
+        </div>
+        <div className={styles.subventions}>
+          <p className={styles.sousTitre}>SUBVENTIONS</p>
+          {subventions.map((data, index) => {
+            // console.log(data);
+            return (
+              <div key={index}>
+                <p>{data.institution}</p>
+                <li>{data.nom}</li>
+              </div>
+            );
+          })}
+        </div>
+        <div className={styles.récompenses}>
+          <p className={styles.sousTitre}>RÉCOMPENSES</p>
+          {récompenses.map((data, index) => {
+            // console.log(data);
+            return (
+              <div key={index}>
+                <p>{data.date}</p>
+                <p>{data.lieu}</p>
+                <li>{data.nom}</li>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

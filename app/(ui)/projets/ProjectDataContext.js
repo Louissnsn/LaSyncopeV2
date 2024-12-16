@@ -561,18 +561,18 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
           "Unversité Paris 8",
         ],
         subventions: [
-          { institution: "Ville de Paris", nom: "Quartiers Libres" },
-          { institution: "Université Paris 8", nom: "Bourse FSDIE" },
+          { institution: "Ville de Paris :", nom: "Quartiers Libres" },
+          { institution: "Université Paris 8 : ", nom: "Bourse FSDIE" },
         ],
         récompenses: [
           {
             date: "2023",
-            lieu: "Festival BIOVIV'ART",
+            lieu: "Festival BIOVIV'ART :",
             nom: "Prix Jeunes auteurs de théâtre",
           },
           {
             date: "2022",
-            lieu: "Festival de Théâtre de Maisons-Laffitte",
+            lieu: "Festival de Théâtre de Maisons-Laffitte :",
             nom: "Prix du jury 2022",
           },
         ],
