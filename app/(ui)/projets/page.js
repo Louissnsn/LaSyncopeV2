@@ -1,33 +1,20 @@
 import Carousel from "@/components/Carousel";
+import cloudinary from "cloudinary";
+import styles from "@/styles/Projets.module.css";
+import Image from "next/image";
 export default async function ProjetsPage() {
-  const CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME;
-  const API_KEY = process.env.CLOUDINARY_API_KEY;
-  const API_SECRET = process.env.CLOUDINARY_API_SECRET;
-  const FOLDER = "Home";
+  const results = await cloudinary.v2.search
+    .expression("resource_type:image ")
+    .sort_by("public_id", "desc")
+    .max_results(5)
+    .execute();
 
-  const url = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/resources/image?prefix=${FOLDER}`;
-  const auth = Buffer.from(`${API_KEY}:${API_SECRET}`).toString("base64");
-
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Basic ${auth}`,
-    },
-    cache: "no-store",
-  });
-  console.log(res);
-
-  if (!res.ok) {
-    throw new Error("Impossible de récupérer les images de Cloudinary");
-  }
-
-  const data = await res.json();
-  const images = data.resources.map((r) => r.secure_url);
+  const images = results.resources.map((resource) => resource.secure_url);
+  // console.log("URLs des images:", images);
 
   return (
-    <main>
-      <h1>Projets</h1>
-      {/* On passe le tableau d'images au composant client */}
+    <div className={styles.container}>
       <Carousel images={images} />
-    </main>
+    </div>
   );
 }
