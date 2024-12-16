@@ -8,13 +8,14 @@ import styles from "@/styles/Header.module.css";
 
 const links = [
   {
-    name: "ACCUEIL",
+    name: "LA COMPAGNIE",
     href: "/",
     submenu: [
       {
         name: "DIRECTION ARTISTIQUE",
         href: "/direction-artistique",
       },
+      { name: "ACCUEIL", href: "/" },
     ],
   },
   {
@@ -58,7 +59,7 @@ export default function Header() {
       router.push("/projets");
     } else if (linkName === "DIRECTION ARTISTIQUE") {
       router.push("/direction-artistique");
-    } else if (linkName === "ACCUEIL") {
+    } else if (linkName === "LA COMPAGNIE") {
       router.push("/");
     }
   };
