@@ -2,8 +2,13 @@
 import styles from "@/styles/Partenaires.module.css";
 import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
 export default function Partenaires() {
-  const { partenaires } = useProjectData();
-  console.log(partenaires);
+  const project = useProjectData();
+
+  const {
+    soutiens = [],
+    subventions = [],
+    récompenses = [],
+  } = project?.partenaires ?? {};
 
   return (
     <div className={styles.parent}>
@@ -11,20 +16,31 @@ export default function Partenaires() {
       <div className={styles.left}></div>
       <div className={styles.right}>
         <p>SOUTIENS</p>
-        {partenaires.soutiens.map((data, index) => {
-          console.log(data);
+        {soutiens.map((data, index) => {
+          // console.log(data);
           return (
-            <div key={index}>
+            <div className={styles.partenaires} key={index}>
               <p>{data}</p>
             </div>
           );
         })}
-        <p>SUBVENTION</p>
-        {partenaires.subventions.map((data, index) => {
-          console.log(data);
+        <p>SUBVENTIONS</p>
+        {subventions.map((data, index) => {
+          // console.log(data);
           return (
-            <div key={index}>
+            <div className={styles.subventions} key={index}>
               <p>{data.institution}</p>
+              <p>{data.nom}</p>
+            </div>
+          );
+        })}
+        <p>RÉCOMPENSES</p>
+        {récompenses.map((data, index) => {
+          // console.log(data);
+          return (
+            <div className={styles.récompenses} key={index}>
+              <p>{data.date}</p>
+              <p>{data.lieu}</p>
               <p>{data.nom}</p>
             </div>
           );
