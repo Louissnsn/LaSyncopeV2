@@ -6,8 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { CldImage } from "next-cloudinary";
-
-import Image from "next/image";
+import styles from "@/styles/Carousel.module.css";
 
 export default function ImageCarousel({ images }) {
   return (
@@ -16,16 +15,16 @@ export default function ImageCarousel({ images }) {
       navigation
       pagination={{ clickable: true }}
       loop={true}
-      style={{ width: "800px", height: "auto" }}
+      className={styles.swiper}
     >
       {images.map((imgUrl, index) => (
         <SwiperSlide key={index}>
-          <div style={{ position: "relative", width: "100%", height: "500px" }}>
+          <div className={styles.imageContainer}>
             <CldImage
               src={imgUrl}
               alt={`image-${index}`}
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", borderRadius: "20px" }}
             />
           </div>
         </SwiperSlide>
