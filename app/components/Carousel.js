@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import styles from "@/styles/Carousel.module.css";
 
 export default function ImageCarousel({ images }) {
@@ -20,7 +21,7 @@ export default function ImageCarousel({ images }) {
       {images.map((imgUrl, index) => (
         <SwiperSlide key={index}>
           <div className={styles.imageContainer}>
-            <CldImage
+            <Image
               src={imgUrl}
               alt={`image-${index}`}
               fill
