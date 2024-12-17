@@ -298,7 +298,7 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
     },
     prixnobeldelamour: {
       title: ["PRIX NOBEL", "DE L'AMOUR"],
-      textTitle: "cérémonie de fantômes en trois monologues et deux surprises",
+      textTitle: "Cérémonie de fantômes en trois monologues et deux surprises",
       description: `« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »
         Nous rendons ce soir femmage, en sa présence!, à la poétesse Josiane Chantier, 
 
@@ -380,6 +380,16 @@ Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !`,
               },
             ],
           },
+        ],
+      },
+      partenaires: {
+        soutiens: [
+          "Festival Texte en Cours",
+          "STC (Super Théâtre Collectif)",
+          "NTA (Nouveau Théâtre de l’Atalante)",
+          "TDI (Théâtre à Durée Indéterminée)",
+          "Colombier - Centre de création théâtrale et chorégraphique indépendant",
+          "Accompagnement d’En Rappel",
         ],
       },
       distribution: [
@@ -472,6 +482,21 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
           contributors: ["Nicolas Blandin", "Jason RESPILIEUX"],
         },
       ],
+      partenaires: {
+        soutiens: [
+          "Ville de Sceaux",
+          "Plaine Commune - Grand Paris (Intercommunale Ile-de-France)",
+          "Ville de Villeurbanne",
+          "Médiathèque Persépolis de Saint-Ouen",
+          "ArTerre (81)",
+          "La Laiterie (Saint-Juery)",
+          "Debout Les Yeux - La Crouzié (81)",
+          "Théâtre à Durée Indéterminée (Paris 20e)",
+          "La Barge (Morlaix)",
+          "Balise 46 - MJC de Villeurbanne",
+          "Centre Paris Anim Ruth Bader Ginsburg (Paris, Les Halles)",
+        ],
+      },
     },
     leventredespoissons: {
       title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],

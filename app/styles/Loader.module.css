@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #9a080a; /* Couleur de fond */
+  background: #ff9770; /* Couleur de fond */
   z-index: 9999;
   animation: slideOut 2s ease-in-out forwards;
 }

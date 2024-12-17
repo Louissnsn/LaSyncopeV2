@@ -6,6 +6,7 @@ export default async function ProjetsPage() {
   const results = await cloudinary.v2.search
     .expression("resource_type:image ")
     .sort_by("public_id", "desc")
+    // .sort_by("random", "desc")
     .max_results(5)
     .execute();
 

@@ -7,13 +7,13 @@
 .titre {
   color: white;
   font-family: var(--font-combine);
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   position: absolute;
-  max-width: 90%;
-  line-height: 1.5;
+  max-width: 100%;
+  line-height: 2;
 
   /* Centrer horizontalement et verticalement */
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%); /* Décale pour centrer parfaitement */
   text-align: center; /* Centre le texte à l'intérieur */
@@ -53,5 +53,14 @@
 @media (min-width: 769px) {
   .titreSuite {
     font-size: 5rem;
+  }
+}
+
+@media (min-width: 880px) and (max-width: 1503px) {
+  .titreSuite {
+    font-size: 3rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
