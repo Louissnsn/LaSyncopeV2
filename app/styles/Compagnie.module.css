@@ -25,10 +25,9 @@
 
 .logoWrapper {
   position: absolute;
-  top: 35%;
-  left: 5%;
-  width: 20%; /* Taille du logo par défaut */
-  max-width: 150px;
+  top: 10%;
+  left: 65%;
+  max-width: 30%; /* Taille du logo par défaut */
 }
 
 .logoWrapper :global(img) {
@@ -54,5 +53,13 @@
     top: 15%;
     left: 50%; /* Centrage horizontal */
     width: 40%; /* Taille adaptée aux petits écrans */
+  }
+}
+
+@media (min-width: 1920px) {
+  .logoWrapper {
+    top: 15%;
+    left: 65%; /* Centrage horizontal */
+    width: 30%; /* Taille adaptée aux petits écrans */
   }
 }

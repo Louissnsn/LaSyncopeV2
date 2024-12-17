@@ -8,8 +8,8 @@ export default function Accueil() {
         <Image
           src={choeur}
           alt="Photo du spectacle des Poissons"
-          placeholder="blur"
           fill
+          placeholder="blur"
           style={{ objectFit: "cover" }}
         />
       </div>
@@ -39,7 +39,6 @@ export default function Accueil() {
         </p>
         <div className={styles.shapeInText}></div>
       </div>
-      <div className={styles.shape2Container}> </div>
     </div>
   );
 }

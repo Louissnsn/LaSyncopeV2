@@ -84,12 +84,21 @@
   .shape1 {
     display: none;
   }
-  .shape2 {
-    padding: 2%;
-  }
+
   .photoContainer {
     order: 2;
     min-height: 50vh;
     background-color: red;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .titre {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .texteContainer {
+    margin-top: 5%;
+    margin-left: 20%;
   }
 }

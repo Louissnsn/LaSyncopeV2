@@ -253,6 +253,9 @@
 }
 
 @media (min-width: 1221px) and (max-width: 4000px) {
+  .shape2Container {
+    display: none;
+  }
   .parent {
     display: flex;
     flex-direction: column;
@@ -283,7 +286,7 @@
     margin-top: 20%;
     font-family: var(--font-combine, Arial, sans-serif);
     position: absolute;
-    font-size: 80px;
+    font-size: 70px;
     cursor: pointer;
     transform: translate(-50%, -50%);
     position: relative;
@@ -316,22 +319,22 @@
 
   .f {
     top: 580px;
-    left: 15%;
+    left: 5%;
   }
   .o2 {
     top: 600px;
-    left: 28%;
+    left: 20%;
   }
   .l {
     top: 620px;
-    left: 40%;
+    left: 30%;
   }
   .i {
-    top: 580px;
-    left: 50%;
+    top: 680px;
+    left: 40%;
   }
   .o3 {
-    top: 590px;
-    left: 57%;
+    top: 690px;
+    left: 47%;
   }
 }
