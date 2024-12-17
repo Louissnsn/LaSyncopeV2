@@ -1,9 +1,13 @@
-.titre {
-  width: 100%;
+.parent {
+  margin-top: 2%;
   height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: flex-start;
-  color: black;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
-  margin-top: 10%;
+  justify-content: flex-end;
+}
+
+.datesContainer {
+  height: 80%;
+  width: 80vw;
+  background-color: #d4a4ee;
 }

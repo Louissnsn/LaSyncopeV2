@@ -2,7 +2,7 @@
 import styles from "@/styles/Dates.module.css";
 import { useProjectData } from "../(ui)/projets/ProjectDataContext";
 import ShowButton from "./ShowButton";
-
+import { motion } from "framer-motion";
 export default function Dates() {
   const project = useProjectData();
 
@@ -11,7 +11,16 @@ export default function Dates() {
   const maxVisibleDates = 3; // Nombre maximum de dates visibles avant d'afficher ShowButton
 
   return (
-    <div className={styles.parent}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 1.5 },
+      }}
+      viewport={{ once: true }}
+      className={styles.parent}
+    >
       <div className={styles.titreContainer}>
         <p className={styles.sousTitre}>PASSÉES</p>
         <p className={styles.titre}>DATES</p>
@@ -66,6 +75,6 @@ export default function Dates() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

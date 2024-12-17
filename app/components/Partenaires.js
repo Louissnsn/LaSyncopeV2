@@ -24,6 +24,7 @@ export default function Partenaires() {
           scale: 1,
           transition: { duration: 2 },
         }}
+        viewport={{ once: true }}
         className={styles.parent}
       >
         <p className={styles.titre}>PARTENAIRES ET SOUTIENS</p>

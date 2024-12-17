@@ -1,15 +1,19 @@
 import styles from "@/styles/Agenda.module.css";
-
-//Cover pour la page d'accueil
+import Cover from "@/components/Cover";
+import nobel2 from "../../../public/images/Spectacles/Nobel/nobel2.jpeg";
 
 export default function Agenda() {
+  const agenda = ["AGENDA"];
   return (
-    <div className={styles.titre}>
-      <p>Un peu de patience, ça arrive</p>
-      {/* <div>
-        container pour les dates de la saison 2024/2025
-        chaque date renvoie à la page du spectacle 
-      </div> */}
-    </div>
+    <>
+      <Cover src={nobel2} title={agenda} altText="Photographie du spectacle" />
+      <div className={styles.parent}>
+        <div className={styles.datesContainer}>
+          <p>2025</p>
+          <p>date2</p>
+          <p>date3</p>
+        </div>
+      </div>
+    </>
   );
 }
