@@ -53,66 +53,6 @@
   margin: 0;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    padding: 0;
-  }
-  .logoAndMobilemenucontainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  .navOpen {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .navBase {
-    display: flex;
-  }
-  .navList {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .logo {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .header {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .logo {
-    max-height: 100%;
-    min-width: 10%;
-  }
-  .navList {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2%;
-    width: 90%;
-  }
-  .navBase {
-    display: flex;
-  }
-
-  .menuButton {
-    display: none; /* Caché sur md et plus */
-  }
-}
-
 .navItem {
   position: relative;
 }
@@ -179,4 +119,70 @@
 
 .activeSubmenuLink {
   background-color: #e0f2fe;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .logoAndMobilemenucontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .navOpen {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBase {
+    display: flex;
+  }
+  .navList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo {
+    max-height: 100%;
+    min-width: 10%;
+  }
+  .navList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    width: 90%;
+  }
+  .navBase {
+    display: flex;
+  }
+
+  .menuButton {
+    display: none; /* Caché sur md et plus */
+  }
+}
+@media (min-width: 1920px) {
+  .navLink {
+    font-size: 1.5rem;
+  }
 }
