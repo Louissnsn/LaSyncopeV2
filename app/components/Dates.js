@@ -1,11 +1,14 @@
 "use client";
 import styles from "@/styles/Dates.module.css";
 import { useProjectData } from "../(ui)/projets/ProjectDataContext";
+import ShowButton from "./ShowButton";
 
 export default function Dates() {
   const project = useProjectData();
 
-  const { aVenir = [], passées = [] } = project?.dates ?? {}; // si dates est undefined, on prend un tableau vide
+  const { aVenir = [], passées = [] } = project?.dates ?? {};
+
+  const maxVisibleDates = 3; // Nombre maximum de dates visibles avant d'afficher ShowButton
 
   return (
     <div className={styles.parent}>
@@ -15,6 +18,7 @@ export default function Dates() {
         <p className={styles.sousTitre}>FUTURES</p>
       </div>
       <div className={styles.contentContainer}>
+        {/* Dates passées */}
         <div className={styles.datesPassees}>
           {passées.map((anneeData, anneeIndex) => (
             <div key={anneeIndex}>
@@ -23,20 +27,26 @@ export default function Dates() {
                 <p>Pas de dates passées pour {anneeData.année}.</p>
               ) : (
                 <ul>
-                  {anneeData.représentations.map((repr, reprIndex) => (
-                    <p key={reprIndex}>
-                      {repr.date} - {repr.lieu}
-                    </p>
-                  ))}
+                  {/* Afficher les 3 premières dates */}
+                  <ShowButton>
+                    {anneeData.représentations.map((repr, reprIndex) => (
+                      <p key={reprIndex}>
+                        {repr.date} - {repr.lieu}
+                      </p>
+                    ))}
+                  </ShowButton>
                 </ul>
               )}
             </div>
           ))}
         </div>
+
+        {/* Shape */}
         <div className={styles.shapeContainer}>
           <div className={styles.shape}></div>
         </div>
 
+        {/* Dates futures */}
         <div className={styles.datesAvenir}>
           {aVenir.map((anneeData, anneeIndex) => (
             <div key={anneeIndex}>
