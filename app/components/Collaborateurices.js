@@ -1,5 +1,6 @@
 "use client";
 import styles from "@/styles/Collaborateurices.module.css";
+import { motion } from "framer-motion";
 export default function Collaborateurices() {
   return (
     <div className={styles.parent}>

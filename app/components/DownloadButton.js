@@ -1,9 +1,10 @@
 import styles from "@/styles/DownloadButton.module.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const DownloadButton = ({ filePath }) => {
   return (
-    <div className={styles.buttonContainer}>
+    <motion.div whileHover={{ scale: 1.2 }} className={styles.buttonContainer}>
       <Link
         href={filePath}
         locale={false}
@@ -14,7 +15,7 @@ const DownloadButton = ({ filePath }) => {
       >
         Télécharger le dossier artistique
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

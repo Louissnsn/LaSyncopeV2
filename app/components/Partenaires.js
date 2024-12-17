@@ -1,6 +1,7 @@
 "use client";
 import styles from "@/styles/Partenaires.module.css";
 import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+import { motion } from "framer-motion";
 export default function Partenaires() {
   const project = useProjectData();
 
@@ -16,12 +17,20 @@ export default function Partenaires() {
     pageToShow = <div></div>;
   } else {
     pageToShow = (
-      <div className={styles.parent}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 2 },
+        }}
+        className={styles.parent}
+      >
         <p className={styles.titre}>PARTENAIRES ET SOUTIENS</p>
         <div className={styles.right}>
           <div className={styles.partenaires}>
             <p className={styles.sousTitre}>SOUTIENS</p>
-            {soutiens.map((data, index) => {
+            {soutiens?.map((data, index) => {
               // console.log(data);
               return (
                 <div key={index}>
@@ -60,7 +69,7 @@ export default function Partenaires() {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 
