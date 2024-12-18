@@ -168,8 +168,25 @@
     mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
   }
 
-  .leftContainer {
+  .zigZag2 {
+    grid-area: 12 / 3 / 12 / 11;
+    --a: 95deg; /* control the angle */
+    --s: 30px; /* size of the zig-zag */
+    --b: 10px; /* control the thickness */
+
+    background: #fb6f92;
+    height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+    width: 80%;
+    --_g: var(--s) repeat-x
+      conic-gradient(
+        from calc(var(--a) / -2) at bottom,
+        #0000,
+        #000 1deg calc(var(--a) - 1deg),
+        #0000 var(--a)
+      );
+    mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
   }
+
   .textLeft {
     display: flex;
     flex-direction: column;
@@ -178,17 +195,29 @@
 
   .textDescription {
     max-width: 55%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .textDescriptionRight {
+    font-size: 1.25rem;
   }
   .rightContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .textRight {
     max-width: 75%;
     max-height: 70%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .textLeft {
+    font-size: 1.5rem;
+  }
+  .textDescriptionRight {
     font-size: 1.5rem;
   }
 }

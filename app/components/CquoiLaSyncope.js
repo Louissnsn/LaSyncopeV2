@@ -37,7 +37,7 @@ export default function Cquoi() {
       </div>
       <div className={styles.rightContainer}>
         <h2 className={styles.sousTitre2}>NOS PRINCIPES CRÉATIFS</h2>
-
+        <div className={styles.zigZag2}></div>
         <div className={styles.textRight}>
           <p className={styles.textDescriptionRight}>
             1- Dramaturgies imprévisibles : écrire{" "}
