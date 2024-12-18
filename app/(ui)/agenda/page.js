@@ -35,16 +35,26 @@ export default function Agenda() {
             })}
           {datesLoup.length > 0 &&
             datesLoup.map((dataLoup, index) => {
+              console.log(dataLoup.date.includes("Mercredi"));
               return (
                 <div className={styles.content} key={index}>
                   <div className={styles.title}>{titles[2]}</div>
                   <div className={styles.divider}></div>
                   <div className={styles.subtitle}> {dataLoup.date}</div>
                   <div className={styles.divider}></div>
-                  <div className={styles.subtitle}> {dataLoup.lieu}</div>
+                  <a
+                    href="https://www.les3t.com/spectacles/quand-le-loup-ny-est-plus"
+                    className={styles.subtitle}
+                  >
+                    {dataLoup.lieu}
+                  </a>
                   <div className={styles.divider}></div>
                   <p className={styles.eventLocation}>Saint-Denis (93)</p>
-                  <p className={styles.time}>10h</p>
+                  {dataLoup.date.includes("Mercredi") ? (
+                    <p className={styles.time}>14h30</p>
+                  ) : (
+                    <p className={styles.time}>16h</p>
+                  )}
                 </div>
               );
             })}
