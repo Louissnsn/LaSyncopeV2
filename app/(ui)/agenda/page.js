@@ -8,13 +8,19 @@ export default function Agenda() {
     data1.leventredespoissons.dates?.aVenir[0].représentations;
   const datesNobel = data1.prixnobeldelamour.dates?.aVenir[0].représentations;
   const datesLoup = data1.quandleloup.dates?.aVenir[0].représentations;
-  const agenda = ["AGENDA"];
 
+  const agenda = ["AGENDA", "Saison 2025-2026"];
+  const titles = [
+    "Tout ce qu'il y a dans le ventre des poissons",
+    "École d'été",
+    "Quand le loup n'y est plus",
+    "Prix Nobel de l'amour",
+  ];
   return (
     <>
       <Cover src={nobel2} title={agenda} altText="Photographie du spectacle" />
       <div className={styles.parent}>
-        <div className={styles.datesContainer}>
+        <div className={styles.container}>
           {datesEcole.length > 0 &&
             datesEcole?.map((dataEcole, index) => {
               return <div key={index}>{dataEcole.représentations}</div>;
@@ -30,9 +36,15 @@ export default function Agenda() {
           {datesLoup.length > 0 &&
             datesLoup.map((dataLoup, index) => {
               return (
-                <div key={index}>
-                  {dataLoup.lieu}
-                  {dataLoup.date}
+                <div className={styles.content} key={index}>
+                  <div className={styles.title}>{titles[2]}</div>
+                  <div className={styles.divider}></div>
+                  <div className={styles.subtitle}> {dataLoup.date}</div>
+                  <div className={styles.divider}></div>
+                  <div className={styles.subtitle}> {dataLoup.lieu}</div>
+                  <div className={styles.divider}></div>
+                  <p className={styles.eventLocation}>Saint-Denis (93)</p>
+                  <p className={styles.time}>10h</p>
                 </div>
               );
             })}
