@@ -57,9 +57,9 @@
 }
 
 @media (min-width: 880px) and (max-width: 1503px) {
-  .titreSuite {
-    font-size: 3rem;
-    top: 45%;
+  .titre {
+    font-size: 4rem;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
