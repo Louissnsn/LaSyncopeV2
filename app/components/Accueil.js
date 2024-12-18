@@ -2,6 +2,7 @@ import styles from "@/styles/Accueil.module.css";
 import Image from "next/image";
 import choeur from "../../public/images/Covers/choeur-des-hommes-4.webp";
 export default function Accueil() {
+  //transformer texte en photo
   return (
     <div className={styles.parent}>
       <div className={styles.photoContainer}>
@@ -24,7 +25,7 @@ export default function Accueil() {
         </p>
         <p className={styles.texteBio}>
           Elle s&apos;est fondée sur une étroite collaboration entre Mathilde
-          Bellin et Pauline Darcel, deux comédiennes et artistes de théâtre
+          Bellin et Pauline Legoëdec, deux comédiennes et artistes de théâtre
           ayant développé une affinité artistique commune et singulière lors de
           leurs différentes formations. <br />
         </p>
