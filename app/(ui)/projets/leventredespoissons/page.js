@@ -7,7 +7,7 @@ import { useProjectData } from "../ProjectDataContext";
 
 export default function PoissonsPage() {
   const project = useProjectData();
-  console.log(project);
+  // console.log(project);
 
   return (
     <div>

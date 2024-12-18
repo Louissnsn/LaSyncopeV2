@@ -276,6 +276,22 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
       },
       { role: "Interprétation", contributors: ["Pauline LEGÖEDEC"] },
     ],
+    presse: [
+      {
+        author: "Luc Évrard",
+        article:
+          "https://0bb5789a-8672-4899-af05-1d96e7376db4.filesusr.com/ugd/3acf0f_62f2a597bff14690b6b5f03c9a0a18cc.pdf",
+      },
+      {
+        author: "Mariane",
+        article:
+          "https://www.marianne.net/culture/spectacle-vivant/la-belle-aventure-de-la-piece-ecole-dete-au-theatre-des-dechargeurs",
+      },
+      {
+        author: "Tête de lecture",
+        article: "https://www.youtube.com/watch?v=ydjtQhS08Bo",
+      },
+    ],
   },
 
   prixnobeldelamour: {
@@ -478,6 +494,13 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
         "Centre Paris Anim Ruth Bader Ginsburg (Paris, Les Halles)",
       ],
     },
+    presse: [
+      {
+        author: "Radio Albiges",
+        article:
+          "https://hearthis.at/radio.albiges/15-05-23-micro-ouvert-la-syncopcollectif/SJj/",
+      },
+    ],
   },
   leventredespoissons: {
     title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],

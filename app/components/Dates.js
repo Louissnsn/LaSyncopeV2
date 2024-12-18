@@ -32,18 +32,27 @@ export default function Dates() {
           {passées.map((anneeData, anneeIndex) => (
             <div key={anneeIndex}>
               <h3>{anneeData.année}</h3>
-              {anneeData.représentations.length === 0 ? (
+              {anneeData?.représentations?.length === 0 ? (
                 <p>Pas de dates passées pour {anneeData.année}.</p>
               ) : (
                 <ul>
-                  {/* Afficher les 3 premières dates */}
-                  <ShowButton>
-                    {anneeData.représentations.map((repr, reprIndex) => (
+                  {anneeData?.représentations?.length <= 3 ? (
+                    // Si 3 dates ou moins, on les affiche directement
+                    anneeData?.représentations?.map((repr, reprIndex) => (
                       <p key={reprIndex}>
                         {repr.date} - {repr.lieu}
                       </p>
-                    ))}
-                  </ShowButton>
+                    ))
+                  ) : (
+                    // Si plus de 3 dates, on utilise ShowButton
+                    <ShowButton>
+                      {anneeData?.représentations?.map((repr, reprIndex) => (
+                        <p key={reprIndex}>
+                          {repr.date} - {repr.lieu}
+                        </p>
+                      ))}
+                    </ShowButton>
+                  )}
                 </ul>
               )}
             </div>

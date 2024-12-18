@@ -11,7 +11,7 @@ export default function ShowButton({ children }) {
     <>
       {readMore ? children.slice(0, 3) : children}
       <span onClick={toggleReadMore} className={styles.showButton}>
-        {readMore ? "... voir plus" : " voir moins"}
+        {readMore ? "... voir plus +" : "voir moins -"}
       </span>
     </>
   );
