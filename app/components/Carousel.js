@@ -5,7 +5,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { CldImage } from "next-cloudinary";
+// import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import styles from "@/styles/Carousel.module.css";
 

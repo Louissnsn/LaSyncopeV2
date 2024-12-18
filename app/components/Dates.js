@@ -8,8 +8,6 @@ export default function Dates() {
 
   const { aVenir = [], passées = [] } = project?.dates ?? {};
 
-  const maxVisibleDates = 3; // Nombre maximum de dates visibles avant d'afficher ShowButton
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
