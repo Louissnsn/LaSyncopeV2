@@ -1,6 +1,7 @@
 .parent {
+  margin-top: 2%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -10,22 +11,79 @@
 
 .presse {
   grid-area: 2 / 1 / 12 / 8;
-  background-color: #a2d2ff;
+  background-color: #d4a4ee;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  transform: skew(5deg);
 }
 
 .titre {
   position: absolute;
   font-family: var(--font-combine);
+  top: 5%;
   font-size: 5rem;
   font-weight: 200;
   color: white;
   margin-top: 2%;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .photoContainer {
   grid-area: 1 / 8 / 13 / 12;
   position: relative;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titre {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .presse {
+    width: 80%;
+    height: 80vh;
+    transform: skew(5deg);
+  }
+  .photoContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titre {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .presse {
+    width: 80%;
+    height: 80vh;
+    transform: skew(5deg);
+  }
+  .photoContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .photoContainer {
+    grid-area: 2 / 8 / 10 / 12;
+  }
+  .presse {
+    grid-area: 2 / 2 / 12 / 8;
+  }
 }

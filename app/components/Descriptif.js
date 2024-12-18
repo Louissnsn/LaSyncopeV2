@@ -19,8 +19,8 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
         <h2 className={styles.titre}>{title}</h2>
         <div className={styles.descContainer}>
           <p className={styles.texte}>{descriptif}</p>
+          <DownloadButton filePath={filePath} />
         </div>
-        <DownloadButton filePath={filePath} />
       </div>
       <motion.div
         initial={{ opacity: 0 }}

@@ -2,7 +2,7 @@ import styles from "@/styles/Cquoi.module.css";
 export default function Cquoi() {
   return (
     <div className={styles.parent}>
-      <h1 className={styles.titre}>LA SYNCOPE</h1>
+      <h2 className={styles.titre}>LA SYNCOPE</h2>
       <div className={styles.leftContainer}>
         <h3 className={styles.sousTitre}>
           QU&apos;EST-CE QUE C&apos;EST QUE CETTE SYNCOPE ?

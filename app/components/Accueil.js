@@ -16,7 +16,7 @@ export default function Accueil() {
       </div>
       <div className={styles.shape1}> </div>
       <div className={styles.titreContainer}>
-        <p className={styles.titre}>LA SYNCOPE</p>
+        <h1 className={styles.titre}>LA SYNCOPE</h1>
       </div>
       <div className={styles.texteContainer}>
         <p className={styles.texteBio}>

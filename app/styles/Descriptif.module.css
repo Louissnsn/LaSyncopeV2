@@ -230,7 +230,9 @@
     margin-bottom: 10%;
     margin-top: 5%;
   }
-
+  .texte {
+    margin-bottom: 10%;
+  }
   .titre {
     margin-top: 5%;
   }
@@ -313,8 +315,8 @@
 
   .photoContainer {
     margin-top: 2%;
-    height: 55vh;
-    width: 50vw;
+    height: 70vh;
+    width: 60vw;
     margin-bottom: 2%;
   }
   .titre {

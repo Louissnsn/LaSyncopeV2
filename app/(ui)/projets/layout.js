@@ -31,10 +31,9 @@ const ProjetLayout = ({ children }) => {
               <Distribution />
               <Dates />
               <Partenaires />
+              <Presse />
             </>
           ) : null}
-
-          {/* <Presse /> */}
         </ProjectDataProvider>
       </SegmentsProvider>
     </div>
