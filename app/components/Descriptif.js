@@ -6,14 +6,13 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1, transition: { duration: 2 } }}
+      viewport={{ once: "true" }}
+      onViewportEnter={() => console.log("enter")}
+      onViewportLeave={() => console.log("leave")}
       className={styles.parent}
     >
-      {" "}
-      {/* <div className={styles.shapeContainer}>
-        <div className={styles.shape}></div>
-      </div> */}
-      <div className={styles.zigZag1}></div>
+      {/* <div className={styles.zigZag1}></div> */}
       <div className={styles.shape1}></div>
       <div className={styles.firstPart}>
         <h2 className={styles.titre}>{title}</h2>
@@ -43,8 +42,8 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
           }}
         />
       </motion.div>
-      <div className={styles.shape2}></div>
-      <div className={styles.zigZag2}></div>
+      {/* <div className={styles.shape2}></div> */}
+      {/* <div className={styles.zigZag2}></div> */}
     </motion.div>
   );
 }

@@ -74,7 +74,6 @@
 .texte {
   margin-top: 5%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
-  text-align: justify;
   line-height: 1.5;
   font-size: 1em;
 }

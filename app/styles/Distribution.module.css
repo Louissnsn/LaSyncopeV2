@@ -2,12 +2,11 @@
   display: grid;
   width: 100%;
   min-height: 100vh;
-  /* background-color: #1089cf; */
   background-color: #ff9770;
-  /* background: linear-gradient(to top, #1089cf 0%, #b8c6cf 100%); */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 0px;
+  /* clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%); */
 }
 
 .logoContainer {
@@ -47,7 +46,6 @@
 }
 .name {
   padding-top: 2%;
-  text-align: justify;
 }
 /* Media Queries */
 @media (max-width: 768px) {
@@ -89,5 +87,12 @@
   }
   .name {
     text-align: center;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 3000px) {
+  .logoContainer {
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -15,6 +15,7 @@
 
 .button:hover {
   background-color: #ea7979;
+  cursor: pointer;
 }
 
 .buttonContainer {

@@ -17,12 +17,11 @@
 }
 
 .rightContainer {
-  grid-area: 3 / 7 / 10 / 13;
+  grid-area: 3 / 8 / 12 / 13;
   background-color: #ffd670;
 }
 
 .textDescription {
-  text-align: justify;
   margin-top: 5%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   padding: 2%;
@@ -31,7 +30,6 @@
   width: 100%;
 }
 .textDescriptionRight {
-  text-align: justify;
   margin-top: 5%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   padding: 2%;
@@ -151,6 +149,7 @@
 
 @media (min-width: 1201px) and (max-width: 3000px) {
   .zigZag {
+    margin-top: 5%;
     grid-area: 12 / 3 / 12 / 11;
     --a: 90deg; /* control the angle */
     --s: 100px; /* size of the zig-zag */
@@ -169,47 +168,27 @@
     mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
   }
 
-  .sousTitre {
-    padding-bottom: 10%;
-  }
-  .sousTitre2 {
-    margin-top: 8%;
-  }
-
   .leftContainer {
-    height: auto;
+  }
+  .textLeft {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 400px;
+    align-items: center;
   }
+
   .textDescription {
-    padding-left: 15%;
-    width: 65%;
-    margin-top: 2%;
-    text-justify: inter-word;
+    max-width: 55%;
+    font-size: 1.5rem;
   }
   .rightContainer {
     display: flex;
     flex-direction: column;
-    border-radius: 500px;
+    align-items: center;
   }
-  /* .flower {
-    width: 200px; 
-    aspect-ratio: 1;
-    --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
-    mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g),
-      50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g),
-      0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g),
-      75% 6.699% var(--g), 93.301% 25% var(--g),
-      radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
-  } 
-  */
 
   .textRight {
-    width: 70%;
-    text-justify: auto;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 75%;
+    max-height: 70%;
+    font-size: 1.5rem;
   }
 }

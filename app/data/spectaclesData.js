@@ -438,28 +438,28 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
           année: "2025",
           représentations: [
             {
-              date: "Mercredi 2 février 2025",
-              lieu: "Théâtre du Troisième Types (3T)- Saint-Denis",
+              date: "Mercredi 5 février 2025",
+              lieu: "Théâtre du Troisième Type (3T)- Saint-Denis",
             },
             {
               date: "Dimanche 9 février 2025",
-              lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              lieu: "Théâtre du Troisième Type (3T) - Saint-Denis",
             },
             {
               date: "Mercredi 12 février 2025",
-              lieu: "Théâtre du Troisième Types (3T) - Saint-Denis ",
+              lieu: "Théâtre du Troisième Type (3T) - Saint-Denis ",
             },
             {
               date: "Dimanche 16 février 2025",
-              lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              lieu: "Théâtre du Troisième Type (3T) - Saint-Denis",
             },
             {
               date: "Mercredi 19 février 2025",
-              lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              lieu: "Théâtre du Troisième Type (3T) - Saint-Denis",
             },
             {
-              date: "Dimanche 28 février 2025",
-              lieu: "Théâtre du Troisième Types (3T) - Saint-Denis",
+              date: "Dimanche 23 février 2025",
+              lieu: "Théâtre du Troisième Type (3T) - Saint-Denis",
             },
           ],
         },
