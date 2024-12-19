@@ -11,7 +11,6 @@
 .photoContainer {
   grid-area: 2 / 1 / 13 / 6;
   position: relative;
-  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 1);
 }
 .shape1 {
   grid-area: 1 / 1 / 2 / 13;
@@ -35,13 +34,10 @@
   color: orange;
 }
 
-.texteContainer {
-  grid-area: 3 / 6 / 13 / 12;
-  margin-top: 2%;
-  background-color: #ffd670;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.photoContainerRight {
+  position: relative;
+  grid-area: 3 / 7 / 13 / 12;
+  margin-top: 6%;
   box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 1);
 }
 

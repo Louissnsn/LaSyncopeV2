@@ -187,6 +187,12 @@
     mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
   }
 
+  .sousTitre {
+    font-size: 2rem;
+  }
+  .sousTitre2 {
+    font-size: 2rem;
+  }
   .textLeft {
     display: flex;
     flex-direction: column;
@@ -210,14 +216,5 @@
   .textRight {
     max-width: 75%;
     max-height: 70%;
-  }
-}
-
-@media (min-width: 1900px) {
-  .textLeft {
-    font-size: 1.5rem;
-  }
-  .textDescriptionRight {
-    font-size: 1.5rem;
   }
 }

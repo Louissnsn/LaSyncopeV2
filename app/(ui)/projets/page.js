@@ -1,7 +1,7 @@
 import Carousel from "@/components/Carousel";
 import cloudinary from "cloudinary";
 import styles from "@/styles/Projets.module.css";
-
+import { EmblaCarousel } from "@/components/CarouselEmbla";
 export default async function ProjetsPage() {
   const results = await cloudinary.v2.search
     .expression("resource_type:image ")
@@ -15,7 +15,8 @@ export default async function ProjetsPage() {
 
   return (
     <div className={styles.container}>
-      <Carousel images={images} />
+      {/* <Carousel images={images} /> */}
+      <EmblaCarousel images={images} />
     </div>
   );
 }

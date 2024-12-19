@@ -13,7 +13,7 @@ export default function Compagnie() {
             alt="Page d'accueil"
             placeholder="blur"
             fill
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             className={styles.image}
           />
         </div>

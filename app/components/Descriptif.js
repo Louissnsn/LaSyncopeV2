@@ -8,11 +8,10 @@ export default function Descriptif({ image, title, descriptif, filePath }) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 2 } }}
       viewport={{ once: "true" }}
-      onViewportEnter={() => console.log("enter")}
-      onViewportLeave={() => console.log("leave")}
+      // onViewportEnter={() => console.log("enter")}
+      // onViewportLeave={() => console.log("leave")}
       className={styles.parent}
     >
-      {/* <div className={styles.zigZag1}></div> */}
       <div className={styles.shape1}></div>
       <div className={styles.firstPart}>
         <h2 className={styles.titre}>{title}</h2>
