@@ -8,4 +8,43 @@
 :root {
   --background: #ebebec;
   --foreground: #ebebec;
+  /* Echelles de taille de police */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-title-mobile: 2.5rem;
+  --font-size-title-tablet: 3rem;
+  --font-size-title-desktop: 4.5rem;
+
+  /* Couleurs */
+  --color-primary: orange;
+  --color-text: #000; /* adapt if needed */
+  --color-secondary-left: #ff9770;
+  --color-secondary-right: #ffd670;
+  --color-accent: #fb6f92;
+  --color-text: #000;
+  --color-primary-bg: #ffc8dd;
+  --color-text-inverse: #ffffff;
+  --color-background: #d4a4ee;
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+
+  /* Police */
+  --font-primary: var(--font-combine, Arial, sans-serif);
+  --font-mono: var(--font-geist-mono, "Courier New", monospace);
+
+  @media (max-width: 768px) {
+    /* Mobile */
+  }
+
+  @media (min-width: 769px) and (max-width: 1199px) {
+    /* Tablette */
+  }
+
+  @media (min-width: 1200px) {
+    /* Desktop */
+  }
 }

@@ -1,82 +1,103 @@
 .parent {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  gap: 0;
+  box-sizing: border-box;
+  padding: var(--spacing-md);
 }
 
-.photoContainer {
-  grid-area: 2 / 1 / 13 / 6;
-  position: relative;
-}
+/* Barre orange en haut (shape1) */
 .shape1 {
   grid-area: 1 / 1 / 2 / 13;
-  background-color: orange;
-  margin: auto;
+  background-color: var(--color-primary);
+  margin: 0 auto;
   width: 80%;
   height: 10px;
   border-radius: 50px;
 }
+
+/* Container du titre */
 .titreContainer {
-  margin-top: 3%;
-  grid-area: 2 / 5 / 5 / 10;
-}
-
-.titre {
-  position: absolute;
-  margin-bottom: 2%;
-  font-family: var(--font-combine, Arial, sans-serif);
-  font-size: 6rem;
-  font-weight: 200;
-  color: orange;
-}
-
-.photoContainerRight {
+  grid-area: 2 / 1 / 5 / 13;
+  text-align: center;
+  margin-top: var(--spacing-md);
   position: relative;
+}
+
+/* Titre */
+.titre {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.1;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  /* La taille du titre variera selon le breakpoint */
+}
+
+/* Photo gauche */
+.photoContainer {
+  grid-area: 2 / 1 / 13 / 6;
+  position: relative;
+}
+
+/* Photo droite */
+.photoContainerRight {
   grid-area: 3 / 7 / 13 / 12;
-  margin-top: 6%;
+  position: relative;
+  margin-top: var(--spacing-lg);
   box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 1);
 }
 
+/* Texte biographique */
 .texteBio {
-  margin-bottom: 20px;
-  margin-top: 6%;
-  font-size: 1rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-body);
   line-height: 1.5;
-  text-justify: auto;
+  text-align: justify;
   max-width: 95%;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
+  font-family: var(--font-mono);
 }
 
+/* Shape dans le texte */
 .shapeInText {
   width: 80%;
   border-radius: 25px;
   height: 10px;
-  margin-top: 20%;
-  background-color: orange;
+  margin-top: var(--spacing-xl);
+  background-color: var(--color-primary);
 }
 
+/* Container shape 2 (à droite) */
 .shape2Container {
   grid-area: 1 / 12 / 13 / 13;
 }
 
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .parent {
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: var(--spacing-sm);
+    min-height: auto;
   }
+
   .titre {
-    order: 1;
-    font-size: 2.5rem;
+    font-size: var(--font-size-title-mobile);
     text-align: center;
-    width: 100vw;
-    margin-top: 10%;
+    width: 100%;
+    margin-top: var(--spacing-lg);
     position: relative;
+    order: 1;
   }
 
   .shape1 {
@@ -86,17 +107,44 @@
   .photoContainer {
     order: 2;
     min-height: 50vh;
-    background-color: red;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .photoContainerRight {
+    width: 100%;
+    margin-top: var(--spacing-md);
+    box-shadow: none;
+  }
+
+  .texteBio {
+    max-width: 100%;
   }
 }
+
+/* Tablet / Moyen écrans (min-width: 769px and max-width: 1199px) */
 @media (min-width: 769px) and (max-width: 1199px) {
   .titre {
-    font-size: 4rem;
+    font-size: var(--font-size-title-tablet);
+  }
+
+  .texteBio {
+    font-size: var(--font-size-body);
   }
 }
+
+/* Grand écrans (≥ 1200px) */
 @media (min-width: 1200px) {
+  .titre {
+    font-size: var(--font-size-title-desktop);
+  }
+
   .texteContainer {
-    margin-top: 5%;
+    margin-top: var(--spacing-lg);
     margin-left: 20%;
+  }
+
+  .texteBio {
+    font-size: var(--font-size-body);
   }
 }

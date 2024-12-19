@@ -58,9 +58,7 @@ export default function Dates() {
         </div>
 
         {/* Shape */}
-        <div className={styles.shapeContainer}>
-          <div className={styles.shape}></div>
-        </div>
+        <div className={styles.shape}></div>
 
         {/* Dates futures */}
         <div className={styles.datesAvenir}>

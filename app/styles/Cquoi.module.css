@@ -1,161 +1,185 @@
 .parent {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   width: 100%;
   height: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 0;
+  box-sizing: border-box;
 }
 
 .italique {
   font-style: italic;
 }
+
 .leftContainer {
   grid-area: 2 / 1 / 11 / 10;
-  background-color: #ff9770;
+  background-color: var(--color-secondary-left);
 }
 
 .rightContainer {
   grid-area: 3 / 8 / 12 / 13;
-  background-color: #ffd670;
+  background-color: var(--color-secondary-right);
 }
 
-.textDescription {
-  margin-top: 5%;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
-  padding: 2%;
-  text-indent: 1em;
-  line-height: 1.5;
-  width: 100%;
-}
+/* Textes descriptifs */
+.textDescription,
 .textDescriptionRight {
-  margin-top: 5%;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
-  padding: 2%;
+  margin-top: var(--spacing-lg);
+  font-family: var(--font-mono);
+  padding: var(--spacing-sm);
   text-indent: 1em;
   line-height: 1.5;
   width: 100%;
+  font-size: var(--font-size-body);
 }
 
+/* Titre principal */
 .titre {
   grid-area: 1 / 1 / 2 / 13;
-  margin-top: 2%;
-  line-height: 150%;
-  font-family: var(--font-combine, Arial, sans-serif);
+  margin-top: var(--spacing-md);
+  line-height: 1.5;
+  font-family: var(--font-primary);
   text-align: center;
-  font-size: 4em;
   width: 100%;
+  /* La taille changera via les media queries */
 }
 
-.sousTitre {
-  font-family: var(--font-combine, Arial, sans-serif);
-  line-height: 2;
-  text-align: center;
-  padding-top: 5%;
-}
+/* Sous-titres */
+.sousTitre,
 .sousTitre2 {
-  font-family: var(--font-combine, Arial, sans-serif);
+  font-family: var(--font-primary);
   line-height: 2;
   text-align: center;
-  padding-top: 5%;
+  padding-top: var(--spacing-lg);
+  /* Taille ajustée dans les media queries */
 }
 
-@media (min-width: 300px) and (max-width: 780px) {
-  .zigZag {
-    display: none;
-  }
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Mobile : max-width: 768px */
+@media (max-width: 768px) {
   .parent {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .titre {
-    font-size: 2em;
-    display: block;
-    padding: 8%;
-  }
-  .leftContainer {
-    height: auto;
-    width: 100%;
-    padding: 2%;
+    padding: var(--spacing-sm);
   }
 
+  .titre {
+    font-size: var(--font-size-title-mobile);
+    display: block;
+    padding: var(--spacing-lg);
+  }
+
+  .leftContainer,
   .rightContainer {
-    height: auto;
     width: 100%;
-    padding: 2%;
+    height: auto;
+    padding: var(--spacing-sm);
+  }
+
+  .sousTitre {
+    padding-top: calc(var(--spacing-lg) * 1.5);
+    margin-top: var(--spacing-sm);
+  }
+
+  .zigZag,
+  .zigZag2 {
+    display: none;
+  }
+}
+
+/* Tablette : 769px à 1199px */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    /* padding: var(--spacing-md); */
+  }
+
+  .titre {
+    font-size: var(--font-size-title-tablet);
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .sousTitre,
+  .sousTitre2 {
+    font-size: 2rem; /* équivalent ~30px */
+  }
+
+  .textDescription,
+  .textDescriptionRight {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+    padding: var(--spacing-sm);
+  }
+
+  .textRight,
+  .textLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zigZag,
+  .zigZag2 {
+    display: none;
+  }
+}
+
+/* Desktop : ≥ 1200px */
+@media (min-width: 1200px) {
+  .titre {
+    font-size: var(--font-size-title-desktop);
+  }
+
+  .sousTitre,
+  .sousTitre2 {
+    font-size: 2rem;
   }
 
   .textLeft {
-    width: 100%;
-    height: 80%;
-    padding: 2%;
-  }
-
-  .sousTitre {
-    padding-top: 7%;
-    margin-top: 2%;
-  }
-}
-
-@media (min-width: 781px) and (max-width: 1200px) {
-  .zigZag {
-    display: none;
-  }
-  .parent {
     display: flex;
     flex-direction: column;
-  }
-  .titre {
-    padding: 8%;
-
-    font-size: 4em;
-    text-align: center;
-  }
-
-  .sousTitre {
-    font-size: 30px;
+    align-items: center;
   }
 
   .textDescription {
-    width: 80%;
-    font-size: 15px;
+    max-width: 55%;
+    font-size: 1.25rem; /* 20px */
   }
+
   .textDescriptionRight {
-    width: 80%;
-    font-size: 15px;
+    font-size: 1.25rem; /* 20px */
   }
+
   .rightContainer {
-    width: 100%;
-    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .textRight {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 75%;
+    max-height: 70%;
   }
 
-  .textLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 3000px) {
   .zigZag {
-    margin-top: 5%;
+    margin-top: var(--spacing-lg);
     grid-area: 12 / 3 / 12 / 11;
-    --a: 90deg; /* control the angle */
-    --s: 100px; /* size of the zig-zag */
-    --b: 35px; /* control the thickness */
-
-    background: #fb6f92;
+    --a: 90deg;
+    --s: 100px;
+    --b: 35px;
+    background: var(--color-accent);
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x
@@ -170,11 +194,10 @@
 
   .zigZag2 {
     grid-area: 12 / 3 / 12 / 11;
-    --a: 95deg; /* control the angle */
-    --s: 30px; /* size of the zig-zag */
-    --b: 10px; /* control the thickness */
-
-    background: #fb6f92;
+    --a: 95deg;
+    --s: 30px;
+    --b: 10px;
+    background: var(--color-accent);
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 80%;
     --_g: var(--s) repeat-x
@@ -185,36 +208,5 @@
         #0000 var(--a)
       );
     mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
-  }
-
-  .sousTitre {
-    font-size: 2rem;
-  }
-  .sousTitre2 {
-    font-size: 2rem;
-  }
-  .textLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textDescription {
-    max-width: 55%;
-    font-size: 1.25rem;
-  }
-  .textDescriptionRight {
-    font-size: 1.25rem;
-  }
-  .rightContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .textRight {
-    max-width: 75%;
-    max-height: 70%;
   }
 }

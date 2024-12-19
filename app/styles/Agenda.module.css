@@ -3,60 +3,81 @@
   width: 100vw;
   display: flex;
   justify-content: flex-end;
+  box-sizing: border-box;
 }
 
 .container {
-  color: #ffffff;
-  background-color: #d4a4ee;
+  color: var(--color-text-inverse);
+  background-color: var(--color-background);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   text-align: center;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
+  font-family: var(--font-primary);
+  padding: var(--spacing-md);
+  box-sizing: border-box;
 }
 
 .content {
   max-width: 25%;
   line-height: 1.5;
-  margin: 2%;
+  margin: var(--spacing-md);
+  box-sizing: border-box;
 }
 
-/* Titres et textes */
 .title {
-  font-size: 3rem;
+  font-size: var(--font-size-title-desktop);
   margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: var(--font-size-subtitle-desktop);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem; /* ~2px */
   font-weight: bold;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text-inverse);
 }
 
 .eventLocation {
-  font-size: 1rem;
+  font-size: var(--font-size-event-desktop);
   font-weight: bold;
 }
 
 .time {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-time-desktop);
   font-weight: bold;
 }
 
-/* Diviseur blanc */
 .divider {
-  border-top: 1px solid #ffffff;
-  margin: 10px 0 20px;
+  border-top: 1px solid var(--color-text-inverse);
+  margin: var(--spacing-sm) 0 var(--spacing-md);
 }
 
-@media (max-width: 768px) {
+/* ---------------- BREAKPOINTS ---------------- */
+
+/* Extra-petits écrans (mobile) ≤480px */
+@media (max-width: 480px) {
+  .title {
+    font-size: calc(var(--font-size-title-mobile) * 0.9);
+  }
+  .subtitle,
+  .eventLocation,
+  .time {
+    font-size: calc(var(--font-size-subtitle-mobile) * 0.9);
+  }
+  .content {
+    margin: var(--spacing-sm) 0;
+  }
+}
+
+/* Mobiles standard >480px et ≤768px */
+@media (max-width: 768px) and (min-width: 481px) {
   .parent {
     height: auto;
     width: 100%;
@@ -65,43 +86,60 @@
 
   .container {
     flex-direction: column;
-    padding: 20px;
+    padding: var(--spacing-md);
     height: auto;
   }
 
   .content {
     max-width: 90%;
     width: 100%;
-    margin: 20px 0;
+    margin: var(--spacing-md) 0;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: var(--font-size-title-mobile);
   }
 
   .subtitle {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-size: var(--font-size-subtitle-mobile);
+    letter-spacing: 0.0625rem; /* ~1px */
   }
 
   .eventLocation {
-    font-size: 0.9rem;
+    font-size: var(--font-size-subtitle-mobile);
   }
 
   .time {
-    font-size: 1rem;
+    font-size: var(--font-size-time-mobile);
   }
 
   .divider {
-    margin: 10px 0 15px;
+    margin: var(--spacing-sm) 0 calc(var(--spacing-sm) * 1.5);
   }
 }
 
-@media (min-width: 769px) and (max-width: 1300px) {
+/* Tablettes 769px à 1199px */
+@media (min-width: 769px) and (max-width: 1199px) {
   .parent {
-    min-height: 150vh;
+    min-height: 120vh; /* Ajustement tablette */
   }
+
   .content {
-    max-width: 30%;
+    max-width: 35%;
+  }
+}
+
+/* Desktop standard 1200px à 1919px */
+/* Ici, pas de style particulier si ce n'est celui de base,
+   car les styles par défaut sont optimisés pour desktop. */
+
+/* Très grands écrans ≥1920px */
+@media (min-width: 1920px) {
+  .title {
+    font-size: calc(var(--font-size-title-desktop) * 1.2);
+  }
+
+  .content {
+    max-width: 20%;
   }
 }

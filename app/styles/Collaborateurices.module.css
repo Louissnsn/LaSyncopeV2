@@ -1,93 +1,140 @@
 .parent {
-  margin-top: 2%;
-  background-color: #ffc8dd;
-  width: 100vw;
+  margin-top: var(--spacing-md);
+  background-color: var(--color-primary-bg);
+  width: 100%;
   box-sizing: border-box;
+  text-decoration: none;
+  color: var(--color-text);
 }
+
 .lien {
   text-decoration: none;
-  color: black;
+  color: var(--color-text);
 }
+
+/* Titre principal */
 .titre {
-  font-family: var(--font-combine, Arial, sans-serif);
+  font-family: var(--font-primary);
   text-align: center;
-  font-size: 4em;
+  font-size: var(--font-size-title-desktop);
   max-width: 100%;
-  margin-top: 2%;
-  line-height: 150%;
+  margin-top: var(--spacing-md);
+  line-height: 1.5;
 }
+
+/* Texte */
 .text {
-  font-family: var(--font-geist-mono, "Courier New", monospace);
-  padding: 1%;
-  margin-top: 2%;
+  font-family: var(--font-mono);
+  padding: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-body);
+  line-height: 1.5;
 }
 
+/* Noms */
 .noms {
-  font-family: var(--font-combine, Arial, sans-serif);
+  font-family: var(--font-primary);
 }
 
-.leftContainer {
-  height: auto;
-  width: 100%;
-}
-
+.leftContainer,
 .rightContainer {
-  height: auto;
   width: 100%;
-  text-decoration: none;
-  color: black;
+  height: auto;
 }
 
-@media (min-width: 300px) and (max-width: 780px) {
+/* Lettres décoratives (portfolio) */
+.letter {
+  font-family: var(--font-primary);
+  position: absolute;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.p {
+  top: 200px;
+  left: 40%;
+}
+.o1 {
+  top: 250px;
+  left: 45%;
+}
+.r {
+  top: 270px;
+  left: 50%;
+}
+.t {
+  top: 270px;
+  left: 55%;
+}
+.f {
+  top: 450px;
+  left: 40%;
+}
+.o2 {
+  top: 500px;
+  left: 45%;
+}
+.l {
+  top: 520px;
+  left: 50%;
+}
+.i {
+  top: 520px;
+  left: 55%;
+}
+.o3 {
+  top: 530px;
+  left: 57%;
+}
+
+@media (max-width: 768px) {
   .parent {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
+    background-color: var(--color-primary-bg);
+    padding: var(--spacing-sm);
   }
 
   .titre {
-    font-size: 20px;
+    font-size: 22px;
     display: block;
-    padding-top: 7%;
-    margin-top: 2%;
+    padding-top: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
   }
+
   .text {
     text-align: center;
   }
-  .leftContainer {
-    height: auto;
+
+  .leftContainer,
+  .rightContainer {
     width: 100%;
-    margin-top: 5%;
-    padding: 2%;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-md);
   }
+
   .noms {
     width: 100%;
     text-align: center;
-    font-family: var(--font-combine, Arial, sans-serif);
     line-height: 2;
   }
+
   .rightContainer {
     height: 100vh;
-    width: 100%;
     position: relative;
-    background-color: #ffc8dd;
-    text-decoration: none;
   }
+
   .letter {
+    font-size: 3.75rem; /* légèrement plus petit que desktop */
     margin-top: 25%;
-    font-family: var(--font-combine, Arial, sans-serif);
-    position: absolute;
-    font-size: 60px;
-    cursor: pointer;
   }
+
+  /* Ajustement des positions des lettres sur mobile pour une meilleure lisibilité */
   .p {
     top: 0;
     left: 10%;
-  }
-  .t {
-    top: 150px;
-    right: 10%;
   }
   .o1 {
     top: 100px;
@@ -96,6 +143,10 @@
   .r {
     top: 50px;
     left: 60%;
+  }
+  .t {
+    top: 150px;
+    left: 70%;
   }
   .f {
     top: 220px;
@@ -118,8 +169,7 @@
     right: 15%;
   }
 }
-
-@media (min-width: 781px) and (max-width: 1080px) {
+/* @media (min-width: 781px) and (max-width: 1080px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -184,9 +234,9 @@
     top: 470px;
     right: 13%;
   }
-}
+} */
 
-@media (min-width: 1081px) and (max-width: 1220px) {
+/* @media (min-width: 1081px) and (max-width: 1220px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -251,9 +301,75 @@
     top: 470px;
     right: 13%;
   }
+} */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+
+  .titre {
+    font-size: 40px;
+    margin-top: 5%;
+  }
+
+  .text {
+    text-align: center;
+    font-size: var(--font-size-body);
+  }
+
+  .rightContainer {
+    height: 80vh;
+    position: relative;
+  }
+
+  .letter {
+    font-size: 3.75rem; /* ~60px */
+    margin-top: 20%;
+  }
+
+  /* Positions adaptées pour tablette */
+  .p {
+    top: 0;
+    left: 8%;
+  }
+  .o1 {
+    top: 50px;
+    left: 28%;
+  }
+  .r {
+    top: 35px;
+    left: 49%;
+  }
+  .t {
+    top: 150px;
+    left: 70%;
+  }
+  .f {
+    top: 220px;
+    left: 12%;
+  }
+  .o2 {
+    top: 280px;
+    left: 28%;
+  }
+  .l {
+    top: 350px;
+    left: 45%;
+  }
+  .i {
+    top: 400px;
+    left: 65%;
+  }
+  .o3 {
+    top: 430px;
+    left: 80%;
+  }
 }
 
-@media (min-width: 1221px) and (max-width: 4000px) {
+/* @media (min-width: 1221px) and (max-width: 4000px) {
   .shape2Container {
     display: none;
   }
@@ -337,5 +453,49 @@
   .o3 {
     top: 690px;
     left: 47%;
+  }
+} */
+@media (min-width: 1200px) {
+  .parent {
+    flex-direction: column;
+    background-color: var(--color-primary-bg);
+    height: auto;
+    padding: var(--spacing-md);
+  }
+
+  .titre {
+    padding: var(--spacing-lg);
+    font-size: var(--font-size-title-desktop);
+    text-align: center;
+  }
+
+  .leftContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .text {
+    font-size: 0.9375rem; /* ~15px */
+    text-align: center;
+    width: 50%;
+  }
+
+  .rightContainer {
+    position: relative;
+    padding-top: var(--spacing-lg);
+    min-height: 100vh;
+    background-color: var(--color-primary-bg);
+  }
+
+  .letter {
+    font-size: 4rem; /* ~64px */
+    max-width: 100%;
+    margin-top: 5%;
+    position: absolute;
+  }
+
+  .shape2Container {
+    display: none;
   }
 }

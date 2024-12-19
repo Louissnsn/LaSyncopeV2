@@ -9,7 +9,7 @@ export default function Agenda() {
   const datesNobel = data1.prixnobeldelamour.dates?.aVenir[0].représentations;
   const datesLoup = data1.quandleloup.dates?.aVenir[0].représentations;
 
-  const agenda = ["AGENDA", "Saison 2025-2026"];
+  const agenda = ["AGENDA", "Saison 2024-2025"];
   const titles = [
     "Tout ce qu'il y a dans le ventre des poissons",
     "École d'été",

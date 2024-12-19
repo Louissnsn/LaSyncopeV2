@@ -1,16 +1,16 @@
-/* Base Styles (Desktop) */
 .parent {
   width: 100%;
   min-height: 100vh;
   background-color: #ffd670;
   clip-path: polygon(0% 0%, 100% 2.3%, 100% 95.5%, 0% 100%);
+  box-sizing: border-box;
 }
 
 .titreContainer {
   display: flex;
   justify-content: space-between;
-  font-family: var(--font-combine, Arial, sans-serif);
-  padding: 5%;
+  font-family: var(--font-primary, Arial, sans-serif);
+  padding: var(--spacing-lg);
   color: aliceblue;
 }
 
@@ -27,52 +27,44 @@
   justify-content: space-around;
   align-items: stretch;
   text-align: center;
-  font-family: var(--font-geist-mono, "Courier New", monospace);
+  font-family: var(--font-mono, "Courier New", monospace);
   line-height: 1.5;
-  padding-bottom: 2%;
+  padding-bottom: var(--spacing-md);
+  box-sizing: border-box;
 }
 
-.datesPassees {
+.datesPassees,
+.datesAvenir {
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: var(--spacing-md);
   width: 49%;
   gap: 1rem;
 }
 
-.datesPassees p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.datesPassees p,
+.datesAvenir p {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
 }
 
-.shapeContainer {
+.shape {
   background-color: aliceblue;
   border-radius: 25px;
   width: 6px;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
-.datesAvenir {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-  width: 49%;
-}
-
-.datesAvenir p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Responsive Styles for Smartphones */
+/* ---------------- SMALL (≤ 768px) ---------------- */
 @media (max-width: 768px) {
   .parent {
     clip-path: none;
   }
+
   .titreContainer {
     flex-direction: column;
     text-align: center;
-    padding: 10%;
+    padding: var(--spacing-xl);
     font-size: clamp(2rem, 5vw, 5rem);
   }
 
@@ -87,35 +79,39 @@
   .contentContainer {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .datesAvenir,
+  .datesPassees {
+    width: 90%;
+    margin-bottom: var(--spacing-md);
   }
 
   .datesAvenir {
     order: 1;
-    width: 90%;
-    margin-bottom: 2%;
   }
 
   .datesPassees {
     order: 2;
-    width: 90%;
   }
 
-  .shapeContainer {
+  .shape {
     display: none;
   }
 }
 
-/* Responsive Styles for Medium Screens */
-@media (max-width: 1439px) and (min-width: 769px) {
+/* ---------------- MEDIUM (769px à 1439px) ---------------- */
+@media (min-width: 769px) and (max-width: 1439px) {
   .titreContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 3%;
+    padding: var(--spacing-md);
   }
 
   .titre {
+    margin-top: 2%;
     font-size: 3rem;
   }
 
@@ -126,35 +122,42 @@
   .contentContainer {
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 3%;
+    padding-bottom: var(--spacing-md);
   }
 
   .datesPassees,
   .datesAvenir {
     width: 45%;
-    margin-top: 2%;
+    margin-top: var(--spacing-md);
+    gap: 1rem;
   }
 
-  .shapeContainer {
+  .shape {
     width: 4px;
     min-height: auto;
   }
 }
 
-/* Responsive Styles for Large Screens */
+/* ---------------- LARGE (≥ 1440px) ---------------- */
 @media (min-width: 1440px) {
   .parent {
     width: 100%;
     min-height: 100vh;
     background-color: #ffd670;
-    padding-top: 2%;
+    padding-top: var(--spacing-md);
+    clip-path: polygon(
+      0% 0%,
+      100% 2.3%,
+      100% 95.5%,
+      0% 100%
+    ); /* conservé pour large écrans */
   }
 
   .titreContainer {
     min-width: 100%;
     display: flex;
     justify-content: space-evenly;
-    font-family: var(--font-combine, Arial, sans-serif);
+    font-family: var(--font-primary, Arial, sans-serif);
     color: aliceblue;
   }
 
@@ -169,14 +172,14 @@
   .contentContainer {
     display: flex;
     justify-content: space-between;
-    padding: 2% 5%;
+    padding: var(--spacing-md) var(--spacing-lg);
   }
 
   .datesPassees,
   .datesAvenir {
     width: 40%;
     gap: 1.5rem;
-    margin-top: 2%;
+    margin-top: var(--spacing-md);
   }
 
   .datesPassees p,
@@ -184,11 +187,11 @@
     margin-bottom: 1.5rem;
   }
 
-  .shapeContainer {
+  .shape {
     width: 6px;
     min-height: 100%;
     background-color: aliceblue;
     border-radius: 25px;
-    margin: 0 2%;
+    margin: 0 var(--spacing-md);
   }
 }
