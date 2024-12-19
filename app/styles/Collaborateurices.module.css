@@ -1,5 +1,4 @@
 .parent {
-  margin-top: var(--spacing-md);
   background-color: var(--color-primary-bg);
   width: 100%;
   box-sizing: border-box;

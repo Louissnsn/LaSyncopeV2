@@ -181,12 +181,9 @@
   }
 }
 @media (min-width: 1500px) {
-  .navLink {
-    font-size: 18px;
-  }
 }
 @media (min-width: 1920px) {
   .navLink {
-    font-size: 1.5rem;
+    font-size: 16px;
   }
 }
