@@ -1,4 +1,4 @@
-import Carousel from "@/components/Carousel";
+// import Carousel from "@/components/Carousel";
 import cloudinary from "cloudinary";
 import styles from "@/styles/Projets.module.css";
 import { EmblaCarousel } from "@/components/CarouselEmbla";
