@@ -35,7 +35,6 @@ export default function Agenda() {
             })}
           {datesLoup.length > 0 &&
             datesLoup.map((dataLoup, index) => {
-              console.log(dataLoup.date.includes("Mercredi"));
               return (
                 <div className={styles.content} key={index}>
                   <div className={styles.title}>{titles[2]}</div>

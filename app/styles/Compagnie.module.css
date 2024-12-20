@@ -2,7 +2,7 @@
   width: 100%;
   height: 90vh;
   position: relative;
-  overflow: hidden; /* Empêche tout dépassement */
+  /* overflow: hidden;  */
 }
 
 .photosContainer {
@@ -25,7 +25,7 @@
 
 .logoWrapper {
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 65%;
   max-width: 30%; /* Taille du logo par défaut */
 }
@@ -58,7 +58,7 @@
 
 @media (min-width: 1920px) {
   .logoWrapper {
-    top: 5%;
+    top: 2%;
     left: 65%; /* Centrage horizontal */
     width: 28%; /* Taille adaptée aux petits écrans */
   }

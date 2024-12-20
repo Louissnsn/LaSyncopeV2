@@ -5,9 +5,8 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
-  /* padding: 1.25rem 2.5rem; */
   border-bottom: 2px solid;
   position: sticky;
   top: 0;

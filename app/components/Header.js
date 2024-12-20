@@ -11,11 +11,11 @@ const links = [
     name: "LA COMPAGNIE",
     href: "/",
     submenu: [
+      { name: "ACCUEIL", href: "/" },
       {
         name: "DIRECTION ARTISTIQUE",
         href: "/direction-artistique",
       },
-      { name: "ACCUEIL", href: "/" },
     ],
   },
   {

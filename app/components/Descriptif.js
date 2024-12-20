@@ -1,48 +1,56 @@
+"use client";
+import ReactMarkdown from "react-markdown";
+
 import styles from "@/styles/Descriptif.module.css";
-import Image from "next/image";
 import DownloadButton from "./DownloadButton";
 import { motion } from "framer-motion";
-export default function Descriptif({ image, title, descriptif, filePath }) {
+import VideoVimeo from "./Video";
+import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+export default function Descriptif({ title, filePath }) {
+  const project = useProjectData();
+  console.log("project", project.description);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 2 } }}
-      viewport={{ once: "true" }}
-      // onViewportEnter={() => console.log("enter")}
-      // onViewportLeave={() => console.log("leave")}
-      className={styles.parent}
-    >
-      <div className={styles.shape1}></div>
-      <div className={styles.firstPart}>
-        <h2 className={styles.titre}>{title}</h2>
-        <div className={styles.descContainer}>
-          <p className={styles.texte}>{descriptif}</p>
-          <DownloadButton filePath={filePath} />
-        </div>
-      </div>
+    <div className={styles.parent}>
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{
-          opacity: 1,
-          transition: { duration: 3 },
-        }}
-        className={styles.photoContainer}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: "true" }}
+        className={styles.textInFirst}
       >
-        <Image
-          src={image}
-          alt="Photo du spectacle"
-          fill
-          priority
-          placeholder="blur"
-          style={{
-            backgroundColor: "red",
-            borderRadius: "20px",
-            objectFit: "cover",
-          }}
-        />
+        <h2 className={styles.titre}>{title}</h2>
+        {project.description.map((data, index) => {
+          if (data.type === "citation") {
+            return (
+              <blockquote className={styles.blockquote} key={index}>
+                {data.texte}
+              </blockquote>
+            );
+          }
+        })}
+        <div className={styles.texte}>
+          {project.description.map((data, index) => {
+            if (data.type === "paragraphe" || data.type === "titre") {
+              const className =
+                data.type === "titre" ? styles.titre : styles.paragraphe;
+
+              return (
+                <div className={className} key={index}>
+                  <ReactMarkdown>{data.texte}</ReactMarkdown>
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
+
+        <DownloadButton filePath={filePath} />
       </motion.div>
-      {/* <div className={styles.shape2}></div> */}
-      {/* <div className={styles.zigZag2}></div> */}
-    </motion.div>
+      <div className={styles.videoContainer}>
+        <h2 className={styles.titre}>Teaser</h2>
+        <div className={styles.teaser}>
+          <VideoVimeo />
+        </div>
+      </div>
+    </div>
   );
 }

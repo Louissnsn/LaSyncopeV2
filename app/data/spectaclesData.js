@@ -4,16 +4,33 @@ export const data1 = {
     textTitle: "Un spectacle de Vassia CHAVAROCHE et Pauline LEGÖEDEC",
     filePath: "/pdf/ecole.pdf",
 
-    description: `  À travers une amitié à distance, qui pourrait s’être écrite sur du vent, École d'été veut raconter l’écart des quotidiens qui peut exister entre deux pays éloignés (comme le tien et le mien), entre les fantasmes qu’on peut se faire et la réalité qui nous saute aux yeux. Et raconter aussi la difficulté de croire à ce qui arrive dans un autre pays et qui relève, d’une certaine manière, de la fiction tant qu’on ne l’a pas véritablement vécu. C'est la tentative de raconter l’histoire sincère et à fleur de peau, de personne à personnes, d’une amitié qui vacille en même temps qu’un pays s’effondre.
-    
-    
-La mise en scène gravite autour d’une mappemonde lumineuse comme je gravite autour de toi, en étendant une constellation d’objets qui parlent de ton pays et racontent mon imaginaire.
-
-
-Je m’adresse directement à toi comme à lui, avec doute et hésitation. Et on ne saurait plus dire ce qui est réel, ce qui est inventé, ce qui est du vécu ou ce qui est joué.
-
-
-Sans grands artifices techniques, cette pièce peut exister dans n’importe quel espace qui ne soit pas un lieu de représentation théâtrale, en saisissant chaque occasion de se réinventer.`,
+    description: [
+      {
+        type: "citation",
+        texte:
+          "« C’est peut-être pour la première et la dernière fois que je peux enfin vous raconter l’histoire de mon Ami : notre rencontre, sa disparition et ce qui risque de nous arriver à tous très très bientôt… » ",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "À travers une amitié à distance, qui pourrait s’être écrite sur du vent, *École d'été* veut raconter l’écart des quotidiens qui peut exister entre deux pays éloignés (comme le tien et le mien), entre les fantasmes qu’on peut se faire et la réalité qui nous saute aux yeux. Et raconter aussi la difficulté de croire à ce qui arrive dans un autre pays et qui relève, d’une certaine manière, de la fiction tant qu’on ne l’a pas véritablement vécu. C'est la tentative de raconter l’histoire sincère et à fleur de peau, de personne à personnes, d’une amitié qui vacille en même temps qu’un pays s’effondre.",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "La mise en scène gravite autour d’une mappemonde lumineuse comme je gravite autour de toi, en étendant une constellation d’objets qui parlent de ton pays et racontent mon imaginaire.",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Je m’adresse directement à toi comme à lui, avec doute et hésitation. Et on ne saurait plus dire ce qui est réel, ce qui est inventé, ce qui est du vécu ou ce qui est joué.",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Sans grands artifices techniques, cette pièce peut exister dans n’importe quel espace qui ne soit pas un lieu de représentation théâtrale, en saisissant chaque occasion de se réinventer.",
+      },
+    ],
     dates: {
       aVenir: [{ année: "2025", représentations: [] }],
       passées: [
@@ -292,59 +309,38 @@ Sans grands artifices techniques, cette pièce peut exister dans n’importe que
         article: "https://www.youtube.com/watch?v=ydjtQhS08Bo",
       },
     ],
+    teasers: [{ nom: "École d'été", urlID: "769098335" }],
   },
 
   prixnobeldelamour: {
     title: ["PRIX NOBEL", "DE L'AMOUR"],
     textTitle: "Cérémonie de fantômes en trois monologues et deux surprises",
-    description: `« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »
-      Nous rendons ce soir femmage, en sa présence!, à la poétesse Josiane Chantier, 
-
-que tout le monde a oubliée. 
-
-Nous avons l’honneur de recevoir ses amies : 
-
-la poétesse Wisława Szymborska et la réalisatrice Chantal Akerman. 
-
-Guidés tout au long de cette soirée par moi-même, 
-
-votre modeste Maîtresse de Cérémonie pour vous servir, 
-
-vous aurez la chance d’entendre ces femmes extraordinaires :
-
-toutes les trois sont mortes et confient ce qu’elles n’ont jamais osé se dire de leur vivant !
-
-
-
-Avec une franche émotion qui les saisira là où elles ne s’y attendront pas, 
-
-Wisława et Chantal se mettront à nue, en avouant la place secrète et ingrate que Josiane a occupée dans leur vie affective et artistique. 
-
-Nous chercherons à comprendre pourquoi Josiane n’a publié qu’un seul recueil de poésie 
-
-et passé sa vie à réécrire en boucle ses poèmes sur sa mère morte et son jardin,
-
-(poèmes que Wisława et Chantal trouvent d’ailleurs terriblement mauvais).
-
-Nous tenterons d’élucider les étranges circonstances du décès de Josiane, 
-
-qui a disparu dans son jardin de fleurs...
-
-
-
-J’ai secrètement prévu quelques coups de théâtre pour pimenter la soirée :
-
-une invitée surprise déboulera du cosmos pour ajouter son mignon petit grain de sel, 
-
-je vous dévoilerai ma véritable identité toute pailletée (car j’ai moi aussi mon mot à dire)
-
-et, quand le bon moment sera venu : 
-
-Josiane prendra enfin la parole pour nous révéler ses secrets...
-
-
-
-Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !`,
+    description: [
+      {
+        type: "citation",
+        texte: `« Ce soir, je raconterai qui t’es, qui je suis et quelles amies nous étions, pourquoi on a vécu et pourquoi on est morte. »`,
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Nous rendons ce soir femmage, *en sa présence!*, à la poétesse Josiane Chantier, que tout le monde a oubliée. Nous avons l’honneur de recevoir ses amies : la poétesse Wisława Szymborska et la réalisatrice Chantal Akerman. Guidés tout au long de cette soirée par moi-même, votre modeste Maîtresse de Cérémonie pour vous servir, vous aurez la chance d’entendre ces femmes extraordinaires :vtoutes les trois sont mortes et confient ce qu’elles n’ont jamais osé se dire de leur vivant !",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Avec une franche émotion qui les saisira là où elles ne s’y attendront pas, Wisława et Chantal se mettront à nue, en avouant la place secrète et ingrate que Josiane a occupée dans leur vie affective et artistique. Nous chercherons à comprendre pourquoi Josiane n’a publié qu’un seul recueil de poésie et passé sa vie à réécrire en boucle ses poèmes sur sa mère morte et son jardin,(poèmes que Wisława et Chantal trouvent d’ailleurs terriblement mauvais).Nous tenterons d’élucider les étranges circonstances du décès de Josiane, qui a disparu dans son jardin de fleurs...",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "J’ai secrètement prévu quelques coups de théâtre pour pimenter la soirée :une invitée surprise déboulera du cosmos pour ajouter son mignon petit grain de sel, je vous dévoilerai ma véritable identité toute pailletée (car j’ai moi aussi mon mot à dire)et, quand le bon moment sera venu : Josiane prendra enfin la parole pour nous révéler ses secrets...",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !",
+      },
+    ],
     //CHANGER L'IMPORT
     filePath: "/pdf/poissons.pdf",
 
@@ -404,30 +400,33 @@ Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !`,
       },
       { role: "Soutien musical", contributors: ["Matthieu PICARD"] },
     ],
+    teasers: [{ nom: "Prix Nobel de l'amour", urlID: "864369255/e6f255dc73" }],
   },
   quandleloup: {
     title: ["QUAND LE LOUP", "N'Y EST PLUS"],
-    description: `
-« Promenons-nous dans les bois, puisque le loup n’y est plus. » 
-
-
-Pour ce spectacle, nous réécrivons le conte Le Petit Chaperon Rouge des Frères Grimm. Dans le conte de ces derniers, dont la fin, plus heureuse que celle de Charles Perrault, connaît deux versions, la grand-mère et sa petite fille sont mangées par le loup puis sauvées par un chasseur. Imaginons que cette  fois-ci, le Petit Chaperon Rouge déambule dans une forêt dépourvue de prédateurs : le conte commence, mais le loup refuse de jouer son rôle. Chassés et exterminés par les fusils des hommes, les loups ont presque tous définitivement disparu, et notre loup est le dernier à pouvoir prendre la parole.
-Et si, pour un temps, la forêt n’était plus cette zone hostile, mais un lieu dans lequel un personnage féminin aurait tout loisir de s’égarer, de musarder ? Comment repenser la narration d’un conte sans prédateur, et d’une forêt dépourvue de danger ?
-
-
-Conte, théâtre d'objet, marionnette et théâtre sonore : au carrefour des langages
-
-
-Pour répondre à toutes ces questions, nous passons, en outre du conte et du récit, par le théâtre d’objet, la marionnette et le théâtre sonore. Dans notre processus créatif, chaque espèce vivante possède son propre mode d'expression scénique : les arbres ne sont qu'audibles, nous les animons en effet grâce au théâtre sonore et à différents bruitages. Rouge, la petite fille, est incarnée par une actrice, et ses souvenirs sont interprétés sur scène grâce au théâtre d'objet. Enfin, le loup est figuré grâce à une marionnette en papier.
-
-
-L'histoire telle que nous la racontons
-
-
-Rouge est une petite-fille timide, dont les joues prennent souvent  une teinte cramoisie à l’école. Un jour, elle apprend que sa mamie  est à l’hôpital : celle-ci souffre d’une maladie très rare qui forme un  masque de loup rouge sur le visage. Ni une ni deux, Rouge boucle  son sac à dos et part explorer la forêt pour y rencontrer le loup et  lui demander conseil. Mais tout ne se passe pas exactement comme  prévu...
-
-Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
-
+    description: [
+      { type: "titre", texte: "JEUNE PUBLIC PLURIDISCIPLINAIRE" },
+      {
+        type: "paragraphe",
+        texte:
+          "Jeune public, mais pas seulement : un spectacle au croisement entre marionnette, théâtre sonore et théâtre d'objet. Et si la forêt n’était plus une zone hostile, mais un lieu dans lequel l'enfant aurait tout le loisir de s’égarer ?",
+      },
+      { type: "titre", texte: "PRÉSENTATION" },
+      {
+        type: "paragraphe",
+        texte:
+          "Rouge est une petite fille timide, dont les joues prennent souvent une teinte cramoisie. Un jour, elle apprend que sa mamie souffre du lupus, une maladie qui forme un masque de loup sur le visage. Rouge boucle donc son sac à dos et part explorer la forêt pour rencontrer le loup, apprendre à vivre comme lui, et pouvoir continuer à communiquer avec sa mamie. Mais tout ne se passe pas exactement comme prévu... Et si le loup refusait de jouer son rôle de prédateur ? Mais si le loup n’y est plus, alors les chasseurs non plus ?",
+      },
+      {
+        type: "titre",
+        texte: "A PROPOS DU SPECTACLE",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Pour cette création à six mains, nous sommes parties du conte *Le Petit Chaperon Rouge* des Frères Grimm. Imaginons que cette fois-ci, Rouge déambule dans une forêt dépourvue de prédateurs. Nous voulons en ce sens raconter l’histoire des cueilleuses, et non celle des chasseurs. L'idée nous est venue de la lecture de *Je suis une fille sans histoire* d'Alice Zeniter, elle-même inspirée par Ursula K. Le Guin et sa recherche d’une fiction-panier. Parce qu'elles n'en peuvent plus « des récits d'hommes remarquables qui font des trucs », elles se demandent toutes deux comment écrire une histoire qui n'utiliserait plus la faune et la flore comme ressource, mais comme personnages dotés d’une sensibilité et d’un langage. En lieu et place des prédateurs, la petite-fille, sa mère et sa grand-mère, le loup et les végétaux de la forêt réinventent ensemble leur histoire.",
+      },
+    ],
     textTitle:
       "Un spectacle de Mathilde BELLIN, Rose GUILLON et Pauline LEGÖEDEC",
     filePath: "/pdf/loup.pdf",
@@ -501,6 +500,7 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
           "https://hearthis.at/radio.albiges/15-05-23-micro-ouvert-la-syncopcollectif/SJj/",
       },
     ],
+    teasers: [{ nom: "Quand le loup n'y est plus", urlID: "1033939430" }],
   },
   leventredespoissons: {
     title: ["TOUT CE QU'IL Y A", "DANS LE VENTRE", "DES POISSONS"],
@@ -548,14 +548,23 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
       ],
     },
 
-    description: `  Tout ce qu’il y a dans le ventre des poissons raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies. 
-
-
-    Alors qu’Augusto décide de rester dans son village, observant les poissons morts flotter à la surface de la boue jusqu'à la taille, Sophia s’échappe à la ville et gravite bientôt dans les hautes sphères du pouvoir. Au cœur de cet accident qui n'en est pas vraiment un, 
-  on trouve notamment la Ministre de l'Environnement corrompue, sa conseillère politique arriviste, et le Président de la Société Samarco.
-  
-  
-  Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?`,
+    description: [
+      {
+        type: "paragraphe",
+        texte:
+          "*Tout ce qu’il y a dans le ventre des poissons* raconte l’histoire d’un frère et d’une sœur, Augusto et Sophia, tous les deux originaires du petit village de Bento Rodrigues, au Brésil, et bientôt séparés par une catastrophe annoncée : la rupture du barrage de Marianna. Le 5 novembre 2015, une boue rouge, couleur du sang, se déverse sur Bento Rodrigues, engloutissant les maisons et contaminant le Rio Doce pour des décennies.\n",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Alors qu’Augusto décide de rester dans son village, observant les poissons morts flotter à la surface de la boue jusqu'à la taille, Sophia s’échappe à la ville et gravite bientôt dans les hautes sphères du pouvoir. Au cœur de cet accident qui n'en est pas vraiment un, on trouve notamment la Ministre de l'Environnement corrompue, sa conseillère politique arriviste, et le Président de la Société Samarco. ",
+      },
+      {
+        type: "paragraphe",
+        texte:
+          "Tous et toutes barbotent dans l'Apocalypse à leur manière et se demandent : n'aurait-on pas pu prédire la catastrophe ?",
+      },
+    ],
     distribution: [
       { role: "Texte, mise en scène", contributors: ["Mathilde BELLIN"] },
       {
@@ -622,5 +631,6 @@ Alors, Mère-grand, si le loup n’y est plus, les chasseurs non  plus ?`,
           "https://www.surlesplanches.org/festival-traits-dunion-tout-ce-quil-y-a-dans-le-ventre-des-poissons-par-le-syncope-collectif/",
       },
     ],
+    teasers: [{ nom: "Teaser Malesherbes", urlID: "769377142" }],
   },
 };

@@ -9,6 +9,7 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      // { protocol: "https", hostname: "vimeo.com", port: "", pathname: "/**" },
     ],
   },
 };

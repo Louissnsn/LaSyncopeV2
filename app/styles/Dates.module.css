@@ -1,6 +1,6 @@
 .parent {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #ffd670;
   clip-path: polygon(0% 0%, 100% 2.3%, 100% 95.5%, 0% 100%);
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-primary, Arial, sans-serif);
-  padding: var(--spacing-lg);
+  /* padding: var(--spacing-lg); */
   color: aliceblue;
 }
 
@@ -24,13 +24,14 @@
 
 .contentContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: space-evenly;
+  /* align-items: stretch; */
   text-align: center;
   font-family: var(--font-mono, "Courier New", monospace);
   line-height: 1.5;
-  padding-bottom: var(--spacing-md);
+  /* padding-bottom: var(--spacing-md); */
   box-sizing: border-box;
+  /* background-color: red; */
 }
 
 .datesPassees,
@@ -141,10 +142,11 @@
 /* ---------------- LARGE (≥ 1440px) ---------------- */
 @media (min-width: 1440px) {
   .parent {
+    padding: 5%;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #ffd670;
-    padding-top: var(--spacing-md);
+    /* padding-top: var(--spacing-md); */
     clip-path: polygon(
       0% 0%,
       100% 2.3%,

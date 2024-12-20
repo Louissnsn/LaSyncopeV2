@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
-  height: fit-content;
+  height: auto;
 }
 
 .photoContainer {
@@ -21,7 +21,7 @@
 .nomContainer {
   position: absolute;
   font-family: var(--font-combine);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
   color: #a2d2ff;
   top: 2%;
@@ -48,13 +48,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 30vw;
+  width: 48%;
   height: 90vh;
 }
 
 .texteBio {
   text-indent: 5%;
-  padding: 1%;
   line-height: 1.5;
   text-justify: inter-word;
   font-size: 1em;
@@ -99,10 +98,8 @@
   .texteBio {
     font-size: 1.1em;
   }
-
-  .zigZag {
-    --s: 120px;
-    --b: 30px;
+  .bio {
+    width: 40vw;
   }
 
   .barreLatérale {

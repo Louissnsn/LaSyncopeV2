@@ -1,33 +1,28 @@
 .parent {
-  display: grid;
-  width: 100%;
-  min-height: 100vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
   background-color: #ff9770;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
   gap: 0px;
-  /* clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%); */
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 94%);
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .logoContainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  grid-area: 1 / 1 / 13 / 5;
-  padding-left: 2%;
-  padding-top: 2%;
-}
-
-.titreContainer {
-  grid-area: 1 / 4 / 4 / 10;
-  display: flex;
   justify-content: center;
   align-items: center;
+  width: 25%;
 }
 
 .titre {
-  margin-top: 5%;
-  padding: 5%;
   font-family: var(--font-combine);
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 200;
@@ -36,33 +31,32 @@
 }
 
 .texteContainer {
-  grid-area: 4 / 6 / 13 / 13;
-  padding: 5%;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .distribText {
-  margin-top: 8%;
   font-family: var(--font-geist-mono, "Courier New", monospace);
   line-height: 1.5;
 }
 .name {
-  padding-top: 2%;
+  padding-top: 1%;
 }
 /* Media Queries */
 @media (max-width: 768px) {
   .parent {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    padding: 5%;
+    height: auto;
   }
 
   .logoContainer {
-    grid-area: auto;
-    justify-content: center;
     padding-left: 0;
     padding-top: 2%;
   }
 
   .titreContainer {
-    grid-area: auto;
     margin-top: 2%;
   }
 
@@ -71,28 +65,31 @@
   }
 
   .texteContainer {
-    grid-area: auto;
-    padding: 15px;
+    width: 40%;
   }
 }
 
 @media (max-width: 480px) {
+  .parent {
+    padding: 8%;
+    height: auto;
+  }
+  .contentContainer {
+    order: 1;
+    flex-direction: column;
+  }
+  .logoContainer {
+    order: 2;
+  }
   .titre {
     font-size: clamp(1.2rem, 8vw, 2.5rem);
   }
 
   .texteContainer {
-    text-align: center;
-    padding: 10px;
+    width: auto;
   }
-  .name {
-    text-align: center;
-  }
-}
 
-@media (min-width: 1500px) and (max-width: 3000px) {
-  .logoContainer {
-    justify-content: center;
-    align-items: center;
+  .role {
+    margin-top: 2%;
   }
 }
