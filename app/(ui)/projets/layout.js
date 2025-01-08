@@ -3,8 +3,8 @@ import Dates from "@/components/Dates";
 import Presse from "@/components/Presse";
 import Partenaires from "@/components/Partenaires";
 import Distribution from "@/components/Distribution";
-import { SegmentsProvider } from "./SegmentsProvider";
-import { ProjectDataProvider } from "./ProjectDataContext";
+import { SegmentsProvider } from "../../providers/SegmentsProvider";
+import { ProjectDataProvider } from "../../providers/ProjectDataContext";
 import { usePathname } from "next/navigation";
 
 const ProjetLayout = ({ children }) => {

@@ -2,7 +2,7 @@
 import Cover from "@/components/Cover";
 import ecole from "../../../../public/images/Covers/Iceberg.webp";
 import robeRouge from "../../../../public/images/Spectacles/Ecole/robeRouge.webp";
-import { useProjectData } from "../ProjectDataContext";
+import { useProjectData } from "../../../providers/ProjectDataContext";
 import Descriptif from "@/components/Descriptif";
 
 export default function Ecole() {

@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/styles/Partenaires.module.css";
-import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+import { useProjectData } from "@/providers/ProjectDataContext";
 import { motion } from "framer-motion";
 export default function Partenaires() {
   const project = useProjectData();

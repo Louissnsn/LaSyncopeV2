@@ -2,7 +2,7 @@
 import styles from "@/styles/Distribution.module.css";
 import Image from "next/image";
 import logo from "../../public/logo/LogoBLANC.png";
-import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+import { useProjectData } from "@/providers/ProjectDataContext";
 
 export default function Distribution() {
   const project = useProjectData();

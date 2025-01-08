@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 
-import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+import { useProjectData } from "@/providers/ProjectDataContext";
 import styles from "@/styles/Video.module.css";
 export default function VideoVimeo() {
   const ReactPlayer = dynamic(() => import("react-player"), {

@@ -4,7 +4,7 @@ import nobel from "../../../../public/images/Covers/Nobel.webp";
 import Descriptif from "@/components/Descriptif";
 import nobel1 from "../../../../public/images/Spectacles/Nobel/Nobel1.webp";
 // import Video from "@/components/Video";
-import { useProjectData } from "../ProjectDataContext";
+import { useProjectData } from "../../../providers/ProjectDataContext";
 
 export default function Ecole() {
   const project = useProjectData();

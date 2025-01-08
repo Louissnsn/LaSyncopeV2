@@ -5,7 +5,7 @@ import styles from "@/styles/Descriptif.module.css";
 import DownloadButton from "./DownloadButton";
 import { motion } from "framer-motion";
 import VideoVimeo from "./Video";
-import { useProjectData } from "@/(ui)/projets/ProjectDataContext";
+import { useProjectData } from "@/providers/ProjectDataContext";
 export default function Descriptif({ title, filePath }) {
   const project = useProjectData();
   console.log("project", project.description);

@@ -3,7 +3,7 @@ import Cover from "@/components/Cover";
 import Descriptif from "@/components/Descriptif";
 import choeur from "../../../../public/images/Spectacles/Poissons/insectes 3.jpg";
 import poisson from "../../../../public/images/Covers/boue.webp";
-import { useProjectData } from "../ProjectDataContext";
+import { useProjectData } from "../../../providers/ProjectDataContext";
 
 export default function PoissonsPage() {
   const project = useProjectData();
