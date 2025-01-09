@@ -21,32 +21,36 @@ export default function Pauline() {
           <span className={styles.nomFamille}>LEGÖEDEC</span>
         </div>
       </div>
+  
+      <div className={styles.bio}>
       <div className={styles.bioTitle}>
         <p>B I O </p>
       </div>
-      <div className={styles.bio}>
         <p className={styles.texteBio}>
-          C&apos;est en pratiquant d&apos;abord le cirque et la musique que
-          Pauline aborde le spectacle vivant. Elle découvre ensuite le théâtre
-          au sein de la compagnie SourouS dirigée par Marcos Malavia et Muriel
-          Roland puis de la compagnie Cousin d’Edgar en suivant l’enseignement
-          de Gaëtan Peau.
+          Après avoir suivi une classe préparatoire littéraire option théâtre,
+          Pauline Legoëdec se forme en tant que comédienne au sein d&apos;une
+          école de théâtre pluridisciplinaire à Minsk au Bélarus puis dans une
+          école privée de Montreuil où elle bénéficie des interventions de
+          Frédéric Jessua, Lorraine de Sagazan, Thomas Bouvet, du Collectif du
+          Grand Cerf Bleu.
         </p>
         <p className={styles.texteBio}>
-          Ses études supérieures se divisent entre une CPGE littéraire option
-          théâtre et des projets théâtraux et dansés. En 2016, elle peaufine sa
-          formation polyvalente en étudiant le théâtre durant un an à Minsk
-          (Belarus) où elle renoue avec le chant, le piano, l&apos;acrobatie et
-          découvre véritablement la danse. Au retour, elle se forme deux ans au
-          LFTP où elle rencontre Mathilde Bellin. En 2019, elle co-fonde deux
-          compagnies dont la Syncope grâce à laquelle elle fait naître École
-          d’été.
+          En 2019, elle co-fonde et dirige artistiquement La Syncope avec
+          Mathilde Bellin, elle y est comédienne et co-metteuse en scène. Elle a
+          travaillé pour les CEMÉA au cours de plusieurs festivals
+          d&apos;Avignon et s&apos;est essayée à la performance avec les
+          artistes Clédat et PetitPierre.
         </p>
         <p className={styles.texteBio}>
-          En parallèle, Pauline s&apos;investit dans des structures qui mènent
-          des actions culturelles telles que les CEMÉA et le TDI, elle donne des
-          lectures et s&apos;essaie à la performance avec « Les mariés, même »
-          de Clédat et Petitpierre.
+          Aujourd&apos;hui, elle travaille en tant que comédienne pour plusieurs
+          collectifs dont Sorcières&cie, produit par le Bureau des filles. C&apos;est
+          avec cette compagnie qu&apos;elle jouera dans <em>L&apos;ouvrir </em>de Morgan Janoir au
+          11, festival d&apos;Avignon 2025. Pauline Legoëdec est par ailleurs
+          co-coordinatrice du T.D.I. - Théâtre à Durée Indéterminée, 20e - lieu
+          membre du réseau Actes If qui accueille des compagnies en résidence.
+          Elle assiste à la mise en scène Paul Balagué pour le prochain
+          spectacle de la Compagnie en Eaux Troubles, <em>Le Seigneur des
+          porcheries</em>, qui sera créé en mai 2025 à la MC93.
         </p>
       </div>
     </div>
