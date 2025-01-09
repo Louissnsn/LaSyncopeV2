@@ -21,7 +21,7 @@ const Gallery = ({ images }) => {
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{
-                objectFit: "contain",
+                objectFit: "cover",
               }}
               alt="Photographie du spectacle"
             />

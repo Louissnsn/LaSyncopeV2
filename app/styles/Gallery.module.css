@@ -1,27 +1,37 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    height: 50vh;
-    width: 90%;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  height: 50vh;
+  width: 90%;
 }
 
 .galleryItem {
-    position: relative;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 
 @media screen and (min-width: 768px) {
-    .gallery {
-height: 80%;
+  .gallery {
+    height: 80%;
   }
 
-.galleryItem{
+  .galleryItem {
     height: 100%;
+  }
 }
-    
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+    height: 80%;
+    width: 60%;
+  }
+
+  .galleryItem{
+    height: 100%;
+  }
+
 }
