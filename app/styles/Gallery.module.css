@@ -14,3 +14,14 @@
     border-radius: 5px;
 
 }
+
+@media screen and (min-width: 768px) {
+    .gallery {
+height: 80%;
+  }
+
+.galleryItem{
+    height: 100%;
+}
+    
+}
