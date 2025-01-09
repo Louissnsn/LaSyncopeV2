@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
-  /* background: #efb1ff;
-  background: -webkit-linear-gradient(0deg, #efb1ff 0%, #ffe2ff 100%);
-  background: linear-gradient(0deg, #efb1ff 0%, #ffe2ff 100%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,7 +2,7 @@ import styles from "@/styles/ContactComponent.module.css";
 export default function ContactComponent() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.titreContact}>CONTACT</h1>
+      <h1 className={styles.titreContact}>CONTACTS</h1>
       <div className={styles.publicationContainer}>
         <div className={styles.publication}>
           <p className={styles.titre}>
