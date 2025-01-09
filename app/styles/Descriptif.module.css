@@ -2,17 +2,20 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
+
 }
 .textInFirst {
   grid-area: textInFirst;
   background-color: pink;
   color: white;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
+ font-size: var(--font-size-body); 
   padding: 10px;
   height: auto;
 }
 
 .blockquote {
+  max-width: 60%;
   font-style: italic;
   font-family: var(--font-geist-mono);
 }
@@ -23,6 +26,8 @@
   font-family: var(--font-combine);
   line-height: 1.5;
   text-align: center;
+  font-size: var(--font-size-title-desktop);
+
 }
 .texte {
   text-indent: 1em;
@@ -33,10 +38,12 @@
 .paragraphe {
   padding: 2%;
   margin-top: 4%;
-  /* background-color: red; */
 }
 .teaser {
   grid-area: teaser;
+  height: 50%;
+  width: 50%;
+  justify-self: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -59,8 +66,15 @@
   .texte {
     font-size: 0.5em;
   }
+  .paragraphe{
+    font-size: var(--font-size-body);
+  }
   .teaser {
-    height: auto;
+    height: 80%;
+    width: 90%;
+  }
+  .titre {
+    font-size: var(--font-size-title-mobile);
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -121,4 +135,27 @@
     color: white;
     font-size: 3em;
   }
+}
+
+@media (min-width: 1200px) {
+  .textInFirst{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  }
+.texte{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+
+}
+.paragraphe{
+  width: 80%;
+  line-height: 2;
+
+}
 }

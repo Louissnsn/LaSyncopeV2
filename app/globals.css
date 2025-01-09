@@ -9,10 +9,10 @@
   --background: #ebebec;
   --foreground: #ebebec;
   /* Echelles de taille de police */
-  --font-size-body: 1rem; /* 16px */
-  --font-size-title-mobile: 2.5rem;
+  --font-size-body: 1.5rem; /* 16px */
+  --font-size-title-mobile: 1.6rem;
   --font-size-title-tablet: 3rem;
-  --font-size-title-desktop: 4.5rem;
+  --font-size-title-desktop: clamp(2rem, 5vw, 3rem);
 
   /* Couleurs */
   --color-primary: orange;
@@ -38,6 +38,8 @@
 
   @media (max-width: 768px) {
     /* Mobile */
+    --font-size-body: 1rem
+
   }
 
   @media (min-width: 769px) and (max-width: 1199px) {

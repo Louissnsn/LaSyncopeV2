@@ -46,7 +46,7 @@ export default function Descriptif({ title, filePath }) {
         <DownloadButton filePath={filePath} />
       </motion.div>
       <div className={styles.videoContainer}>
-        <h2 className={styles.titre}>Teaser</h2>
+        <h2 className={styles.titre}>TEASER</h2>
         <div className={styles.teaser}>
           <VideoVimeo />
         </div>
