@@ -32,7 +32,7 @@
     radial-gradient(#0000 66%, #f31987 68% 70%, #0000 72%) 0 calc(32px / 2) /
       32px 32px #bde0fe;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .titreContact {
@@ -76,6 +76,7 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 2%;
+    height: fit-content;
   }
   .titreContact {
     font-size: 3rem;
@@ -83,7 +84,7 @@
   .publicationContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
   }
   .droits {
