@@ -1,7 +1,6 @@
 import styles from "@/styles/Mathilde.module.css";
 import photoMathilde from "../../public/images/119.webp";
 import Image from "next/image";
-import logoSVG from "../../public/logo/logo-syncope-v2.svg";
 
 export default function Mathilde() {
   return (
@@ -67,10 +66,8 @@ export default function Mathilde() {
             (création 2025, Théâtre d&apos;Albi).
           </p>
         </div>
-        <div className={styles.barreLatérale}> </div>
       </div>
       <div className={styles.zigZag}></div>
-      {/* <Image src={logoSVG} alt="logo au format SVG" /> */}
     </div>
   );
 }

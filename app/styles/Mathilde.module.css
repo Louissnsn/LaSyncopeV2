@@ -46,16 +46,16 @@
 .bio {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 48%;
-  height: 90vh;
+  height: auto;
 }
 
 .texteBio {
+  margin-top: 2%;
   text-indent: 5%;
   line-height: 1.5;
-  text-justify: inter-word;
   font-size: 1em;
   font-family: var(--font-geist-mono, "Courier New", monospace);
 }
@@ -78,13 +78,6 @@
   mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
 }
 
-.barreLatérale {
-  background-color: #a2d2ff;
-  width: 6px;
-  border-radius: 50px;
-  height: 97%;
-}
-
 /* ========== Very Large (≥1920px) ========== */
 @media (min-width: 1920px) {
   .nomContainer {
@@ -100,10 +93,6 @@
   }
   .bio {
     width: 40vw;
-  }
-
-  .barreLatérale {
-    width: 8px;
   }
 }
 
@@ -141,11 +130,6 @@
     margin-top: 5%;
     --s: 80px;
     --b: 20px;
-  }
-
-  .barreLatérale {
-    width: 5px;
-    margin-top: 2%;
   }
 }
 
@@ -194,40 +178,43 @@
   .zigZag {
     display: none;
   }
-
-  .barreLatérale {
-    display: none;
-  }
 }
 
 /* ========== Very Small (≤480px) ========== */
 @media (max-width: 480px) {
   .mainContainer {
-    padding: 5%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .matContainer {
+    padding: 0;
+    padding: 5%;
   }
 
   .photoContainer {
+    padding: 2%;
     margin-bottom: 5%;
     max-height: 10vh;
     min-height: 85vh;
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 95%;
+    max-width: 95%;
   }
 
   .nomContainer {
+    text-align: center;
+
     font-size: 2.5rem;
     top: 5%;
     left: 5%;
   }
 
   .bio {
-    height: auto;
-    width: 100vw;
+    min-width: 100%;
     padding: 2%;
   }
 
@@ -244,9 +231,5 @@
     margin-top: 10%;
     --s: 30px;
     --b: 10px;
-  }
-
-  .barreLatérale {
-    width: 3px;
   }
 }
