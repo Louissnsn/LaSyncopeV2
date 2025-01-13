@@ -115,3 +115,91 @@
     text-indent: 5%;
   }
 }
+
+
+@media (min-width: 1920px) {
+  .photoContainer {
+    width: 40vw;
+    height: 85vh;
+  }
+  .nomContainer {
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  .nomFamille{
+    font-size: 6rem;
+
+  }
+
+  .bioTitle {
+    font-size: 3.5rem;
+  }
+
+  .texteBio {
+    font-size: 1.1em;
+  }
+  .bio {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .photoContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    height: 65vh;
+  }
+
+  .nomContainer {
+    font-size: 3rem;
+    top: 5%;
+    left: 10%;
+  }
+
+  .bio {
+    margin-left: 2%;
+    width: 80%;
+    height: auto;
+  }
+
+  .bioTitle {
+    font-size: 2.5rem;
+    margin-top: 2%;
+  }
+
+  .texteBio {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200) and (max-width: 1919px) {
+  .photoContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    height: 60vh;
+  }
+
+  .nomContainer {
+    font-size: 3rem;
+    top: 5%;
+    left: 10%;
+  }
+
+  .bio {
+    margin-left: 2%;
+    width: 80%;
+    height: auto;
+  }
+
+  .bioTitle {
+    font-size: 2.5rem;
+    margin-top: 2%;
+  }
+
+  .texteBio {
+    font-size: 1em;
+  }
+}
