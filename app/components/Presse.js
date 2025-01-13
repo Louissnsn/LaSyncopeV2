@@ -7,14 +7,14 @@ export default function Presse() {
       <div className={styles.presse}>
         <p className={styles.titre}>ON PARLE DE NOUS</p>
       </div>
-      <div className={styles.photoContainer}>
+      {/* <div className={styles.photoContainer}>
         <Image
           src={leviathan}
           alt="Photographie d'un spectacle"
           fill
           style={{ borderRadius: "25px" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

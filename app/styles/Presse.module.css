@@ -53,9 +53,9 @@
     height: 80vh;
     transform: skew(5deg);
   }
-  .photoContainer {
+  /* .photoContainer {
     display: none;
-  }
+  } */
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -75,15 +75,13 @@
     height: 80vh;
     transform: skew(5deg);
   }
-  .photoContainer {
+  /* .photoContainer {
     display: none;
-  }
+  } */
 }
 
 @media (min-width: 1201px) and (max-width: 3000px) {
-  /* .photoContainer {
-    grid-area: 1 / 8 / 12 / 12;
-  } */
+
   .presse {
     grid-area: 2 / 2 / 12 / 12;
   }
