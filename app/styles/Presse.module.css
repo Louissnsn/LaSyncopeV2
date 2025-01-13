@@ -10,7 +10,7 @@
 }
 
 .presse {
-  grid-area: 2 / 1 / 12 / 8;
+  grid-area: 1 / 1 / 13 / 13;
   background-color: #d4a4ee;
   display: flex;
   justify-content: center;
@@ -30,10 +30,11 @@
   line-height: 1.5;
 }
 
-.photoContainer {
+/* .photoContainer {
   grid-area: 2 / 8 / 13 / 12;
   position: relative;
-}
+  display: none;
+} */
 
 @media (min-width: 300px) and (max-width: 768px) {
   .parent {
@@ -80,10 +81,10 @@
 }
 
 @media (min-width: 1201px) and (max-width: 3000px) {
-  .photoContainer {
+  /* .photoContainer {
     grid-area: 1 / 8 / 12 / 12;
-  }
+  } */
   .presse {
-    grid-area: 2 / 2 / 12 / 8;
+    grid-area: 2 / 2 / 12 / 12;
   }
 }
