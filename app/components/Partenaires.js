@@ -32,7 +32,6 @@ export default function Partenaires() {
           <div className={styles.partenaires}>
             <p className={styles.sousTitre}>SOUTIENS</p>
             {soutiens?.map((data, index) => {
-              // console.log(data);
               return (
                 <div key={index}>
                   <li>{data}</li>
@@ -45,7 +44,6 @@ export default function Partenaires() {
               <p className={styles.sousTitre}>SUBVENTIONS</p>
             )}
             {subventions.map((data, index) => {
-              // console.log(data);
               return (
                 <div key={index}>
                   <p>{data.institution}</p>
@@ -59,7 +57,6 @@ export default function Partenaires() {
               <p className={styles.sousTitre}>RÉCOMPENSES</p>
             )}
             {récompenses.map((data, index) => {
-              // console.log(data);
               return (
                 <div key={index}>
                   <p>{data.date}</p>

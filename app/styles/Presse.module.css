@@ -22,7 +22,7 @@
   position: absolute;
   font-family: var(--font-combine);
   top: 5%;
-  font-size: 5rem;
+  font-size: var(--font-size-title-desktop);
   font-weight: 200;
   color: white;
   margin-top: 2%;

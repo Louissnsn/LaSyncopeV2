@@ -6,12 +6,10 @@ import styles from "@/styles/EmblaCarousel.module.css";
 import { useEffect, useCallback } from "react";
 export function EmblaCarousel({ images }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  //[Autoplay()]
 
   useEffect(() => {
     if (emblaApi) {
       // Access API
-      // console.log("hello fucker", emblaApi.slideNodes()); // Access API
     }
   }, [emblaApi]);
 

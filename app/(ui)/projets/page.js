@@ -11,7 +11,6 @@ export default async function ProjetsPage() {
     .execute();
 
   const images = results.resources.map((resource) => resource.secure_url);
-  console.log("URLs des images:", images);
 
   return (
     <div className={styles.container}>

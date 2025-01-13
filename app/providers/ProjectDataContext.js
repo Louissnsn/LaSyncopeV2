@@ -13,7 +13,6 @@ const ProjectDataContext = createContext({});
 
 export function ProjectDataProvider({ children }) {
   const segments = useSegments(); // par exemple ['ecoledete']
-  // console.log("SEGMENT EN COURS ===>", segments);
   const currentProject = segments[0];
 
   const data = currentProject ? data1[currentProject] : {};

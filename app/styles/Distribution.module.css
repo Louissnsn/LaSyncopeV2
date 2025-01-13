@@ -24,7 +24,7 @@
 
 .titre {
   font-family: var(--font-combine);
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: var(--font-size-title-desktop);
   font-weight: 200;
   color: white;
   text-align: center;
@@ -47,26 +47,44 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .parent {
-    padding: 5%;
+    padding: 2%;
     height: auto;
   }
 
+
+
   .logoContainer {
     padding-left: 0;
-    padding-top: 2%;
+    margin-top: 10%;
   }
 
   .titreContainer {
-    margin-top: 2%;
+    /* padding: var(--spacing-xl); */
+    padding: 5%;
+
   }
 
   .titre {
-    font-size: clamp(1.5rem, 6vw, 3rem);
+    height: 100%;
+    width: 100%;
+    font-size: var(--font-size-title-mobile);
+    text-align: center;
+  }
+
+  .role{
+    font-size: 1em;
   }
 
   .texteContainer {
     width: 40%;
+   font-size: var(--font-size-body);
   }
+
+  .distribText{
+    margin-top: var(--spacing-sm);
+  }
+
+
 }
 
 @media (max-width: 480px) {

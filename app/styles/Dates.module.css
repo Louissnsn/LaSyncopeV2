@@ -10,13 +10,11 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-primary, Arial, sans-serif);
-  /* padding: var(--spacing-lg); */
   color: aliceblue;
 }
 
 .titre {
-  font-size: 5rem;
-}
+ font-size: var(--font-size-title-desktop)}
 
 .sousTitre {
   font-size: 4rem;
@@ -66,11 +64,10 @@
     flex-direction: column;
     text-align: center;
     padding: var(--spacing-xl);
-    font-size: clamp(2rem, 5vw, 5rem);
   }
 
   .titre {
-    font-size: 3rem;
+    font-size: var(--font-size-title-mobile);
   }
 
   .sousTitre {

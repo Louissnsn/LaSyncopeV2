@@ -8,7 +8,6 @@ import VideoVimeo from "./Video";
 import { useProjectData } from "@/providers/ProjectDataContext";
 export default function Descriptif({ title, filePath }) {
   const project = useProjectData();
-  console.log("project", project.description);
   return (
     <div className={styles.parent}>
       <motion.div
