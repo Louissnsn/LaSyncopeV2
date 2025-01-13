@@ -42,15 +42,18 @@ export default function Descriptif({ title, filePath }) {
             return null;
           })}
         </div>
-
-        <DownloadButton filePath={filePath} />
-      </motion.div>
-      <div className={styles.videoContainer}>
-        <h2 className={styles.titre}>TEASER</h2>
-        <div className={styles.teaser}>
-          <VideoVimeo />
+        <div className={styles.bottomContainer}>
+          <h2 className={styles.titre}>TEASER</h2>
+          {!project.title.includes("PRIX NOBEL" || "DE L'AMOUR") && (
+            <div className={styles.videoContainer}>
+              <div className={styles.teaser}>
+                <VideoVimeo />
+              </div>
+            </div>
+          )}
+          <DownloadButton filePath={filePath} />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

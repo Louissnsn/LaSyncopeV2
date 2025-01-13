@@ -1,7 +1,7 @@
 .parent {
   margin-top: 2%;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -79,9 +79,9 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1600px) {
+@media (min-width: 1201px) and (max-width: 3000px) {
   .photoContainer {
-    grid-area: 2 / 8 / 10 / 12;
+    grid-area: 1 / 8 / 12 / 12;
   }
   .presse {
     grid-area: 2 / 2 / 12 / 8;

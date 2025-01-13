@@ -2,14 +2,12 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
-
 }
 .textInFirst {
   grid-area: textInFirst;
   background-color: pink;
   color: white;
-  /* font-size: 1.5em; */
- font-size: var(--font-size-body); 
+  font-size: var(--font-size-body);
   padding: 10px;
   height: auto;
 }
@@ -27,7 +25,6 @@
   line-height: 1.5;
   text-align: center;
   font-size: var(--font-size-title-desktop);
-
 }
 .texte {
   text-indent: 1em;
@@ -66,7 +63,7 @@
   .texte {
     font-size: 0.5em;
   }
-  .paragraphe{
+  .paragraphe {
     font-size: var(--font-size-body);
   }
   .teaser {
@@ -138,24 +135,42 @@
 }
 
 @media (min-width: 1200px) {
-  .textInFirst{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-.texte{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
+  .textInFirst {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraphe {
+    width: 80%;
+    line-height: 2;
+    /* background-color: blue; */
+  }
+  .videoContainer {
+    width: 100%;
+    padding: 2%;
+  }
 
-}
-.paragraphe{
-  width: 80%;
-  line-height: 2;
+  .bottomContainer{
+    width: 100%;
+  }
+  .videoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-}
 }

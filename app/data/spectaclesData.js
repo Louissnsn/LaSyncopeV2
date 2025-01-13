@@ -323,7 +323,7 @@ export const data1 = {
       {
         type: "paragraphe",
         texte:
-          "Nous rendons ce soir femmage, *en sa présence!*, à la poétesse Josiane Chantier, que tout le monde a oubliée. Nous avons l’honneur de recevoir ses amies : la poétesse Wisława Szymborska et la réalisatrice Chantal Akerman. Guidés tout au long de cette soirée par moi-même, votre modeste Maîtresse de Cérémonie pour vous servir, vous aurez la chance d’entendre ces femmes extraordinaires :vtoutes les trois sont mortes et confient ce qu’elles n’ont jamais osé se dire de leur vivant !",
+          "Nous rendons ce soir femmage, *en sa présence!*, à la poétesse Josiane Chantier, que tout le monde a oubliée. Nous avons l’honneur de recevoir ses amies : la poétesse Wisława Szymborska et la réalisatrice Chantal Akerman. Guidés tout au long de cette soirée par moi-même, votre modeste Maîtresse de Cérémonie pour vous servir, vous aurez la chance d’entendre ces femmes extraordinaires : toutes les trois sont mortes et confient ce qu’elles n’ont jamais osé se dire de leur vivant !",
       },
       {
         type: "paragraphe",
