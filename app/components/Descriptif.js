@@ -1,6 +1,5 @@
 "use client";
 import ReactMarkdown from "react-markdown";
-
 import styles from "@/styles/Descriptif.module.css";
 import DownloadButton from "./DownloadButton";
 import { motion } from "framer-motion";

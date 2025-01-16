@@ -341,7 +341,6 @@ export const data1 = {
           "Alors venez nous écouter, je vous promets une soirée pleine d’imprévus !",
       },
     ],
-    //CHANGER L'IMPORT
     filePath: "/pdf/Nobel.pdf",
 
     dates: {

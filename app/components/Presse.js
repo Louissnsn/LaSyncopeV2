@@ -1,20 +1,34 @@
+"use client";
 import styles from "@/styles/Presse.module.css";
-import Image from "next/image";
-import leviathan from "../../public/images/Spectacles/Poissons/leviathan.jpg";
+import { useProjectData } from "@/providers/ProjectDataContext";
+
 export default function Presse() {
+  const project = useProjectData();
+
+  const presse = project?.presse ?? []; // si presse est undefined, on prend un tableau vide
+
+  // console.log(project.presse[0].author);
+  // console.log(project.presse[0].article);
+
+  const infos = presse.map((data, i) => {
+    console.log(data);
+    return (
+      <div className={styles.presseContainer} key={i}>
+        <a href={data.article} className={styles.link}>
+          <p className={styles.author}>{data.author}</p>
+        </a>
+      </div>
+    );
+  });
+
   return (
     <div className={styles.parent}>
       <div className={styles.presse}>
-        <p className={styles.titre}>ON PARLE DE NOUS</p>
+        <div className={styles.titreContainer}>
+          <h2 className={styles.titre}>ON PARLE DE NOUS</h2>
+        </div>
+        <div className={styles.contentContainer}>{infos}</div>
       </div>
-      {/* <div className={styles.photoContainer}>
-        <Image
-          src={leviathan}
-          alt="Photographie d'un spectacle"
-          fill
-          style={{ borderRadius: "25px" }}
-        />
-      </div> */}
     </div>
   );
 }
