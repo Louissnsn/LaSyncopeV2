@@ -1,5 +1,4 @@
 .parent {
-  /* padding: 5%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +28,7 @@
   font-weight: 200;
   color: white;
   text-align: center;
+  height: auto;
 }
 
 .texteContainer {
@@ -83,10 +83,10 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .parent {
     padding: 8%;
-    height: auto;
+    height: fit-content;
   }
   .contentContainer {
     order: 1;
@@ -105,5 +105,16 @@
 
   .role {
     margin-top: 2%;
+  }
+}
+
+@media (max-height: 700px) {
+  .parent {
+    height: fit-content;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

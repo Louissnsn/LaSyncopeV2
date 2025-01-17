@@ -25,12 +25,12 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 879px) {
   .titre {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .titreSuite {
-    font-size: 2rem;
+    font-size: 3em;
   }
 }
 
@@ -46,17 +46,11 @@
     text-align: center;
   }
   .titreSuite {
-    font-size: 1rem;
+    font-size: clamp(1.2rem, 8vw, 2.5rem);
   }
 }
 
-@media (min-width: 769px) {
-  .titreSuite {
-    font-size: 5rem;
-  }
-}
-
-@media (min-width: 880px) and (max-width: 2000px) {
+@media (min-width: 880px) and (max-width: 1920) {
   .titre {
     width: 100%;
     font-size: 4rem;

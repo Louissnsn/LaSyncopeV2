@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  margin-bottom: 8%;
 }
 .textInFirst {
   grid-area: textInFirst;
@@ -74,7 +75,8 @@
     width: 95%;
   }
   .titre {
-    font-size: var(--font-size-title-mobile);
+    font-size: var(--font-size-title-s-mobile);
+    width: fit-content;
   }
 
   .bottomContainer {
@@ -93,6 +95,11 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .downloadButton {
+    width: 100%;
+    line-height: 2;
+  }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   .texte {
@@ -107,36 +114,28 @@
   .blockquote {
     text-align: center;
   }
-  .videoContainer {
-    background: radial-gradient(
-          farthest-side at -33.33% 50%,
-          #0000 52%,
-          #d5a5d2 54% 57%,
-          #0000 59%
-        )
-        0 calc(128px / 2),
-      radial-gradient(
-          farthest-side at 50% 133.33%,
-          #0000 52%,
-          #d5a5d2 54% 57%,
-          #0000 59%
-        )
-        calc(128px / 2) 0,
-      radial-gradient(
-        farthest-side at 133.33% 50%,
-        #0000 52%,
-        #d5a5d2 54% 57%,
-        #0000 59%
-      ),
-      radial-gradient(
-        farthest-side at 50% -33.33%,
-        #0000 52%,
-        #d5a5d2 54% 57%,
-        #0000 59%
-      ),
-      #839a9e;
-    background-size: calc(128px / 4.667) 128px, 128px calc(128px / 4.667);
 
+  .bottomContainer {
+    width: 100%;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: fit-content;
+    padding: 5% 0 5% 0; */
+  }
+  .downloadButton {
+    width: 100%;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .test {
+    height: 30vh;
+    width: 55%;
+  }
+  .videoContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -149,7 +148,7 @@
   }
   .titre {
     padding: 0;
-    color: white;
+    color: black;
     font-size: 3em;
   }
 }

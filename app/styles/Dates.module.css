@@ -14,7 +14,8 @@
 }
 
 .titre {
- font-size: var(--font-size-title-desktop)}
+  font-size: var(--font-size-title-desktop);
+}
 
 .sousTitre {
   font-size: 4rem;
@@ -23,13 +24,10 @@
 .contentContainer {
   display: flex;
   justify-content: space-evenly;
-  /* align-items: stretch; */
   text-align: center;
   font-family: var(--font-mono, "Courier New", monospace);
   line-height: 1.5;
-  /* padding-bottom: var(--spacing-md); */
   box-sizing: border-box;
-  /* background-color: red; */
 }
 
 .datesPassees,

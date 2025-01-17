@@ -9,14 +9,15 @@
   --background: #ebebec;
   --foreground: #ebebec;
   /* Echelles de taille de police */
-  --font-size-body: 1rem; 
+  --font-size-body: 1rem;
   --font-size-title-mobile: 1.8rem;
+  --font-size-title-s-mobile: 1.5rem;
   --font-size-title-tablet: 3rem;
   --font-size-title-desktop: clamp(2rem, 5vw, 3rem);
 
   /* Couleurs */
   --color-primary: orange;
-  --color-text: #000; 
+  --color-text: #000;
   --color-secondary-left: #ff9770;
   --color-secondary-right: #ffd670;
   --color-accent: #fb6f92;
@@ -38,8 +39,7 @@
 
   @media (max-width: 768px) {
     /* Mobile */
-    --font-size-body: 1rem
-
+    --font-size-body: 1rem;
   }
 
   @media (min-width: 769px) and (max-width: 1199px) {
