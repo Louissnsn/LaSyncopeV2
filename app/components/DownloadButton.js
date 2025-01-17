@@ -13,7 +13,7 @@ const DownloadButton = ({ filePath }) => {
         aria-label="Télécharger le dossier artistique"
         className={styles.button}
       >
-        Télécharger le dossier artistique
+        TÉLÉCHARGER LE DOSSIER ARTISTIQUE
       </Link>
     </motion.div>
   );
