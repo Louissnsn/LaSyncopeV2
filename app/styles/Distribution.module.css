@@ -1,8 +1,8 @@
 .parent {
-  padding: 5%;
+  /* padding: 5%; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 90vh;
   background-color: #ff9770;
   gap: 0px;
@@ -12,14 +12,15 @@
 .contentContainer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .logoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: auto;
 }
 
 .titre {
@@ -31,11 +32,11 @@
 }
 
 .texteContainer {
-  width: 25%;
-  height: 100%;
+  width: 45%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .distribText {
   font-family: var(--font-geist-mono, "Courier New", monospace);
@@ -51,17 +52,13 @@
     height: auto;
   }
 
-
-
   .logoContainer {
     padding-left: 0;
     margin-top: 10%;
   }
 
   .titreContainer {
-    /* padding: var(--spacing-xl); */
     padding: 5%;
-
   }
 
   .titre {
@@ -71,23 +68,22 @@
     text-align: center;
   }
 
-  .role{
+  .role {
     font-size: 1em;
   }
 
   .texteContainer {
-    width: 40%;
-   font-size: var(--font-size-body);
+    padding: 5%;
+    width: 45%;
+    font-size: var(--font-size-body);
   }
 
-  .distribText{
+  .distribText {
     margin-top: var(--spacing-sm);
   }
-
-
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .parent {
     padding: 8%;
     height: auto;

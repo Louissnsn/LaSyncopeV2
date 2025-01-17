@@ -30,6 +30,7 @@ export default function Distribution() {
             sizes="(max-width: 768px) 80vw, 400px"
             height={500}
             width={300}
+            styles={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
 
