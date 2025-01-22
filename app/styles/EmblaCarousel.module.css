@@ -1,13 +1,14 @@
 .embla {
   overflow: hidden;
-  max-width: 110vw;
+  max-width: 60%;
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 1rem;
+  --slide-height: 10rem;
+  /* --slide-spacing: 1rem; */
   --slide-size: 100%;
 }
 .embla__container {
-  height: 90vh;
+  height: 60vh;
+  background-color: red;
   width: 100%;
   display: flex;
   touch-action: pan-y pinch-zoom;

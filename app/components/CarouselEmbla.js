@@ -4,7 +4,9 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import styles from "@/styles/EmblaCarousel.module.css";
 import { useEffect, useCallback } from "react";
-export function EmblaCarousel({ images }) {
+
+export default function EmblaCarousel({ images }) {
+  // console.log(images);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   useEffect(() => {
@@ -30,7 +32,7 @@ export function EmblaCarousel({ images }) {
               <Image
                 src={imgUrl}
                 alt={`image-${index}`}
-                sizes="100vw"
+                sizes="90vw"
                 style={{
                   width: "100%",
                   height: "auto",

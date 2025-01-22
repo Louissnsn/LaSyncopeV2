@@ -1,30 +1,12 @@
 .parent {
   width: 100%;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  gap: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   box-sizing: border-box;
   padding: var(--spacing-md);
-}
-
-/* Barre orange en haut (shape1) */
-.shape1 {
-  grid-area: 1 / 1 / 2 / 13;
-  background-color: var(--color-primary);
-  margin: 0 auto;
-  width: 80%;
-  height: 10px;
-  border-radius: 50px;
-}
-
-/* Container du titre */
-.titreContainer {
-  grid-area: 2 / 1 / 5 / 13;
-  text-align: center;
-  margin-top: var(--spacing-md);
-  position: relative;
 }
 
 /* Titre */
@@ -32,57 +14,14 @@
   font-family: var(--font-primary);
   font-weight: 200;
   color: var(--color-primary);
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.1;
-  position: absolute;
-  z-index: 2;
+  /* margin-bottom: var(--spacing-sm); */
   width: 100%;
-  /* La taille du titre variera selon le breakpoint */
-}
-
-/* Photo gauche */
-.photoContainer {
-  grid-area: 2 / 1 / 13 / 6;
-  position: relative;
-}
-
-/* Photo droite */
-.photoContainerRight {
-  grid-area: 3 / 7 / 13 / 12;
-  position: relative;
-  margin-top: var(--spacing-lg);
-  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 1);
-}
-
-/* Texte biographique */
-.texteBio {
-  margin-top: var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
-  font-size: var(--font-size-body);
-  line-height: 1.5;
-  text-align: justify;
-  max-width: 95%;
-  font-family: var(--font-mono);
-}
-
-/* Shape dans le texte */
-.shapeInText {
-  width: 80%;
-  border-radius: 25px;
-  height: 10px;
-  margin-top: var(--spacing-xl);
-  background-color: var(--color-primary);
-}
-
-/* Container shape 2 (à droite) */
-.shape2Container {
-  grid-area: 1 / 12 / 13 / 13;
+  text-align: center;
 }
 
 /* ---------------- MEDIA QUERIES ---------------- */
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .parent {
     display: flex;
     flex-direction: column;
@@ -122,7 +61,6 @@
   }
 }
 
-/* Tablet / Moyen écrans (min-width: 769px and max-width: 1199px) */
 @media (min-width: 769px) and (max-width: 1199px) {
   .titre {
     font-size: var(--font-size-title-tablet);
@@ -133,7 +71,6 @@
   }
 }
 
-/* Grand écrans (≥ 1200px) */
 @media (min-width: 1200px) {
   .titre {
     font-size: var(--font-size-title-desktop);
@@ -147,4 +84,4 @@
   .texteBio {
     font-size: var(--font-size-body);
   }
-}
+} */

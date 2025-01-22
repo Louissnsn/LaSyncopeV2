@@ -1,32 +1,30 @@
 import styles from "@/styles/Accueil.module.css";
-import Image from "next/image";
-import choeur from "../../public/images/Covers/choeur-des-hommes-4.webp";
-import welcome from "../../public/images/Covers/welcome.webp";
-export default function Accueil() {
-  return (
-    <div className={styles.parent}>
-      <div className={styles.photoContainer}>
-        <Image
-          src={welcome}
-          alt="Photo du spectacle des Poissons"
-          fill
-          placeholder="blur"
-          style={{ objectFit: "contain" }}
-        />
-      </div>
-      <div className={styles.shape1}> </div>
-      <div className={styles.titreContainer}>
+import cloudinary from "cloudinary";
+import EmblaCarousel from "./CarouselEmbla";
+
+export default async function Accueil() {
+  try {
+    const results = await cloudinary.v2.search
+      .expression("folder:test AND resource_type:image")
+      .sort_by("public_id", "desc")
+      .max_results(4)
+      .execute();
+
+    const images = results.resources.map((resource) => resource.secure_url);
+    console.log("url", images);
+
+    return (
+      <div className={styles.parent}>
         <h1 className={styles.titre}>LA SYNCOPE</h1>
+        <EmblaCarousel images={images} />
       </div>
-      <div className={styles.photoContainerRight}>
-        <Image
-          src={choeur}
-          alt="Photo du spectacle Quand le loup n'y est plus"
-          fill
-          placeholder="blur"
-          style={{ objectFit: "cover" }}
-        />
+    );
+  } catch (error) {
+    console.error("Erreur lors de la récupération des images:", error);
+    return (
+      <div className={styles.container}>
+        Erreur lors du chargement des images
       </div>
-    </div>
-  );
+    );
+  }
 }
