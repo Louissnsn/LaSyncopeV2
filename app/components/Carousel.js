@@ -8,9 +8,9 @@ import styles from "@/styles/Carousel.module.css";
 export default function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    console.log("Images in Carousel:", images);
-  }, [images]);
+  // useEffect(() => {
+  //   console.log("Images in Carousel:", images);
+  // }, [images]);
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);

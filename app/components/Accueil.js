@@ -10,7 +10,7 @@ export default async function Accueil() {
       .execute();
 
     const images = results.resources.map((resource) => resource.secure_url);
-    console.log("url", images, images.length);
+    // console.log("url", images, images.length);
 
     return (
       <div className={styles.parent}>
