@@ -11,7 +11,7 @@ export default function Presse() {
   // console.log(project.presse[0].article);
 
   const infos = presse.map((data, i) => {
-    console.log(data);
+    // console.log(data);
     return (
       <div className={styles.presseContainer} key={i}>
         <a href={data.article} className={styles.link}>
