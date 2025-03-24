@@ -1,22 +1,20 @@
 import styles from "@/styles/Accueil.module.css";
 import cloudinary from "cloudinary";
-import EmblaCarousel from "./CarouselEmbla";
-
+import Carousel from "./Carousel";
 export default async function Accueil() {
   try {
     const results = await cloudinary.v2.search
       .expression("folder:test AND resource_type:image")
       .sort_by("public_id", "desc")
-      .max_results(4)
+      .max_results(20)
       .execute();
 
     const images = results.resources.map((resource) => resource.secure_url);
-    console.log("url", images);
+    console.log("url", images, images.length);
 
     return (
       <div className={styles.parent}>
-        <h1 className={styles.titre}>LA SYNCOPE</h1>
-        <EmblaCarousel images={images} />
+        <Carousel images={images} />
       </div>
     );
   } catch (error) {

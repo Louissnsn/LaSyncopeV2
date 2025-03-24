@@ -176,12 +176,12 @@
   }
 
   .zigZag {
-    margin-top: var(--spacing-lg);
-    grid-area: 12 / 3 / 12 / 11;
+    grid-area: 10 / 1 / 12 / 13;
     --a: 90deg;
     --s: 100px;
     --b: 35px;
     background: var(--color-accent);
+
     height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
     width: 100%;
     --_g: var(--s) repeat-x

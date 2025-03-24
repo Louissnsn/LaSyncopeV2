@@ -1,12 +1,9 @@
 .parent {
   width: 100%;
-  min-height: 100vh;
+  max-height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
   box-sizing: border-box;
-  padding: var(--spacing-md);
+  padding-bottom: 5%;
 }
 
 /* Titre */

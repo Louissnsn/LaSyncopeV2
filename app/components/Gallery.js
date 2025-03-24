@@ -24,6 +24,7 @@ const Gallery = ({ images }) => {
     return "/projets";
   };
 
+
   return (
     <div className={styles.gallery}>
       {images.map((imageUrl, index) => {

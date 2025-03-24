@@ -25,14 +25,15 @@ export default function EmblaCarousel({ images }) {
 
   return (
     <div className={styles.embla}>
+      <h1 className={styles.titre}>LA SYNCOPE</h1>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {images.map((imgUrl, index) => (
             <div className={styles.embla__slide} key={index}>
               <Image
                 src={imgUrl}
-                alt={`image-${index}`}
-                sizes="90vw"
+                alt={`image - ${index}`}
+                sizes="50vw"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -40,6 +41,18 @@ export default function EmblaCarousel({ images }) {
                 width={500}
                 height={300}
               />
+              {/* <div className={styles.slideImageWrapper}>
+                <Image
+                  src={imgUrl}
+                  alt={`image-${index}`}
+                  fill // on utilise fill pour remplir le conteneur parent
+                  style={{
+                    objectFit: "cover", // recadre l’image pour remplir complètement
+                    customPosition: "center",
+                  }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div> */}
             </div>
           ))}
         </div>
