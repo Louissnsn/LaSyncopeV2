@@ -7,7 +7,6 @@ const DownloadButton = ({ filePath }) => {
     <motion.div whileHover={{ scale: 1.2 }} className={styles.buttonContainer}>
       <Link
         href={filePath}
-        locale={false}
         rel="noopener noreferrer"
         target="_blank"
         aria-label="Télécharger le dossier artistique"
