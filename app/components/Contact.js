@@ -24,6 +24,14 @@ export default function ContactComponent() {
             L.335-2 et suivants du Code de la propriété intellectuelle.
           </span>
         </div>
+        <div className={styles.credits}>
+          <span className={styles.titre}>Crédits photo :</span>
+          <br />
+          <span className={styles.texte}>
+            Romane FOER, Mélissandre CARRASCO, Nicolas BLANDIN, Nina LACOUR,
+            Marion GERMA
+          </span>
+        </div>
         <div className={styles.dev}>
           <span className={styles.titre}>Développement :</span>
           <br />
