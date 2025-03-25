@@ -54,3 +54,10 @@
 .next {
   right: 10px;
 }
+
+.chevronIcon {
+  width: 5vw;
+  height: auto;
+  min-width: 24px;
+  max-width: 48px;
+}

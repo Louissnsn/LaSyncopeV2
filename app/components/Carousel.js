@@ -45,13 +45,13 @@ export default function Carousel({ images }) {
         onClick={handlePrev}
         className={`${styles.carouselButton} ${styles.prev}`}
       >
-        <ChevronLeft size={54} />
+        <ChevronLeft className={styles.chevronIcon} />
       </button>
       <button
         onClick={handleNext}
         className={`${styles.carouselButton} ${styles.next}`}
       >
-        <ChevronRight size={54} />
+        <ChevronRight className={styles.chevronIcon} />
       </button>
     </div>
   );
