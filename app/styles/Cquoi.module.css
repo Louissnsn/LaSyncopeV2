@@ -14,12 +14,12 @@
 }
 
 .leftContainer {
-  grid-area: 1 / 1 / 9 / 9;
+  grid-area: 1 / 2 / 9 / 9;
   background-color: var(--color-secondary-left);
 }
 
 .rightContainer {
-  grid-area: 2 / 7 / 9 / 13;
+  grid-area: 2 / 7 / 9 / 12;
   background-color: var(--color-secondary-right);
   padding: 2%;
 }
@@ -29,11 +29,11 @@
 .textDescriptionRight {
   margin-top: var(--spacing-lg);
   font-family: var(--font-mono);
-  /* padding: var(--spacing-sm); */
   text-indent: 1em;
   line-height: 1.5;
   width: 100%;
   font-size: var(--font-size-body);
+  z-index: 2;
 }
 
 /* Titre principal */
@@ -148,16 +148,13 @@
   }
 
   .textLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    height: 78%;
+    height: auto;
     padding: 2%;
+    width: 73%;
   }
 
   .textDescription {
-    max-width: 75%;
+    max-width: 100%;
     font-size: var(--font-size-body);
   }
 
