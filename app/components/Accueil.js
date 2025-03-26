@@ -1,6 +1,7 @@
 import styles from "@/styles/Accueil.module.css";
 import cloudinary from "cloudinary";
 import Carousel from "./Carousel";
+import ScrollDown from "./ScrollDown";
 export default async function Accueil() {
   try {
     const results = await cloudinary.v2.search
@@ -15,6 +16,7 @@ export default async function Accueil() {
     return (
       <div className={styles.parent}>
         <Carousel images={images} />
+        <ScrollDown />
       </div>
     );
   } catch (error) {

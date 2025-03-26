@@ -14,12 +14,12 @@
 }
 
 .leftContainer {
-  grid-area: 1 / 1 / 8 / 9;
+  grid-area: 1 / 1 / 9 / 9;
   background-color: var(--color-secondary-left);
 }
 
 .rightContainer {
-  grid-area: 2 / 7 / 8 / 13;
+  grid-area: 2 / 7 / 9 / 13;
   background-color: var(--color-secondary-right);
   padding: 2%;
 }
