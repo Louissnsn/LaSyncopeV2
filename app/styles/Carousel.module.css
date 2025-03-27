@@ -10,9 +10,9 @@
   aspect-ratio: 16/9;
 
   width: 80vw;
-
   margin: 0 auto;
   padding-top: 5%;
+  padding-bottom: 2%;
 }
 
 .carouselTrack {
@@ -60,4 +60,69 @@
   height: auto;
   min-width: 24px;
   max-width: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 95vw; /* Plus large sur mobile */
+    padding-top: 2%;
+  }
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: x mandatory;
+  overflow: visible; /* On cache le dépassement */
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Ajustement des boutons pour mobile */
+@media screen and (max-width: 768px) {
+  .carouselButton {
+    padding: 6px 10px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+}
+
+.chevronIcon {
+  width: 5vw;
+  height: auto;
+  min-width: 24px;
+  max-width: 48px;
+}
+
+/* Ajustement de la taille des chevrons sur mobile */
+@media screen and (max-width: 768px) {
+  .chevronIcon {
+    width: 8vw;
+  }
 }

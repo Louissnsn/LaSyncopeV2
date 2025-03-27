@@ -36,17 +36,6 @@
   z-index: 2;
 }
 
-/* Titre principal */
-.titre {
-  grid-area: 1 / 1 / 2 / 13;
-  margin-top: var(--spacing-md);
-  line-height: 1.5;
-  font-family: var(--font-primary);
-  text-align: center;
-  width: 100%;
-  /* La taille changera via les media queries */
-}
-
 /* Sous-titres */
 .sousTitre,
 .sousTitre2 {
@@ -59,6 +48,12 @@
 
 /* ---------------- MEDIA QUERIES ---------------- */
 
+@media (max-width: 1300px) {
+  .break1300 {
+    display: none;
+  }
+}
+
 /* Mobile : max-width: 768px */
 @media (max-width: 768px) {
   .parent {
@@ -68,12 +63,6 @@
     padding: var(--spacing-sm);
   }
 
-  .titre {
-    font-size: var(--font-size-title-mobile);
-    display: block;
-    padding: var(--spacing-lg);
-  }
-
   .leftContainer,
   .rightContainer {
     width: 100%;
@@ -81,10 +70,6 @@
     padding: var(--spacing-sm);
   }
 
-  .sousTitre {
-    padding-top: calc(var(--spacing-lg) * 1.5);
-    margin-top: var(--spacing-sm);
-  }
 
   .zigZag,
   .zigZag2 {
@@ -98,12 +83,6 @@
     display: flex;
     flex-direction: column;
     /* padding: var(--spacing-md); */
-  }
-
-  .titre {
-    font-size: var(--font-size-title-tablet);
-    text-align: center;
-    padding: var(--spacing-lg);
   }
 
   .sousTitre,
@@ -138,10 +117,6 @@
 
 /* Desktop : ≥ 1200px */
 @media (min-width: 1200px) {
-  .titre {
-    font-size: var(--font-size-title-desktop);
-  }
-
   .sousTitre,
   .sousTitre2 {
     font-size: 2rem;
