@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Bienvenue sur le site de la compagnie de théâtre La Syncope
 
 Node version is 20.11.1 \o\ Don't forget to `bash npm ci` if fail /o/
 
