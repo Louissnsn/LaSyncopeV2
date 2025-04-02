@@ -1,4 +1,11 @@
-Bienvenue sur le site de la compagnie de théâtre La Syncope
+Bienvenue sur le site de la compagnie de théâtre [La Syncope](https://www.lasyncope.fr/) 
+
+Développé en sorti de formation, ce projet m'a permis de consolider mes compétences en React sur NextJS (providers, hooks, navigation etc...). 
+
+## To dos 
+- Améliorer l'UX
+- Creuser la charte graphique pour un rendu plus agréable
+- Créer un back-office permettant aux admins de changer elles-mêmes les dates etc
 
 Node version is 20.11.1 \o\ Don't forget to `bash npm ci` if fail /o/
 
