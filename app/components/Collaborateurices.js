@@ -121,6 +121,7 @@ export default function Collaborateurices() {
           className={styles.lien}
           href="pdf/portfolioCompagnie.pdf"
           download="portfolioCompagnie.pdf"
+          title="Télécharger le portfolio de la compagnie"
         >
           <span className={`${styles.letter} ${styles.p}`}>P</span>
           <span className={`${styles.letter} ${styles.o1}`}>O</span>
