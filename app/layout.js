@@ -5,10 +5,43 @@ import { Inter } from "next/font/google";
 
 export const metadata = {
   title: "La Syncope",
-  description: "La Syncope - Collectif de théâtre",
+  description: "La Syncope - Collectif de théâtre contemporain",
+  keywords: ["théâtre", "collectif", "art contemporain", "spectacle vivant"],
+  authors: [{ name: "La Syncope" }],
+  creator: "La Syncope",
+  publisher: "La Syncope",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://lasyncope.fr"),
+  openGraph: {
+    title: "La Syncope",
+    description: "La Syncope - Collectif de théâtre contemporain",
+    url: "https://lasyncope.fr",
+    siteName: "La Syncope",
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "La Syncope",
+    description: "La Syncope - Collectif de théâtre contemporain",
+  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
