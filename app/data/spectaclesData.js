@@ -32,9 +32,13 @@ export const data1 = {
       },
     ],
     dates: {
-      aVenir: [{ année: "2025", représentations: [] }],
+      aVenir: [
+        {
+          année: "2026",
+          représentations: [],
+        },
+      ],
       passées: [
-        { année: "2024", représentations: [] },
         {
           année: "2023",
           représentations: [
@@ -346,6 +350,17 @@ export const data1 = {
     dates: {
       aVenir: [
         {
+          année: "2026",
+          représentations: [
+            {
+              date: "Les 19, 20 et 21 février à 19h30",
+              lieu: "Théâtre à Durée Indéterminée (TDI)",
+            },
+          ],
+        },
+      ],
+      passées: [
+        {
           année: "2025",
           représentations: [
             {
@@ -354,8 +369,6 @@ export const data1 = {
             },
           ],
         },
-      ],
-      passées: [
         {
           année: "2024",
           représentations: [
@@ -437,7 +450,8 @@ export const data1 = {
     filePath: "/pdf/loup.pdf",
 
     dates: {
-      aVenir: [
+      aVenir: [{ année: "2026", représentations: [] }],
+      passées: [
         {
           année: "2025",
           représentations: [
@@ -468,7 +482,6 @@ export const data1 = {
           ],
         },
       ],
-      passées: [{ année: "2024", représentations: [] }],
     },
     customPosition: "10% 35%",
     distribution: [
@@ -482,7 +495,7 @@ export const data1 = {
         role: "Crédits images",
         contributors: ["Nicolas Blandin", "Jason RESPILIEUX"],
       },
-      {role: "Régie son", contributors: ["Marius ORJOLLET"]}
+      { role: "Régie son", contributors: ["Marius ORJOLLET"] },
     ],
     partenaires: {
       soutiens: [
@@ -515,7 +528,7 @@ export const data1 = {
     altText: "Photographie du spectacle",
     filePath: "/pdf/poissons.pdf",
     dates: {
-      aVenir: [{ année: "2025", représentations: [] }],
+      aVenir: [{ année: "2026", représentations: [] }],
       passées: [
         {
           année: "2022",
