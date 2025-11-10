@@ -61,9 +61,16 @@ export default function Mathilde() {
             d&apos;Arts du spectacle à l&apos;Université Lumière Lyon 2, et
             donne également des cours de théâtre amateur et des ateliers
             d&apos;expression corporelle et d’écriture dans différentes
-            structures publiques (médiathèques, associations). En 2024, elle est
-            à la mise en scène de l&apos;opéra <em>Lakmé </em>
-            (création 2025, Théâtre d&apos;Albi).
+            structures publiques (médiathèques, associations). En 2025, elle est
+            à la mise en scène de l&apos;opéra <em>Lakmé</em> avec la{" "}
+            <a
+              href="https://cie-datura.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              compagnie Datura
+            </a>
+            (création au Théâtre d&apos;Albi).
           </p>
         </div>
       </div>

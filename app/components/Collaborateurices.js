@@ -16,6 +16,10 @@ export default function Collaborateurices() {
         </p>
         <br />
         <p className={styles.text}>
+          Elsa <span className={styles.noms}>BATAILLE-TESTU</span> costumière
+        </p>
+        <br />
+        <p className={styles.text}>
           Soizic <span className={styles.noms}>BILLET</span> comédienne
         </p>
         <br />
@@ -62,6 +66,10 @@ export default function Collaborateurices() {
         </p>
         <br />
         <p className={styles.text}>
+          Milan <span className={styles.noms}>DENIS</span> créateur lumière
+        </p>
+        <br />
+        <p className={styles.text}>
           Juliette <span className={styles.noms}>DUCERF</span> comédienne
         </p>
         <br />
@@ -80,6 +88,10 @@ export default function Collaborateurices() {
         <br />
         <p className={styles.text}>
           Nicolas <span className={styles.noms}>HADOT</span> créateur sonore
+        </p>
+        <br />
+        <p className={styles.text}>
+          Jude <span className={styles.noms}>JOUBERT</span> accessoiriste
         </p>
         <br />
         <p className={styles.text}>
