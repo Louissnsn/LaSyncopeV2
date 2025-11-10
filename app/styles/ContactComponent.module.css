@@ -108,16 +108,16 @@
     height: fit-content;
   }
 
+  .titreContact{
+    font-size: 2rem;
+  }
+
   @media screen and (max-width: 768px) {
     .contactContainer {
       flex-direction: column;
       align-items: flex-start;
       gap: 2rem;
     }
-  }
-
-  .titreContact {
-    font-size: 3rem;
   }
 
   .contactList {
