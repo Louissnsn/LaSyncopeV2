@@ -22,15 +22,6 @@ export default function ContactComponent() {
           </div>
 
           <div className={styles.contactItem}>
-            <p className={styles.titre}>Tous droits réservés :</p>
-            <p className={styles.texte}>
-              L&apos;ensemble des éléments composant ce site, œuvre protégée par
-              la législation sur la propriété intellectuelle, sont la propriété
-              exclusive de la compagnie La Syncope. [...]
-            </p>
-          </div>
-
-          <div className={styles.contactItem}>
             <p className={styles.titre}>Crédits photo :</p>
             <p className={styles.texte}>
               Romane FOER, Mélissandre CARRASCO, Nicolas BLANDIN, Nina LACOUR,
@@ -40,7 +31,23 @@ export default function ContactComponent() {
 
           <div className={styles.contactItem}>
             <p className={styles.titre}>Développement :</p>
-            <p className={styles.texte}>Louis SANSON</p>
+            <a
+              className={styles.socialLink}
+              href="https://www.louissanson.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Louis SANSON
+            </a>
+          </div>
+
+          <div className={styles.contactItem}>
+            <p className={styles.titre}>Tous droits réservés :</p>
+            <p className={styles.texte}>
+              L&apos;ensemble des éléments composant ce site, œuvre protégée par
+              la législation sur la propriété intellectuelle, sont la propriété
+              exclusive de la compagnie La Syncope.
+            </p>
           </div>
 
           <div className={styles.contactItem}>
@@ -54,35 +61,35 @@ export default function ContactComponent() {
           <div className={styles.contactItem}>
             <div className={styles.contactContainer}>
               <div className={styles.contactSection}>
-              <p className={styles.titre}>Nous contacter :</p>
-              <button
-                className={styles.mailButton}
-                onClick={() =>
-                  (window.location.href = "mailto:syncopecollectif@gmail.com")
-                }
-              >
-                syncopecollectif@gmail.com
-              </button>
+                <p className={styles.titre}>Nous contacter :</p>
+                <button
+                  className={styles.mailButton}
+                  onClick={() =>
+                    (window.location.href = "mailto:syncopecollectif@gmail.com")
+                  }
+                >
+                  syncopecollectif@gmail.com
+                </button>
               </div>
 
               <div className={styles.contactSection}>
-              <p className={styles.titre}>Nous suivre :</p>
-              <div className={styles.socialLinks}>
-                <a
-                  href="https://www.instagram.com/la.syncope/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://www.facebook.com/LaSyncope/?locale=fr_FR"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </div>
+                <p className={styles.titre}>Nous suivre :</p>
+                <div className={styles.socialLinks}>
+                  <a
+                    href="https://www.instagram.com/la.syncope/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.facebook.com/LaSyncope/?locale=fr_FR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </div>
               </div>
             </div>
           </div>
