@@ -314,7 +314,7 @@ export const data1 = {
 
   prixnobeldelamour: {
     title: ["PRIX NOBEL", "DE L'AMOUR"],
-    textTitle: "Cérémonie de fantômes en trois monologues et deux surprises",
+    textTitle: "Un spectacle de Vassia Chavaroche",
     description: [
       {
         type: "citation",
@@ -398,6 +398,12 @@ export const data1 = {
         ],
       },
       { role: "Soutien musical", contributors: ["Matthieu PICARD"] },
+      {
+        role: "Accessoires",
+        contributors: ["Jude JOUBERT", "Adrienne ROMEUF"],
+      },
+      { role: "Création et régie lumière", contributors: ["Milan DENIS"] },
+      { role: "Conseil costumes", contributors: ["Elsa BATAILLE-TESTU"] },
     ],
     teasers: [{ nom: "Prix Nobel de l'amour", urlID: "864369255/e6f255dc73" }],
   },
@@ -476,6 +482,7 @@ export const data1 = {
         role: "Crédits images",
         contributors: ["Nicolas Blandin", "Jason RESPILIEUX"],
       },
+      {role: "Régie son", contributors: ["Marius ORJOLLET"]}
     ],
     partenaires: {
       soutiens: [
