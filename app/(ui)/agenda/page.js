@@ -9,30 +9,25 @@ export default function Agenda() {
   const datesNobel = data1.prixnobeldelamour.dates?.aVenir[0].représentations;
   const datesLoup = data1.quandleloup.dates?.aVenir[0].représentations;
 
-  const agenda = ["AGENDA", "Saison 2024-2025"];
+  const agenda = ["AGENDA", "Saison 2025-2026"];
   const titles = [
     "Tout ce qu'il y a dans le ventre des poissons",
     "École d'été",
     "Quand le loup n'y est plus",
     "Prix Nobel de l'amour",
   ];
+
+const titleNobel = data1.prixnobeldelamour.title.join(" ");
   return (
     <>
       <Cover src={nobel2} title={agenda} altText="Photographie du spectacle" />
       <div className={styles.parent}>
         <div className={styles.container}>
-          {datesEcole.length > 0 &&
-            datesEcole?.map((dataEcole, index) => {
-              return <div key={index}>{dataEcole.représentations}</div>;
-            })}
           {datesPoissons.length > 0 &&
             datesPoissons?.map((dataPoissons, index) => {
               return <div key={index}>{dataPoissons.représentations.lieu}</div>;
             })}
-          {datesNobel.length > 0 &&
-            datesPoissons.map((dataNobel, index) => {
-              return <div key={index}> {dataNobel.représentations.lieu}</div>;
-            })}
+       
           {datesLoup.length > 0 &&
             datesLoup.map((dataLoup, index) => {
               return (
@@ -54,6 +49,27 @@ export default function Agenda() {
                   ) : (
                     <p className={styles.time}>16h</p>
                   )}
+                </div>
+              );
+            })}
+              {datesNobel.length > 0 &&
+            datesNobel?.map((datesNobel, index) => {
+              return (
+                <div className={styles.content} key={index}>
+                  <div className={styles.title}>{titleNobel}</div>
+                  <div className={styles.divider}></div>
+                  <div className={styles.subtitle}> {datesNobel.date}</div>
+                  <div className={styles.divider}></div>
+                  <a
+                    href="https://lecolombier-langaja.com/programmation/2025-2026/prix-nobel-de-lamour/index.html"
+                    className={styles.subtitle}
+                    rel="noopener noreferrer"
+                  >
+                    {datesNobel.lieu}
+                  </a>
+                  <div className={styles.divider}></div>
+                  <p className={styles.eventLocation}>Bagnolet (93)</p>
+                    <p className={styles.time}>19h30</p>
                 </div>
               );
             })}

@@ -354,7 +354,7 @@ export const data1 = {
           représentations: [
             {
               date: "Les 19, 20 et 21 février à 19h30",
-              lieu: "Théâtre à Durée Indéterminée (TDI)",
+              lieu: "Théâtre Les Colombiers",
             },
           ],
         },
